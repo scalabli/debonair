@@ -1,4 +1,4 @@
- import os
+import os
 import sys
 import quo
 import readline
@@ -9,9 +9,9 @@ from src.debonair.core import *
 @quo.app("--list")
 def main(list):
 	banner()
-	print("   [01] Information Gathering")
-	print("   [02] Vulnerability Analysis")
-	print("   [03] Web Hacking")
+	quo.flair(f"   [01] Information Gathering", foreground="vred", bold=True)
+	quo.flair(f"   [02] Vulnerability Analysis", foreground="vblue", bold=True)
+	quo.flair(f"   [03] Web Hacking", foreground="vyellow", bold=True)
 	print("   [04] Database Assessment")
 	print("   [05] Password Attacks")
 	print("   [06] Wireless Attacks")
