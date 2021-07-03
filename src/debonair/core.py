@@ -68,7 +68,7 @@ def restart_program():
 
 def backtomenu_option():
 	if not readStatus():
-		print(backtomenu_banner)
+		quo.flair(f'{backtomenu_banner}')
 		backtomenu = input("lzmx > ")
 		
 		if backtomenu == "99":
