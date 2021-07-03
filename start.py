@@ -16,7 +16,7 @@ def main(list):
 	quo.flair(f"   [05] Password Attacks",foreground="vwhite", bold=True)
 	quo.flair(f"   [06] Wireless Attacks", foreground="vcyan", bold=True)
 	quo.flair(f"   [07] Reverse Engineering", foreground="vmagenta", bold=True)
-	print("   [08] Exploitation Tools")
+	quo.flair(f"   [08] Exploitation Tools", foreground=(165, 42, 42), bold=True)
 	print("   [09] Sniffing and Spoofing")
 	print("   [10] Reporting Tools")
 	print("   [11] Forensic Tools")
@@ -854,4 +854,3 @@ def main(list):
 if __name__ == "__main__":
 	os.system("clear")
 	main()
-
