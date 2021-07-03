@@ -78,7 +78,7 @@ def backtomenu_option():
 		elif backtomenu == "00":
 			sys.exit()
 		else:
-			print("\nERROR: Wrong Input")
+			quo.flair(f"ERROR: Wrong Input")
 			time.sleep(2)
 			restart_program()
 
@@ -98,7 +98,7 @@ def nmap():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install nmap')
 	print('###### Done')
-	print("###### Type 'nmap' to start.")
+	quo.flair(f"###### Type 'nmap' to start.")
 	backtomenu_option()
 
 def red_hawk():
@@ -203,7 +203,7 @@ def xd3v():
 	os.system('curl -k -O https://gist.github.com/Gameye98/92035588bd0228df6fb7fa77a5f26bc2/raw/f8e73cd3d9f2a72bd536087bb6ba7bc8baef7d1d/xd3v.sh')
 	os.system('mv xd3v.sh {0}/../usr/bin/xd3v && chmod +x {0}/../usr/bin/xd3v'.format(homeDir))
 	print('###### Done')
-	print("###### Type 'xd3v' to start.")
+	quo.flair(f"###### Type 'xd3v' to start.")
 	backtomenu_option()
 
 def crips():
@@ -308,7 +308,7 @@ def wordpresscan():
 	os.system('cd termux-wordpresscan && chmod +x * && sh install.sh')
 	os.system('mv termux-wordpresscan {}'.format(homeDir))
 	print('###### Done')
-	print("###### Type 'wordpresscan' to start.")
+	quo.flair(f"###### Type 'wordpresscan' to start.")
 	backtomenu_option()
 
 def routersploit():
@@ -502,7 +502,7 @@ def metasploit():
 	os.system("apt install unstable-repo")
 	os.system("cd {} && apt install metasploit".format(homeDir))
 	print('###### Done')
-	print("###### Type 'msfconsole' to start.")
+	quo.flair(f"###### Type 'msfconsole' to start.")
 	backtomenu_option()
 
 def commix():
@@ -846,7 +846,7 @@ def beanshell():
 	os.system('dpkg -i beanshell_2.04_all.deb')
 	os.system('rm beanshell_2.04_all.deb')
 	print('###### Done')
-	print("###### Type 'bsh' to start.")
+	quo.flair(f"###### Type 'bsh' to start.")
 	backtomenu_option()
 
 def crunch():
@@ -854,8 +854,8 @@ def crunch():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install unstable-repo')
 	os.system('apt install crunch')
-	print("###### Done")
-	print("###### Type 'crunch' to start.")
+	quo.flair(f"###### Done")
+	quo.flair(f"###### Type 'crunch' to start.")
 	backtomenu_option()
 
 def binploit():
@@ -863,8 +863,8 @@ def binploit():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install unstable-repo')
 	os.system('apt install gdb radare2 ired ddrescue bin-utils yasm strace ltrace cdb hexcurse memcached llvmdb')
-	print("###### Done")
-	print("###### Tutorial: https://youtu.be/3NTXFUxcKPc")
+	quo.flair(f"###### Done")
+	quo.flair(f"###### Tutorial: https://youtu.be/3NTXFUxcKPc")
 	backtomenu_option()
 
 def textr():
@@ -875,7 +875,7 @@ def textr():
 	os.system('dpkg -i textr_1.0_all.deb')
 	os.system('rm textr_1.0_all.deb')
 	print('###### Done')
-	print("###### Type 'textr' to start.")
+	quo.flair(f"###### Type 'textr' to start.")
 	backtomenu_option()
 
 def apsca():
@@ -886,7 +886,7 @@ def apsca():
 	os.system('dpkg -i apsca_0.1_all.deb')
 	os.system('rm apsca_0.1_all.deb')
 	print('###### Done')
-	print("###### Type 'apsca' to start.")
+	quo.flair(f"###### Type 'apsca' to start.")
 	backtomenu_option()
 
 def amox():
@@ -897,7 +897,7 @@ def amox():
 	os.system('dpkg -i amox_1.0_all.deb')
 	os.system('rm amox_1.0_all.deb')
 	print('###### Done')
-	print("###### Type 'amox' to start.")
+	quo.flair(f"###### Type 'amox' to start.")
 	backtomenu_option()
 
 def fade():
@@ -944,7 +944,7 @@ def hpb():
 	os.system('dpkg -i html_0.1_all.deb')
 	os.system('rm html_0.1_all.deb')
 	print('###### Done')
-	print("###### Type 'hpb' to start.")
+	quo.flair(f"###### Type 'hpb' to start.")
 	backtomenu_option()
 
 def fmbrute():
@@ -960,8 +960,8 @@ def hashid():
 	print('\n###### Installing HashID')
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install python2 && python2 -m pip install hashid')
-	print("###### Done")
-	print("###### Type 'hashid -h' to show usage of hashid")
+	quo.flair(f"###### Done")
+	quo.flair(f"###### Type 'hashid -h' to show usage of hashid")
 	backtomenu_option()
 
 def gpstr():
@@ -970,7 +970,7 @@ def gpstr():
 	os.system('apt install php git')
 	os.system('git clone https://github.com/indosecid/gps_tracking')
 	os.system('mv gps_tracking {}'.format(homeDir))
-	print("###### Done")
+	quo.flair(f"###### Done")
 	backtomenu_option()
 
 def pret():
@@ -980,7 +980,7 @@ def pret():
 	os.system('python2 -m pip install colorama pysnmp')
 	os.system('git clone https://github.com/RUB-NDS/PRET')
 	os.system('mv PRET {}'.format(homeDir))
-	print("###### Done")
+	quo.flair(f"###### Done")
 	backtomenu_option()
 
 def atlas():
@@ -989,7 +989,7 @@ def atlas():
 	os.system('apt install git python2 && python2 -m pip install urllib2')
 	os.system('git clone https://github.com/m4ll0k/Atlas')
 	os.system('mv Atlas {}'.format(homeDir))
-	print("###### Done")
+	quo.flair(f"###### Done")
 	backtomenu_option()
 
 def hashcat():
@@ -997,8 +997,8 @@ def hashcat():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install unstable-repo')
 	os.system('apt install hashcat')
-	print("###### Done")
-	print("###### Type 'hashcat' to start.")
+	quo.flair(f"###### Done")
+	quo.flair(f"###### Type 'hashcat' to start.")
 	backtomenu_option()
 
 def liteotp():
@@ -1006,8 +1006,8 @@ def liteotp():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install php wget')
 	os.system('wget https://raw.githubusercontent.com/Cvar1984/LiteOTP/master/build/main.phar -O $PREFIX/bin/lite')
-	print("###### Done")
-	print("###### Type 'lite' to start.")
+	quo.flair(f"###### Done")
+	quo.flair(f"###### Type 'lite' to start.")
 	backtomenu_option()
 
 def fbbrutex():
@@ -1064,7 +1064,7 @@ def jadx():
 	os.system('dpkg -i jadx-0.6.1_all.deb?raw=true')
 	os.system('rm -rf jadx-0.6.1_all.deb?raw=true')
 	print('###### Done')
-	print("###### Type 'jadx' to start.")
+	quo.flair(f"###### Type 'jadx' to start.")
 	backtomenu_option()
 
 def pwnedornot():
@@ -1095,7 +1095,7 @@ def f4k3():
 	os.system('dpkg -i f4k3_1.0_all.deb')
 	os.system('rm -rf f4k3_1.0_all.deb')
 	print('###### Done')
-	print("###### Type 'f4k3' to start.")
+	quo.flair(f"###### Type 'f4k3' to start.")
 	backtomenu_option()
 
 def katak():
@@ -1114,7 +1114,7 @@ def heroku():
 	os.system('apt install nodejs')
 	os.system('npm install heroku -g')
 	print('###### Done')
-	print("###### Type 'heroku' to start.")
+	quo.flair(f"###### Type 'heroku' to start.")
 	backtomenu_option()
 
 def google():
@@ -1123,7 +1123,7 @@ def google():
 	os.system('apt install python')
 	os.system('python -m pip install google')
 	print('###### Done')
-	print("###### Type 'google' to start.")
+	quo.flair(f"###### Type 'google' to start.")
 	backtomenu_option()
 
 def billcypher():
@@ -1156,23 +1156,23 @@ def kojawafft():
 	backtomenu_option()
 
 def aircrackng():
-	if int(inputstream("id -u".split()).decode("utf8")) != 0: print("\nERROR: Make sure you're device has been rooted");
+	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing aircrack-ng')
 		os.system('apt update -y && apt upgrade -y')
 		os.system('apt install root-repo aircrack-ng')
 		print('###### Done')
-		print("###### Type 'aircrack-ng' to start.")
+		quo.flair(f"###### Type 'aircrack-ng' to start.")
 	backtomenu_option()
 
 def ettercap():
-	if int(inputstream("id -u".split()).decode("utf8")) != 0: print("\nERROR: Make sure you're device has been rooted");
+	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing ettercap')
 		os.system('apt update -y && apt upgrade -y')
 		os.system('apt install root-repo ettercap')
 		print('###### Done')
-		print("###### Type 'ettercap' to start.")
+		quo.flair(f"###### Type 'ettercap' to start.")
 	backtomenu_option()
 
 def ccgen():
@@ -1220,7 +1220,7 @@ def apktool():
 	os.system('mv Termux-Apktool {}'.format(homeDir))
 	os.system('cd {}/Termux-Apktool && dpkg -i *.deb'.format(homeDir))
 	print('###### Done')
-	print("###### Type 'apktool' to start.")
+	quo.flair(f"###### Type 'apktool' to start.")
 	backtomenu_option()
 
 def uncompyle():
@@ -1236,7 +1236,7 @@ def uncompyle():
 	backtomenu_option()
 
 def wifite():
-	if int(inputstream("id -u".split()).decode("utf8")) != 0: print("\nERROR: Make sure you're device has been rooted");
+	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing Wifite')
 		os.system('apt update -y && apt upgrade -y')
@@ -1266,13 +1266,13 @@ def archlinux():
 	backtomenu_option()
 
 def tshark():
-	if int(inputstream("id -u".split()).decode("utf8")) != 0: print("\nERROR: Make sure you're device has been rooted");
+	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing tshark')
 		os.system('apt update -y && apt upgrade -y')
 		os.system('apt install root-repo tshark')
 		print('###### Done')
-		print("###### Type 'tshark' to start.")
+		quo.flair(f"###### Type 'tshark' to start.")
 	backtomenu_option()
 
 def dos2unix():
@@ -1280,7 +1280,7 @@ def dos2unix():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install dos2unix')
 	print('###### Done')
-	print("###### Type 'dos2unix' to start.")
+	quo.flair(f"###### Type 'dos2unix' to start.")
 	backtomenu_option()
 
 def exiftool():
@@ -1288,7 +1288,7 @@ def exiftool():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install exiftool')
 	print('###### Done')
-	print("###### Type 'exiftool' to start.")
+	quo.flair(f"###### Type 'exiftool' to start.")
 	backtomenu_option()
 
 def iconv():
@@ -1296,7 +1296,7 @@ def iconv():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install iconv')
 	print('###### Done')
-	print("###### Type 'iconv' to start.")
+	quo.flair(f"###### Type 'iconv' to start.")
 	backtomenu_option()
 
 def mediainfo():
@@ -1316,23 +1316,23 @@ def pdfinfo():
 	backtomenu_option()
 
 def tcpdump():
-	if int(inputstream("id -u".split()).decode("utf8")) != 0: print("\nERROR: Make sure you're device has been rooted");
+	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing tcpdump')
 		os.system('apt update -y && apt upgrade -y')
 		os.system('apt install root-repo tcpdump')
 		print('###### Done')
-		print("###### Type 'tcpdump' to start.")
+		quo.flair(f"###### Type 'tcpdump' to start.")
 	backtomenu_option()
 
 def hping3():
-	if int(inputstream("id -u".split()).decode("utf8")) != 0: print("\nERROR: Make sure you're device has been rooted");
+	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing hping3')
 		os.system('apt update -y && apt upgrade -y')
 		os.system('apt install root-repo hping3')
 		print('###### Done')
-		print("###### Type 'hping3' to start.")
+		quo.flair(f"###### Type 'hping3' to start.")
 	backtomenu_option()
 
 def dbdat():
@@ -1372,7 +1372,7 @@ def mongoaudit():
 	os.system('apt install git python -y')
 	os.system('python -m pip install pymongo mongoaudit')
 	print('###### Done')
-	print("###### Type 'mongoaudit' to start.")
+	quo.flair(f"###### Type 'mongoaudit' to start.")
 	backtomenu_option()
 
 def wifiphisher():
@@ -1399,7 +1399,7 @@ def shc():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install shc -y')
 	print('###### Done')
-	print("###### Type 'shc' to start.")
+	quo.flair(f"###### Type 'shc' to start.")
 	backtomenu_option()
 
 def steghide():
@@ -1407,7 +1407,7 @@ def steghide():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install steghide -y')
 	print('###### Done')
-	print("###### Type 'steghide' to start.")
+	quo.flair(f"###### Type 'steghide' to start.")
 	backtomenu_option()
 
 def tesseract():
@@ -1415,7 +1415,7 @@ def tesseract():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install tesseract -y')
 	print('###### Done')
-	print("###### Type 'tesseract' to start.")
+	quo.flair(f"###### Type 'tesseract' to start.")
 	backtomenu_option()
 
 def sleuthkit():
@@ -1423,7 +1423,7 @@ def sleuthkit():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install sleuthkit -y')
 	print('###### Done')
-	print("###### Type 'pkg files sleuthkit | grep usr/bin' to check executable file related to sleuthkit package.")
+	quo.flair(f"###### Type 'pkg files sleuthkit | grep usr/bin' to check executable file related to sleuthkit package.")
 	backtomenu_option()
 
 def octave():
@@ -1433,7 +1433,7 @@ def octave():
 		pointless_repo()
 	os.system('apt install octave -y')
 	print('###### Done')
-	print("###### Type 'octave' to start.")
+	quo.flair(f"###### Type 'octave' to start.")
 	backtomenu_option()
 
 def fpcompiler():
@@ -1443,7 +1443,7 @@ def fpcompiler():
 		pointless_repo()
 	os.system('apt install fp-compiler -y')
 	print('###### Done')
-	print("###### Type 'fpc' to start.")
+	quo.flair(f"###### Type 'fpc' to start.")
 	backtomenu_option()
 
 def numpy():
@@ -1453,7 +1453,7 @@ def numpy():
 		pointless_repo()
 	os.system('apt install numpy -y')
 	print('###### Done')
-	print("###### Type 'pkg files numpy | grep usr/bin' to check executable file related to numpy package.")
+	quo.flair(f"###### Type 'pkg files numpy | grep usr/bin' to check executable file related to numpy package.")
 	backtomenu_option()
 
 def userrecon():
@@ -1464,7 +1464,7 @@ def userrecon():
 	os.system('dpkg -i userrecon_1.0_all.deb')
 	os.system('rm userrecon_1.0_all.deb')
 	print('###### Done')
-	print("###### Type 'userrecon' to start.")
+	quo.flair(f"###### Type 'userrecon' to start.")
 	backtomenu_option()
 
 def mrsip():
@@ -1565,7 +1565,7 @@ def cfr():
 	os.system('chmod 755 $PREFIX/bin/lib/cfr-0.151.dex')
 	os.chdir(current_dir)
 	print('###### Done')
-	print("###### Type 'cfr' to start.")
+	quo.flair(f"###### Type 'cfr' to start.")
 	backtomenu_option()
 
 def upx():
@@ -1578,7 +1578,7 @@ def upx():
 	os.system('rm -rf upx-3.96-arm64_linux upx-3.96-arm64_linux.tar.xz')
 	os.system('chmod 755 $PREFIX/bin/upx')
 	print('###### Done')
-	print("###### Type 'upx' to start.")
+	quo.flair(f"###### Type 'upx' to start.")
 	backtomenu_option()
 
 def pyinstxtractor():
@@ -1603,7 +1603,7 @@ def innoextract():
 	os.chdir(current_dir)
 	os.system('rm -rf innoextract')
 	print('###### Done')
-	print("###### Type 'innoextract' to start.")
+	quo.flair(f"###### Type 'innoextract' to start.")
 	backtomenu_option()
 
 def lynis():
@@ -1630,7 +1630,7 @@ def clamav():
 	os.system('apt install clamav -y')
 	os.system('freshclam')
 	print('###### Done')
-	print("###### Type 'clamscan' to start.")
+	quo.flair(f"###### Type 'clamscan' to start.")
 	backtomenu_option()
 
 def yara():
@@ -1638,7 +1638,7 @@ def yara():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install yara -y')
 	print('###### Done')
-	print("###### Type 'yara' to start.")
+	quo.flair(f"###### Type 'yara' to start.")
 	backtomenu_option()
 
 def virustotal():
@@ -1646,7 +1646,7 @@ def virustotal():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install virustotal-cli -y')
 	print('###### Done')
-	print("###### Type 'vt' to start.")
+	quo.flair(f"###### Type 'vt' to start.")
 	backtomenu_option()
 
 def maigret():
@@ -1655,8 +1655,8 @@ def maigret():
 	os.system('apt install python -y')
 	os.system('python -m pip install maigret')
 	print('###### Done')
-	print("###### Usage: maigret <username>")
-	print("###### Usage: maigret -h")
+	quo.flair(f"###### Usage: maigret <username>")
+	quo.flair(f"###### Usage: maigret -h")
 	backtomenu_option()
 
 def xplsearch():
@@ -1727,7 +1727,7 @@ def binwalk():
 	os.chdir("..")
 	os.system('mv binwalk {}'.format(homeDir))
 	print('###### Done')
-	print("###### Type 'binwalk' to start.")
+	quo.flair(f"###### Type 'binwalk' to start.")
 	backtomenu_option()
 
 def arat():
@@ -1803,7 +1803,7 @@ def python2():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install python2 -y')
 	print('###### Done')
-	print("###### Type 'python2' to start.")
+	quo.flair(f"###### Type 'python2' to start.")
 	backtomenu_option()
 
 def ecj():
@@ -1811,7 +1811,7 @@ def ecj():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install ecj -y')
 	print('###### Done')
-	print("###### Type 'ecj' to start.")
+	quo.flair(f"###### Type 'ecj' to start.")
 	backtomenu_option()
 
 def golang():
@@ -1819,7 +1819,7 @@ def golang():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install golang -y')
 	print('###### Done')
-	print("###### Type 'go' to start.")
+	quo.flair(f"###### Type 'go' to start.")
 	backtomenu_option()
 
 def ldc():
@@ -1827,7 +1827,7 @@ def ldc():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install ldc -y')
 	print('###### Done')
-	print("###### Type 'ldc2' to start.")
+	quo.flair(f"###### Type 'ldc2' to start.")
 	backtomenu_option()
 
 def nim():
@@ -1835,7 +1835,7 @@ def nim():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install nim -y')
 	print('###### Done')
-	print("###### Type 'nim' to start.")
+	quo.flair(f"###### Type 'nim' to start.")
 	backtomenu_option()
 
 def shc():
@@ -1843,7 +1843,7 @@ def shc():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install shc -y')
 	print('###### Done')
-	print("###### Type 'shc' to start.")
+	quo.flair(f"###### Type 'shc' to start.")
 	backtomenu_option()
 
 def tcc():
@@ -1851,7 +1851,7 @@ def tcc():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install tcc -y')
 	print('###### Done')
-	print("###### Type 'tcc' to start.")
+	quo.flair(f"###### Type 'tcc' to start.")
 	backtomenu_option()
 
 def php():
@@ -1859,7 +1859,7 @@ def php():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install php -y')
 	print('###### Done')
-	print("###### Type 'php' to start.")
+	quo.flair(f"###### Type 'php' to start.")
 	backtomenu_option()
 
 def ruby():
@@ -1867,7 +1867,7 @@ def ruby():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install ruby -y')
 	print('###### Done')
-	print("###### Type 'ruby' to start.")
+	quo.flair(f"###### Type 'ruby' to start.")
 	backtomenu_option()
 
 def perl():
@@ -1875,7 +1875,7 @@ def perl():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install perl -y')
 	print('###### Done')
-	print("###### Type 'perl' to start.")
+	quo.flair(f"###### Type 'perl' to start.")
 	backtomenu_option()
 
 def vlang():
@@ -1883,7 +1883,7 @@ def vlang():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install vlang -y')
 	print('###### Done')
-	print("###### Type 'vlang' to start.")
+	quo.flair(f"###### Type 'vlang' to start.")
 	backtomenu_option()
 
 def blogc():
@@ -1891,7 +1891,7 @@ def blogc():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install blogc -y')
 	print('###### Done')
-	print("###### Type 'blogc' to start.")
+	quo.flair(f"###### Type 'blogc' to start.")
 	backtomenu_option()
 
 ### termux games
@@ -1927,7 +1927,7 @@ def nsnake():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install nsnake -y')
 	print('###### Done')
-	print("###### Type 'nsnake' to start.")
+	quo.flair(f"###### Type 'nsnake' to start.")
 	backtomenu_option()
 
 def nudoku():
@@ -1935,7 +1935,7 @@ def nudoku():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install nudoku -y')
 	print('###### Done')
-	print("###### Type 'nudoku' to start.")
+	quo.flair(f"###### Type 'nudoku' to start.")
 	backtomenu_option()
 
 def moon_buggy():
@@ -1943,7 +1943,7 @@ def moon_buggy():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install moon-buggy -y')
 	print('###### Done')
-	print("###### Type 'moon-buggy' to start.")
+	quo.flair(f"###### Type 'moon-buggy' to start.")
 	backtomenu_option()
 
 def ttysolitaire():
@@ -1951,7 +1951,7 @@ def ttysolitaire():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install tty-solitaire -y')
 	print('###### Done')
-	print("###### Type 'ttysolitaire' to start.")
+	quo.flair(f"###### Type 'ttysolitaire' to start.")
 	backtomenu_option()
 
 def pacman4console():
@@ -1959,7 +1959,7 @@ def pacman4console():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install pacman4console -y')
 	print('###### Done')
-	print("###### Type 'pacman' to start.")
+	quo.flair(f"###### Type 'pacman' to start.")
 	backtomenu_option()
 
 ### bash function ---
