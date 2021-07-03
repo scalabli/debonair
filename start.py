@@ -13,7 +13,7 @@ def main(list):
 	quo.flair(f"   [02] Vulnerability Analysis", foreground="vblue", bold=True)
 	quo.flair(f"   [03] Web Hacking", foreground="vyellow", bold=True)
 	quo.flair(f"   [04] Database Assessment", foreground="vgreen", bold=True)
-        quo.flair(f"   [05] Password Attacks",foreground="vwhite", bold=True)
+	quo.flair(f"   [05] Password Attacks",foreground="vwhite", bold=True)
 	quo.flair(f"   [06] Wireless Attacks", foreground="vcyan", bold=True)
 	quo.flair(f"   [07] Reverse Engineering", foreground="vmagenta", bold=True)
 	print("   [08] Exploitation Tools")
