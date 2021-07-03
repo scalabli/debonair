@@ -18,8 +18,11 @@ lazymux_banner = """
 
 """
 backtomenu_banner = """
-  [99] < Back (Main menu)
-  [00] Exit debonair
+
+#####################################
+# [99] < Back (Main menu)           #
+# [00] Exit Debonair                #
+#####################################
 """
 
 prefix = os.getenv("PREFIX")
