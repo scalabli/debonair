@@ -7,7 +7,7 @@ import urllib.request
 from subprocess import check_output as inputstream
 
 current_dir = os.getcwd()
-lazymux_banner = """
+_banner = """
 
 ╭━━━┳━━━┳━━╮╭━━━┳━╮╱╭┳━━━┳━━┳━━━┳━━━╮
 ╰╮╭╮┃╭━━┫╭╮┃┃╭━╮┃┃╰╮┃┃╭━╮┣┫┣┫╭━╮┃╭━━╯
@@ -27,8 +27,8 @@ backtomenu_banner = """
 
 prefix = os.getenv("PREFIX")
 configBase = "[HOME] = ~"
-configFile = "../lazymux.conf"
-cache_1 = "/tmp/lazymux_1"
+configFile = "../etc/debonair.conf"
+cache_1 = "/etc/debonair_1"
 
 def repo_check(sources_list):
 	if os.path.isfile(os.getenv("PREFIX")+"/etc/apt/sources.list.d/"+sources_list):
@@ -86,7 +86,7 @@ def backtomenu_option():
 			restart_program()
 
 def banner():
-	quo.flair(f'{lazymux_banner}', foreground="red", bold=True) 
+	quo.flair(f'{_banner}', foreground="red", bold=True) 
 
 ### Repo Installer
 def pointless_repo():
