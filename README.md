@@ -16,7 +16,26 @@
         python3 start.py
 
 
-
+## Tool Categories 🚦
+`Information Gathering`
+`Vulnerability Scanner/Analysis`
+`Web hacking`
+`Database Assessment`
+`Password Attacks`
+`Wireless Attacks`
+`Reverse Engineering`
+`Exploitation Tools`
+`Sniffing & Spoofing`
+`Reporting Tools`
+`Forensic Tools`
+`Stress Testing`
+`Linux Distos`
+`Termux Utility`
+`Shell Function [.bashrc]`
+`CLI Games`
+`Malware Analysis`
+`Compiler/Interpreter`
+`Social Engineering Tools`
 
 ### Requirements
 • Python 3.x
