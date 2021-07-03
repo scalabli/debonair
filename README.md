@@ -64,7 +64,8 @@ Each number represents a specific output:
 :bulb: Type `4` to know more about sashay
 
 :bulb: Type `x` to exit Sashay
-### Requirements
+
+## Requirements🎲
 • Python **3.6+**
 
 
