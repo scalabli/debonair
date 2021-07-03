@@ -53,5 +53,5 @@ Each number represents a specific output:
 
 :bulb: Type `x` to exit Sashay
 ### Requirements
-• Python 3.x
+• Python 3.6+
 
