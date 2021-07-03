@@ -16,7 +16,7 @@
         python3 start.py
 
 
-## Tool Categories 🚦
+## Tool Categories🚦
 `Information Gathering`
 `Vulnerability Scanner/Analysis`
 `Web hacking`
