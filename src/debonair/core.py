@@ -1,8 +1,6 @@
 import os
 import quo
 import subprocess
-import sys
-import time
 import urllib.request
 from subprocess import check_output as inputstream
 
@@ -17,6 +15,9 @@ _banner = """
 ╰━━━┻━━━┻━━━┻━━━┻╯╱╰━┻╯╱╰┻━━┻╯╰━┻━━━╯
 
 """
+
+import sys
+import time
 _banner2 = """
 
 #####################################
@@ -31,11 +32,15 @@ configBase = "[HOME] = ~"
 configFile = "/etc/debonair.conf"
 cache_1 = "/etc/debonair_1"
 
+@quo.commamd()
+@quo.app("--sources_list")
 def repo_check(sources_list):
 	if os.path.isfile(os.getenv("PREFIX")+"/etc/apt/sources.list.d/"+sources_list):
 		return True
 	return False
 
+@quo.command()
+@quo.app("--statusId")
 def writeStatus(statusId):
 	open(cache_1,"w").write(str(statusId))
 
