@@ -29,7 +29,7 @@ def main(list):
 	print("   [18] Compiler/Interpreter")
 	print("   [19] Social Engineering Tools")
 	print("\n   [00] Exit the Lazymux\n")
-	lazymux = input("lzmx > set_install ")
+	lazymux = quo.prompt("lzmx > set_install ")
 
 	# 01 - Information Gathering
 	if lazymux.strip() == "1" or lazymux.strip() == "01":
@@ -77,7 +77,7 @@ def main(list):
 		print("    [42] ADB-ToolKit")
 		print("    [43] TekDefense-Automater: Automater - IP URL and MD5 OSINT Analysis")
 		print("\n    [00] Back to main menu\n")
-		infogathering = input("lzmx > set_install ")
+		infogathering = quo.prompt("lzmx > set_install ")
 		if infogathering == "@":
 			infogathering = ""
 			for x in range(1,201):
@@ -131,7 +131,7 @@ def main(list):
 			elif infox.strip() == "42": adbtk()
 			elif infox.strip() == "43": tekdefense()
 			elif infox.strip() == "00" or infox.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Wrong Input", foreground="red", bold=True);timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
