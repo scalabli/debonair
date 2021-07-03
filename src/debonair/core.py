@@ -71,14 +71,14 @@ def restart_program():
 def backtomenu_option():
 	if not readStatus():
 		quo.flair(f'{backtomenu_banner}')
-		backtomenu = input("lzmx > ")
+		backtomenu = quo.prompt("lzmx > ")
 		
 		if backtomenu == "99":
 			restart_program()
 		elif backtomenu == "00":
 			sys.exit()
 		else:
-			quo.flair(f"ERROR: Wrong Input")
+			quo.flair(f"ERROR: Wrong Input", foreground="red")
 			time.sleep(2)
 			restart_program()
 
