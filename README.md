@@ -1,3 +1,17 @@
+<h1>Sashay<img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
+
+[![Sashay](assets/sashay.png)](https://github.com/gerrishon-s)
+---
+
+[![GitHub stars](https://img.shields.io/github/stars/secretum-inc/debonair.svg)](https://github.com/secretum-inc/debonair/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/secretum-inc/debonair.svg)](https://github.com/secretum-inc/debonair/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/secretum-inc/debonair.svg)](https://github.com/secretum-inc/debonair/issues)
+[![GitHub watchers](https://img.shields.io/github/watchers/secretum-inc/debonair.svg)](https://github.com/secretum-inc/debonair/watchers)
+[![Python](https://img.shields.io/badge/language-Python%203-blue.svg)](https://www.python.org)
+[![Twitter Follow](https://img.shields.io/twitter/follow/gerrishon_s?style=social)](https://twitter.com/gerrishon_s)
+
+
+
 # debonair
 
 ### Introduction
