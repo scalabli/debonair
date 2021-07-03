@@ -37,6 +37,21 @@
 `Compiler/Interpreter`
 `Social Engineering Tools`
 
+## How to use👨‍💻
+
+Type **`debonair`** or **`dbnr`** from anywhere in your terminal
+
+Each number represents a specific output:
+
+:bulb: Type `1` to show all available tools. Type the number corresponding number of a tool which you want to install.
+
+:bulb: Type `2` to show tools categories
+
+:bulb: Type `3` to  update sashay
+
+:bulb: Type `4` to know more about sashay
+
+:bulb: Type `x` to exit Sashay
 ### Requirements
 • Python 3.x
 
