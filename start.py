@@ -5,7 +5,9 @@ import readline
 from time import sleep as timeout
 from src.debonair.core import *
 
-def main():
+@quo.command()
+@quo.app("--list")
+def main(list):
 	banner()
 	print("   [01] Information Gathering")
 	print("   [02] Vulnerability Analysis")
