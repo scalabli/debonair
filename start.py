@@ -28,7 +28,7 @@ def main(list):
 	print("   [17] Malware Analysis")
 	print("   [18] Compiler/Interpreter")
 	print("   [19] Social Engineering Tools")
-	print("\n   [00] Exit the Lazymux\n")
+	quo.flair(f"   [00] Exit the Debonair", foreground="black", background="yellow", bold=True)
 	lazymux = quo.prompt("lzmx > set_install ")
 
 	# 01 - Information Gathering
