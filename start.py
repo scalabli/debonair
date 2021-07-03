@@ -28,8 +28,8 @@ def main(list):
 	print("   [17] Malware Analysis")
 	print("   [18] Compiler/Interpreter")
 	print("   [19] Social Engineering Tools")
-	quo.flair(f"   [00] Exit the Debonair", foreground="black", background="yellow", bold=True)
-	lazymux = quo.prompt("lzmx > set_install ")
+	quo.flair(f"   [00] Exit Debonair", foreground="black", background="yellow", bold=True)
+	lazymux = quo.prompt("@dbnr >> install ")
 
 	# 01 - Information Gathering
 	if lazymux.strip() == "1" or lazymux.strip() == "01":
@@ -77,7 +77,7 @@ def main(list):
 		print("    [42] ADB-ToolKit")
 		print("    [43] TekDefense-Automater: Automater - IP URL and MD5 OSINT Analysis")
 		print("\n    [00] Back to main menu\n")
-		infogathering = quo.prompt("lzmx > set_install ")
+		infogathering = quo.prompt("@dbnr >> install ")
 		if infogathering == "@":
 			infogathering = ""
 			for x in range(1,201):
@@ -163,7 +163,7 @@ def main(list):
 		print("    [24] XPL-SEARCH: Search exploits in multiple exploit databases")
 		print("    [25] AndroBugs_Framework: An efficient Android vulnerability scanner that helps developers or hackers find potential security vulnerabilities in Android applications")
 		print("\n    [00] Back to main menu\n")
-		vulnsys = quo.prompt("lzmx > set_install ")
+		vulnsys = quo.prompt("@dbnr >> install ")
 		if vulnsys == "@":
 			vulnsys = ""
 			for x in range(1,201):
@@ -230,7 +230,7 @@ def main(list):
 		print("    [23] Xadmin: Admin Panel Finder")
 		print("    [24] CMSeeK: CMS Detection and Exploitation suite - Scan WordPress, Joomla, Drupal and over 180 other CMSs")
 		print("\n    [00] Back to main menu\n")
-		webhack = quo.prompt("lzmx > set_install ")
+		webhack = quo.prompt("@dbnr >> install ")
 		if webhack == "@":
 			webhack = ""
 			for x in range(1,201):
@@ -277,7 +277,7 @@ def main(list):
 		print("    [04] audit_couchdb: Detect security issues, large or small, in a CouchDB server")
 		print("    [05] mongoaudit: An automated pentesting tool that lets you know if your MongoDB instances are properly secured")
 		print("\n    [00] Back to main menu\n")
-		dbssm = quo.prompt("lzmx > set_install ")
+		dbssm = quo.prompt("@dbnr >> install ")
 		if dbssm == "@":
 			dbssm = ""
 			for x in range(1,201):
@@ -323,7 +323,7 @@ def main(list):
 		print("    [22] Credmap: An open source tool that was created to bring awareness to the dangers of credential reuse")
 		print("    [23] BruteX: Automatically brute force all services running on a target")
 		print("\n    [00] Back to main menu\n")
-		passtak = quo.prompt("lzmx > set_install ")
+		passtak = quo.prompt("@dbnr >> install ")
 		if passtak == "@":
 			passtak = ""
 			for x in range(1,201):
@@ -368,7 +368,7 @@ def main(list):
 		print("    [03] Wifiphisher: The Rogue Access Point Framework")
 		print("    [04] Routersploit: Exploitation Framework for Embedded Devices")
 		print("\n    [00] Back to main menu\n")
-		wiretak = quo.prompt("lzmx > set_install ")
+		wiretak = quo.prompt("@dbnr >> install ")
 		if wiretak == "@":
 			wiretak = ""
 			for x in range(1,201):
@@ -400,7 +400,7 @@ def main(list):
 		print("    [09] innoextract: A tool to unpack installers created by Inno Setup")
 		print("    [10] binwalk: Firmware analysis tool")
 		print("\n    [00] Back to main menu\n")
-		reversi = quo.prompt("lzmx > set_install ")
+		reversi = quo.prompt("@dbnr >> install ")
 		if reversi == "@":
 			reversi = ""
 			for x in range(1,201):
@@ -438,7 +438,7 @@ def main(list):
 		print("    [09] A-Rat: Remote Administration Tool")
 		print("    [10] BAF: Blind Attacking Framework")
 		print("\n    [00] Back to main menu\n")
-		exploitool = quo.prompt("lzmx > set_install ")
+		exploitool = quo.prompt("@dbnr >> install ")
 		if exploitool == "@":
 			exploitool = ""
 			for x in range(1,201):
@@ -471,7 +471,7 @@ def main(list):
 		print("    [04] hping3: hping is a command-line oriented TCP/IP packet assembler/analyzer")
 		print("    [05] tshark: Network protocol analyzer and sniffer")
 		print("\n    [00] Back to main menu\n")
-		sspoof = quo.prompt("lzmx > set_install ")
+		sspoof = quo.prompt("@dbnr >> install ")
 		if sspoof == "@":
 			sspoof = ""
 			for x in range(1,201):
@@ -499,7 +499,7 @@ def main(list):
 		print("    [04] mediainfo: Command-line utility for reading information from media files")
 		print("    [05] pdfinfo: PDF document information extractor")
 		print("\n    [00] Back to main menu\n")
-		reportls = quo.prompt("lzmx > set_install ")
+		reportls = quo.prompt("@dbnr >> install ")
 		if reportls == "@":
 			reportls = ""
 			for x in range(1,201):
@@ -525,7 +525,7 @@ def main(list):
 		print("    [02] tesseract: Tesseract is probably the most accurate open source OCR engine available")
 		print("    [03] sleuthkit: The Sleuth Kit (TSK) is a library for digital forensics tools")
 		print("\n    [00] Back to main menu\n")
-		forensc = quo.prompt("lzmx > set_install ")
+		forensc = quo.prompt("@dbnr >> install ")
 		if forensc == "@":
 			forensc = ""
 			for x in range(1,201):
@@ -555,7 +555,7 @@ def main(list):
 		print("    [08] santet-online: Social Engineering Tool")
 		print("    [09] dost-attack: WebServer Attacking Tools")
 		print("\n    [00] Back to main menu\n")
-		stresstest = quo.prompt("lzmx > set_install ")
+		stresstest = quo.prompt("@dbnr >> install ")
 		if stresstest == "@":
 			stresstest = ""
 			for x in range(1,201):
@@ -587,7 +587,7 @@ def main(list):
 		print("    [04] Parrot")
 		print("    [05] Arch Linux")
 		print("\n    [00] Back to main menu\n")
-		innudis = quo.prompt("lzmx > set_install ")
+		innudis = quo.prompt("@dbnr >> install ")
 		if innudis == "@":
 			innudis = ""
 			for x in range(1,201):
@@ -630,7 +630,7 @@ def main(list):
 		print("    [20] BTC-to-IDR-checker: Check the exchange rate virtual money currency to Indonesia Rupiah from Bitcoin.co.id API")
 		print("    [21] ClickBot: Earn money using telegram bot")
 		print("\n    [00] Back to main menu\n")
-		moretool = quo.prompt("lzmx > set_install ")
+		moretool = quo.prompt("@dbnr >> install ")
 		if moretool == "@":
 			moretool = ""
 			for x in range(1,201):
@@ -677,7 +677,7 @@ def main(list):
 		print("    [07] pranayama (4-7-8 Relax Breathing)")
 		print("    [08] sqlc (SQLite Query Processor)")
 		print("\n    [00] Back to main menu\n")
-		myshf = quo.prompt("lzmx > set_install ")
+		myshf = quo.prompt("@dbnr >> install ")
 		if myshf == "@":
 			myshf = ""
 			for x in range(1,201):
@@ -711,7 +711,7 @@ def main(list):
 		print("    [07] tty-solitaire")
 		print("    [08] Pacman4Console")
 		print("\n    [00] Back to main menu\n")
-		cligam = quo.prompt("lzmx > set_install ")
+		cligam = quo.prompt("@dbnr >> install ")
 		if cligam == "@":
 			cligam = ""
 			for x in range(1,201):
@@ -743,7 +743,7 @@ def main(list):
 		print("    [05] VirusTotal-CLI: Command line interface for VirusTotal")
 		print("    [06] avpass: Tool for leaking and bypassing Android malware detection system")
 		print("\n    [00] Back to main menu\n")
-		malsys = quo.prompt("lzmx > set_install ")
+		malsys = quo.prompt("@dbnr >> install ")
 		if malsys == "@":
 			malsys = ""
 			for x in range(1,201):
@@ -782,7 +782,7 @@ def main(list):
 		print("    [14] Octave: Scientific Programming Language")
 		print("    [15] BlogC: A blog compiler")
 		print("\n    [00] Back to main menu\n")
-		compter = quo.prompt("lzmx > set_install ")
+		compter = quo.prompt("@dbnr >> install ")
 		if compter == "@":
 			compter = ""
 			for x in range(1,201):
@@ -822,7 +822,7 @@ def main(list):
 		print("    [06] F4K3: Fake User Data Generator")
 		print("    [07] Hac")
 		print("\n    [00] Back to main menu\n")
-		soceng = quo.prompt("lzmx > set_install ")
+		soceng = quo.prompt("@dbnr >> install ")
 		if soceng == "@":
 			soceng = ""
 			for x in range(1,201):
