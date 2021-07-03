@@ -68,6 +68,7 @@ Each number represents a specific output:
 ## Requirements🎲
 • Python **3.6+**
 
+• quo **2021.×**
 
 ## Contributing👥
 
