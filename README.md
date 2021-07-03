@@ -12,8 +12,6 @@
 
 
 
-# debonair
-
 ### Introduction
 > :information_source: Debonair is an all in one, across the board and automatic installer for helpful tools.
 
@@ -30,7 +28,7 @@
         python3 start.py
 
 
-## Tool Categories🚦
+## Tool Categories🚥
 `Information Gathering`
 `Vulnerability Scanner/Analysis`
 `Web hacking`
@@ -67,5 +65,21 @@ Each number represents a specific output:
 
 :bulb: Type `x` to exit Sashay
 ### Requirements
-• Python 3.6+
+• Python **3.6+**
+
+
+## Contributing👥
+
+If you run into an issue, we would be very happy if you would file a bug on the [issue tracker](https://github.com/secretum-inc/debonair/issues). You can also contribute by adding more tools by creating a pull request
+
+## License📑
+
+Debonair is released under a Apache
+
+
+## Donate🎁
+
+Please consider [Donating](https://www.paypal.com/donate?hosted_button_id=KP893BC2EKK54) today
+
+------------------------------------------------------------------------
 
