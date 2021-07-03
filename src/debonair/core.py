@@ -1,6 +1,6 @@
-## lzmcore.py - useful module of Lazymux
-##
-import os, sys, time
+import os
+import sys
+import time
 import urllib.request
 from subprocess import check_output as inputstream
 
