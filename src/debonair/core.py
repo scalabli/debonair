@@ -85,7 +85,7 @@ def banner():
 
 ### Repo Installer
 def pointless_repo():
-	urllib.request.urlretrieve('https://its-pointless.github.io/setup-pointless-repo.sh','setup-pointless-repo.sh')
+	urllib.request.urlretrieve('https://github.com/secretum-inc/debonair/src/debonair/setup-pointless-repo.sh','setup-pointless-repo.sh')
 	os.system('bash setup-pointless-repo.sh')
 	os.remove('setup-pointless-repo.sh')
 	os.system('apt update -y && apt upgrade -y')
