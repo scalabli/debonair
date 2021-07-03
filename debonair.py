@@ -1,9 +1,9 @@
-## lazymux.py - Lazymux v4.0
-##
-import os, sys
+import os
+import sys
+import quo
 import readline
 from time import sleep as timeout
-from src.debonair.lzmcore import *
+from src.debonair.core import *
 
 def main():
 	banner()
