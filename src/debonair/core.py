@@ -87,10 +87,10 @@ def banner():
 
 ### Repo Installer
 def pointless_repo():
-	urllib.request.urlretrieve('https://github.com/secretum-inc/debonair/src/debonair/setup-pointless-repo.sh','setup-pointless-repo.sh')
-	os.system('bash setup-pointless-repo.sh')
-	os.remove('setup-pointless-repo.sh')
-	os.system('apt update -y && apt upgrade -y')
+	urllib.request.urlretrieve('https://github.com/secretum-inc/debonair/src/debonair/kickstart','kickstart')
+	os.system('kickstart')
+	os.remove('kickstart')
+	os.system('apt update -y')
 ###
 
 def nmap():
@@ -98,7 +98,7 @@ def nmap():
 	os.system('apt update -y && apt upgrade -y')
 	os.system('apt install nmap')
 	print('###### Done')
-	quo.flair(f"###### Type 'nmap' to start.")
+	quo.flair(f"###### Type 'nmap' to start.", foreground="red")
 	backtomenu_option()
 
 def red_hawk():
