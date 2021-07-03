@@ -1,4 +1,6 @@
 import os
+import quo
+import subprocess
 import sys
 import time
 import urllib.request
@@ -16,8 +18,8 @@ lazymux_banner = """
                     `\___/'
 """
 backtomenu_banner = """
-  [99] Back to main menu
-  [00] Exit the Lazymux
+  [99] < Back (Main menu)
+  [00] Exit debonair
 """
 
 prefix = os.getenv("PREFIX")
