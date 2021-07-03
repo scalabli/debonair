@@ -17,17 +17,18 @@ _banner = """
 ╰━━━┻━━━┻━━━┻━━━┻╯╱╰━┻╯╱╰┻━━┻╯╰━┻━━━╯
 
 """
-backtomenu_banner = """
+_banner2 = """
 
 #####################################
 # [99] < Back (Main menu)           #
 # [00] Exit Debonair                #
 #####################################
 """
-
+os.system("cd /etc/ && touch debonair.conf")
+os.system("cd /etc/ && touch debonair_1")
 prefix = os.getenv("PREFIX")
 configBase = "[HOME] = ~"
-configFile = "../etc/debonair.conf"
+configFile = "/etc/debonair.conf"
 cache_1 = "/etc/debonair_1"
 
 def repo_check(sources_list):
@@ -73,7 +74,7 @@ def restart_program():
 
 def backtomenu_option():
 	if not readStatus():
-		quo.flair(f'{backtomenu_banner}')
+		quo.flair(f'{_banner2}', foreground="red", bold=True) 
 		backtomenu = quo.prompt("lzmx > ")
 		
 		if backtomenu == "99":
@@ -86,7 +87,7 @@ def backtomenu_option():
 			restart_program()
 
 def banner():
-	quo.flair(f'{_banner}', foreground="red", bold=True) 
+	quo.flair(f'{_banner}', foreground="yellow", bold=True) 
 
 ### Repo Installer
 def pointless_repo():
@@ -98,7 +99,7 @@ def pointless_repo():
 
 def nmap():
 	print('\n###### Installing Nmap')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install nmap')
 	print('###### Done')
 	quo.flair(f"###### Type 'nmap' to start.", foreground="red")
@@ -106,7 +107,7 @@ def nmap():
 
 def red_hawk():
 	print('\n###### Installing RED HAWK')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/Tuhinshubhra/RED_HAWK')
 	os.system('mv RED_HAWK {}'.format(homeDir))
@@ -115,7 +116,7 @@ def red_hawk():
 
 def dtect():
 	print('\n###### Installing D-TECT')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/bibortone/D-Tech')
 	os.system('mv D-Tech {}/D-TECT'.format(homeDir))
@@ -124,7 +125,7 @@ def dtect():
 
 def sqlmap():
 	print('\n###### Installing sqlmap')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/sqlmapproject/sqlmap')
 	os.system('mv sqlmap {}'.format(homeDir))
@@ -133,7 +134,7 @@ def sqlmap():
 
 def infoga():
 	print('\n###### Installing Infoga')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install requests urllib3 urlparse')
 	os.system('git clone https://github.com/m4ll0k/Infoga')
@@ -143,7 +144,7 @@ def infoga():
 
 def reconDog():
 	print('\n###### Installing ReconDog')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/s0md3v/ReconDog')
 	os.system('mv ReconDog {}'.format(homeDir))
@@ -152,7 +153,7 @@ def reconDog():
 
 def androZenmap():
 	print('\n###### Installing AndroZenmap')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install nmap curl')
 	os.system('curl -O https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/scripts/androzenmap.sh')
 	os.system('mkdir {}/AndroZenmap'.format(homeDir))
@@ -162,7 +163,7 @@ def androZenmap():
 
 def sqlmate():
 	print('\n###### Installing sqlmate')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install mechanize bs4 HTMLparser argparse requests urlparse2')
 	os.system('git clone https://github.com/s0md3v/sqlmate')
@@ -172,7 +173,7 @@ def sqlmate():
 
 def astraNmap():
 	print('\n###### Installing AstraNmap')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git nmap')
 	os.system('git clone https://github.com/Gameye98/AstraNmap')
 	os.system('mv AstraNmap {}'.format(homeDir))
@@ -181,7 +182,7 @@ def astraNmap():
 
 def weeman():
 	print('\n###### Installing weeman')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install clang git python2')
 	os.system('python2 -m pip bs4 html5lib lxml')
 	os.system('git clone https://github.com/evait-security/weeman')
@@ -191,7 +192,7 @@ def weeman():
 
 def easyMap():
 	print('\n###### Installing Easymap')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install php git')
 	os.system('git clone https://github.com/Cvar1984/Easymap')
 	os.system('mv Easymap {}'.format(homeDir))
@@ -201,7 +202,7 @@ def easyMap():
 
 def xd3v():
 	print('\n###### Installing XD3v')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install curl')
 	os.system('curl -k -O https://gist.github.com/Gameye98/92035588bd0228df6fb7fa77a5f26bc2/raw/f8e73cd3d9f2a72bd536087bb6ba7bc8baef7d1d/xd3v.sh')
 	os.system('mv xd3v.sh {0}/../usr/bin/xd3v && chmod +x {0}/../usr/bin/xd3v'.format(homeDir))
@@ -211,7 +212,7 @@ def xd3v():
 
 def crips():
 	print('\n###### Installing Crips')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install git python2 openssl curl libcurl wget")
 	os.system("git clone https://github.com/Manisso/Crips")
 	os.system("mv Crips {}".format(homeDir))
@@ -220,7 +221,7 @@ def crips():
 
 def sir():
 	print('\n###### Installing SIR')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install python2 git")
 	os.system("python2 -m pip install bs4 urllib2")
 	os.system("git clone https://github.com/AeonDave/sir.git")
@@ -230,7 +231,7 @@ def sir():
 
 def xshell():
 	print('\n###### Installing Xshell')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install lynx python2 figlet ruby php nano w3m")
 	os.system("git clone https://github.com/Ubaii/Xshell")
 	os.system("mv Xshell {}".format(homeDir))
@@ -239,7 +240,7 @@ def xshell():
 
 def evilURL():
 	print('\n###### Installing EvilURL')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install git python2 python3")
 	os.system("git clone https://github.com/UndeadSec/EvilURL")
 	os.system("mv EvilURL {}".format(homeDir))
@@ -248,7 +249,7 @@ def evilURL():
 
 def striker():
 	print('\n###### Installing Striker')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/s0md3v/Striker')
 	os.system('mv Striker {}'.format(homeDir))
@@ -258,7 +259,7 @@ def striker():
 
 def dsss():
 	print('\n###### Installing DSSS')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/stamparm/DSSS')
 	os.system('mv DSSS {}'.format(homeDir))
@@ -267,7 +268,7 @@ def dsss():
 
 def sqliv():
 	print('\n###### Installing SQLiv')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/the-robot/sqliv')
 	os.system('mv sqliv {}'.format(homeDir))
@@ -276,7 +277,7 @@ def sqliv():
 
 def sqlscan():
 	print('\n###### Installing sqlscan')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone http://www.github.com/Cvar1984/sqlscan')
 	os.system('mv sqlscan {}'.format(homeDir))
@@ -285,7 +286,7 @@ def sqlscan():
 
 def wordpreSScan():
 	print('\n###### Installing Wordpresscan')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 python2-dev clang libxml2-dev libxml2-utils libxslt-dev')
 	os.system('git clone https://github.com/swisskyrepo/Wordpresscan')
 	os.system('mv Wordpresscan {}'.format(homeDir))
@@ -295,7 +296,7 @@ def wordpreSScan():
 
 def wpscan():
 	print('\n###### Installing WPScan')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git ruby curl')
 	os.system('git clone https://github.com/wpscanteam/wpscan')
 	os.system('mv wpscan {0} && cd {0}/wpscan'.format(homeDir))
@@ -305,7 +306,7 @@ def wpscan():
 
 def wordpresscan():
 	print('\n###### Installing wordpresscan(2)')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install nmap figlet git')
 	os.system('git clone https://github.com/silverhat007/termux-wordpresscan')
 	os.system('cd termux-wordpresscan && chmod +x * && sh install.sh')
@@ -316,7 +317,7 @@ def wordpresscan():
 
 def routersploit():
 	print('\n###### Installing Routersploit')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install requests')
 	os.system('git clone https://github.com/threat9/routersploit')
@@ -326,7 +327,7 @@ def routersploit():
 
 def torshammer():
 	print('\n###### Installing Torshammer')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/dotfighter/torshammer')
 	os.system('mv torshammer {}'.format(homeDir))
@@ -335,7 +336,7 @@ def torshammer():
 
 def slowloris():
 	print('\n###### Installing Slowloris')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/gkbrk/slowloris')
 	os.system('mv slowloris {}'.format(homeDir))
@@ -344,7 +345,7 @@ def slowloris():
 
 def fl00d12():
 	print('\n###### Installing Fl00d & Fl00d2')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 curl')
 	os.system('mkdir {}/fl00d'.format(homeDir))
 	os.system('curl -O https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/scripts/fl00d.py')
@@ -355,7 +356,7 @@ def fl00d12():
 
 def goldeneye():
 	print('\n###### Installing GoldenEye')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/jseidl/GoldenEye')
 	os.system('mv GoldenEye {}'.format(homeDir))
@@ -364,7 +365,7 @@ def goldeneye():
 
 def xerxes():
 	print('\n###### Installing Xerxes')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git')
 	os.system('apt install clang')
 	os.system('git clone https://github.com/baraalmasri/xerxes')
@@ -377,7 +378,7 @@ def xerxes():
 
 def planetwork_ddos():
 	print('\n###### Installing Planetwork-DDOS')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/Hydra7/Planetwork-DDOS')
 	os.system('mv Planetwork-DDOS {}'.format(homeDir))
@@ -386,14 +387,14 @@ def planetwork_ddos():
 
 def hydra():
 	print('\n###### Installing Hydra')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install hydra')
 	print('###### Done')
 	backtomenu_option()
 
 def black_hydra():
 	print('\n###### Installing Black Hydra')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install hydra git python2')
 	os.system('git clone https://github.com/Gameye98/Black-Hydra')
 	os.system('mv Black-Hydra {}'.format(homeDir))
@@ -402,7 +403,7 @@ def black_hydra():
 
 def cupp():
 	print('\n###### Installing Cupp')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/Mebus/cupp')
 	os.system('mv cupp {}'.format(homeDir))
@@ -411,7 +412,7 @@ def cupp():
 
 def asu():
 	print('\n###### Installing ASU')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 php')
 	os.system('python2 -m pip install requests bs4 mechanize')
 	os.system('git clone https://github.com/LOoLzeC/ASU')
@@ -421,7 +422,7 @@ def asu():
 
 def hash_buster():
 	print('\n###### Installing Hash-Buster')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/s0md3v/Hash-Buster')
 	os.system('mv Hash-Buster {}'.format(homeDir))
@@ -430,7 +431,7 @@ def hash_buster():
 
 def instaHack():
 	print('\n###### Installing InstaHack')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install requests')
 	os.system('git clone https://github.com/Slayeri4/instahack')
@@ -440,7 +441,7 @@ def instaHack():
 
 def indonesian_wordlist():
 	print('\n###### Installing indonesian-wordlist')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/geovedi/indonesian-wordlist')
 	os.system('mv indonesian-wordlist {}'.format(homeDir))
@@ -449,7 +450,7 @@ def indonesian_wordlist():
 
 def fbBrute():
 	print('\n###### Installing Facebook Brute Force 3')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install curl python2')
 	os.system('python2 -m pip install mechanize')
 	os.system('curl -O https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/scripts/facebook3.py')
@@ -461,7 +462,7 @@ def fbBrute():
 
 def webdav():
 	print('\n###### Installing WebDAV')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 openssl curl libcurl')
 	os.system('python2 -m pip install urllib3 chardet certifi idna requests')
 	os.system('mkdir {}/webdav'.format(homeDir))
@@ -471,7 +472,7 @@ def webdav():
 
 def webmassploit():
 	print('\n###### Installing Webdav Mass Exploiter')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install python2 openssl curl libcurl")
 	os.system("python2 -m pip install requests")
 	os.system("curl -k -O https://pastebin.com/raw/K1VYVHxX && mv K1VYVHxX webdav.py")
@@ -481,7 +482,7 @@ def webmassploit():
 
 def sqldump():
 	print('\n###### Installing sqldump')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 curl')
 	os.system('python2 -m pip install google')
 	os.system('curl -k -O https://gist.githubusercontent.com/Gameye98/76076c9a282a6f32749894d5368024a6/raw/6f9e754f2f81ab2b8efda30603dc8306c65bd651/sqldump.py')
@@ -491,7 +492,7 @@ def sqldump():
 
 def websploit():
 	print('\n###### Installing Websploit')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install scapy')
 	os.system('git clone https://github.com/The404Hacking/websploit')
@@ -501,7 +502,7 @@ def websploit():
 
 def metasploit():
 	print('\n###### Installing Metasploit')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install unstable-repo")
 	os.system("cd {} && apt install metasploit".format(homeDir))
 	print('###### Done')
@@ -510,7 +511,7 @@ def metasploit():
 
 def commix():
 	print('\n###### Installing Commix')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/commixproject/commix')
 	os.system('mv commix {}'.format(homeDir))
@@ -519,7 +520,7 @@ def commix():
 
 def brutal():
 	print('\n###### Installing Brutal')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/Screetsec/Brutal')
 	os.system('mv Brutal {}'.format(homeDir))
@@ -528,7 +529,7 @@ def brutal():
 
 def knockmail():
 	print('\n###### Installing KnockMail')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install validate_email pyDNS')
 	os.system('git clone https://github.com/4w4k3/KnockMail')
@@ -538,7 +539,7 @@ def knockmail():
 
 def hac():
 	print('\n###### Installing Hac')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install php git')
 	os.system('git clone https://github.com/Cvar1984/Hac')
 	os.system('mv Hac {}'.format(homeDir))
@@ -547,7 +548,7 @@ def hac():
 
 def rang3r():
 	print('\n###### Installing Rang3r')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install git python2 && python2 -m pip install optparse termcolor")
 	os.system("git clone https://github.com/floriankunushevci/rang3r")
 	os.system("mv rang3r {}".format(homeDir))
@@ -556,7 +557,7 @@ def rang3r():
 
 def sh33ll():
 	print('\n###### Installing SH33LL')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install git python2")
 	os.system("git clone https://github.com/LOoLzeC/SH33LL")
 	os.system("mv SH33LL {}".format(homeDir))
@@ -565,7 +566,7 @@ def sh33ll():
 
 def social():
 	print('\n###### Installing Social-Engineering')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install python2 perl")
 	os.system("git clone https://github.com/LOoLzeC/social-engineering")
 	os.system("mv social-engineering {}".format(homeDir))
@@ -574,7 +575,7 @@ def social():
 
 def spiderbot():
 	print('\n###### Installing SpiderBot')
-	os.system("apt update && apt upgrade")
+	# secretum inxlc
 	os.system("apt install git php")
 	os.system("git clone https://github.com/Cvar1984/SpiderBot")
 	os.system("mv SpiderBot {}".format(homeDir))
@@ -583,7 +584,7 @@ def spiderbot():
 
 def ngrok():
 	print('\n###### Installing Ngrok')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/themastersunil/ngrok')
 	os.system('mv ngrok {}'.format(homeDir))
@@ -592,7 +593,7 @@ def ngrok():
 
 def sudo():
 	print('\n###### Installing sudo')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install ncurses-utils git')
 	os.system('git clone https://github.com/st42/termux-sudo')
 	os.system('mv termux-sudo {0} && cd {0}/termux-sudo && chmod 777 *'.format(homeDir))
@@ -603,7 +604,7 @@ def sudo():
 
 def ubuntu():
 	print('\n###### Installing Ubuntu')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/Neo-Oli/termux-ubuntu')
 	os.system('mv termux-ubuntu {0} && cd {0}/termux-ubuntu && bash ubuntu.sh'.format(homeDir))
@@ -612,7 +613,7 @@ def ubuntu():
 
 def fedora():
 	print('\n###### Installing Fedora')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install wget git')
 	os.system('wget https://raw.githubusercontent.com/nmilosev/termux-fedora/master/termux-fedora.sh')
 	os.system('mv termux-fedora.sh {}'.format(homeDir))
@@ -621,7 +622,7 @@ def fedora():
 
 def nethunter():
 	print('\n###### Installing Kali NetHunter')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/Hax4us/Nethunter-In-Termux')
 	os.system('mv Nethunter-In-Termux {}'.format(homeDir))
@@ -630,7 +631,7 @@ def nethunter():
 
 def blackbox():
 	print('\n###### Installing BlackBox')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git && python2 -m pip install optparse passlib')
 	os.system('git clone https://github.com/jothatron/blackbox')
 	os.system('mv blackbox {}'.format(homeDir))
@@ -639,7 +640,7 @@ def blackbox():
 
 def xattacker():
 	print('\n###### Installing XAttacker')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git perl')
 	os.system('cpnm install HTTP::Request')
 	os.system('cpnm install LWP::Useragent')
@@ -650,7 +651,7 @@ def xattacker():
 
 def vcrt():
 	print('\n###### Installing VCRT')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/LOoLzeC/Evil-create-framework')
 	os.system('mv Evil-create-framework {}'.format(homeDir))
@@ -659,7 +660,7 @@ def vcrt():
 
 def socfish():
 	print('\n###### Installing SocialFish')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git && python2 -m pip install wget')
 	os.system('git clone https://github.com/UndeadSec/SocialFish')
 	os.system('mv SocialFish {}'.format(homeDir))
@@ -668,7 +669,7 @@ def socfish():
 
 def ecode():
 	print('\n###### Installing ECode')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install php git')
 	os.system('git clone https://github.com/Cvar1984/Ecode')
 	os.system('mv Ecode {}'.format(homeDir))
@@ -677,7 +678,7 @@ def ecode():
 
 def xsstrike():
 	print('\n###### Installing XSStrike')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install fuzzywuzzy prettytable mechanize HTMLParser')
 	os.system('git clone https://github.com/s0md3v/XSStrike')
@@ -687,7 +688,7 @@ def xsstrike():
 
 def breacher():
 	print('\n###### Installing Breacher')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install requests argparse')
 	os.system('git clone https://github.com/s0md3v/Breacher')
@@ -697,7 +698,7 @@ def breacher():
 
 def stylemux():
 	print('\n###### Installing Termux-Styling')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/BagazMukti/Termux-Styling-Shell-Script')
 	os.system('mv Termux-Styling-Shell-Script {}'.format(homeDir))
@@ -706,7 +707,7 @@ def stylemux():
 
 def txtool():
 	print('\n###### Installing TXTool')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 nmap php curl')
 	os.system('python2 -m pip install requests')
 	os.system('git clone https://github.com/kuburan/txtool')
@@ -716,7 +717,7 @@ def txtool():
 
 def passgencvar():
 	print('\n###### Installing PassGen')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/Cvar1984/PassGen')
 	os.system('mv PassGen {}'.format(homeDir))
@@ -725,7 +726,7 @@ def passgencvar():
 
 def owscan():
 	print('\n###### Installing OWScan')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/Gameye98/OWScan')
 	os.system('mv OWScan {}'.format(homeDir))
@@ -734,7 +735,7 @@ def owscan():
 
 def sanlen():
 	print('\n###### Installing santet-online')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/santet-online')
 	os.system('mv santet-online {}'.format(homeDir))
@@ -743,7 +744,7 @@ def sanlen():
 
 def spazsms():
 	print('\n###### Installing SpazSMS')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/SpazSMS')
 	os.system('mv SpazSMS {}'.format(homeDir))
@@ -752,7 +753,7 @@ def spazsms():
 
 def hasher():
 	print('\n###### Installing Hasher')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install passlib binascii progressbar')
 	os.system('git clone https://github.com/CiKu370/hasher')
 	os.system('mv hasher {}'.format(homeDir))
@@ -761,7 +762,7 @@ def hasher():
 
 def hashgenerator():
 	print('\n###### Installing Hash-Generator')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install passlib progressbar')
 	os.system('git clone https://github.com/CiKu370/hash-generator')
 	os.system('mv hash-generator {}'.format(homeDir))
@@ -770,7 +771,7 @@ def hashgenerator():
 
 def kodork():
 	print('\n###### Installing ko-dork')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install urllib2')
 	os.system('git clone https://github.com/CiKu370/ko-dork')
 	os.system('mv ko-dork {}'.format(homeDir))
@@ -779,7 +780,7 @@ def kodork():
 
 def snitch():
 	print('\n###### Installing snitch')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/Smaash/snitch')
 	os.system('mv snitch {}'.format(homeDir))
@@ -788,7 +789,7 @@ def snitch():
 
 def osif():
 	print('\n###### Installing OSIF')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install requests')
 	os.system('git clone https://github.com/CiKu370/OSIF')
@@ -798,7 +799,7 @@ def osif():
 
 def nk26():
 	print('\n###### Installing nk26')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/milio48/nk26')
 	os.system('mv nk26 {}'.format(homeDir))
@@ -807,7 +808,7 @@ def nk26():
 
 def devploit():
 	print('\n###### Installing Devploit')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git && python2 -m pip install urllib2')
 	os.system('git clone https://github.com/joker25000/Devploit')
 	os.system('mv Devploit {}'.format(homeDir))
@@ -816,7 +817,7 @@ def devploit():
 
 def hasherdotid():
 	print('\n###### Installing Hasherdotid')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/galauerscrew/hasherdotid')
 	os.system('mv hasherdotid {}'.format(homeDir))
@@ -825,7 +826,7 @@ def hasherdotid():
 
 def namechk():
 	print('\n###### Installing Namechk')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/HA71/Namechk')
 	os.system('mv Namechk {}'.format(homeDir))
@@ -834,7 +835,7 @@ def namechk():
 
 def xlPy():
 	print('\n###### Installing xl-py')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python git')
 	os.system('git clone https://github.com/albertoanggi/xl-py')
 	os.system('mv xl-py {}'.format(homeDir))
@@ -843,7 +844,7 @@ def xlPy():
 
 def beanshell():
 	print('\n###### Installing Beanshell')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://github.com/amsitlab/amsitlab.github.io/raw/master/dists/termux/amsitlab/binary-all/beanshell_2.04_all.deb')
 	os.system('dpkg -i beanshell_2.04_all.deb')
@@ -854,7 +855,7 @@ def beanshell():
 
 def crunch():
 	print('\n###### Installing Crunch')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install unstable-repo')
 	os.system('apt install crunch')
 	quo.flair(f"###### Done")
@@ -863,7 +864,7 @@ def crunch():
 
 def binploit():
 	print('\n###### Installing Binary Exploitation')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install unstable-repo')
 	os.system('apt install gdb radare2 ired ddrescue bin-utils yasm strace ltrace cdb hexcurse memcached llvmdb')
 	quo.flair(f"###### Done")
@@ -872,7 +873,7 @@ def binploit():
 
 def textr():
 	print('\n###### Installing Textr')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://raw.githubusercontent.com/amsitlab/textr/master/textr_1.0_all.deb')
 	os.system('dpkg -i textr_1.0_all.deb')
@@ -883,7 +884,7 @@ def textr():
 
 def apsca():
 	print('\n###### Installing ApSca')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://raw.githubusercontent.com/BlackHoleSecurity/apsca/master/apsca_0.1_all.deb')
 	os.system('dpkg -i apsca_0.1_all.deb')
@@ -894,7 +895,7 @@ def apsca():
 
 def amox():
 	print('\n###### Installing amox')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://gitlab.com/dtlily/amox/raw/master/amox_1.0_all.deb')
 	os.system('dpkg -i amox_1.0_all.deb')
@@ -905,7 +906,7 @@ def amox():
 
 def fade():
 	print('\n###### Installing FaDe')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/FaDe')
 	os.system('mv FaDe {}'.format(homeDir))
@@ -914,7 +915,7 @@ def fade():
 
 def ginf():
 	print('\n###### Installing GINF')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/Gameye98/GINF')
 	os.system('mv GINF {}'.format(homeDir))
@@ -923,7 +924,7 @@ def ginf():
 
 def auxile():
 	print('\n###### Installing AUXILE')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install requests bs4 pexpect')
 	os.system('git clone https://github.com/CiKu370/AUXILE')
 	os.system('mv AUXILE {}'.format(homeDir))
@@ -932,7 +933,7 @@ def auxile():
 
 def inther():
 	print('\n###### Installing inther')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git ruby')
 	os.system('git clone https://github.com/Gameye98/inther')
 	os.system('mv inther {}'.format(homeDir))
@@ -941,7 +942,7 @@ def inther():
 
 def hpb():
 	print('\n###### Installing HPB')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/package/html_0.1_all.deb')
 	os.system('dpkg -i html_0.1_all.deb')
@@ -952,7 +953,7 @@ def hpb():
 
 def fmbrute():
 	print('\n###### Installing FMBrute')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python && python -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/FMBrute')
 	os.system('mv FMBrute {}'.format(homeDir))
@@ -961,7 +962,7 @@ def fmbrute():
 
 def hashid():
 	print('\n###### Installing HashID')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 && python2 -m pip install hashid')
 	quo.flair(f"###### Done")
 	quo.flair(f"###### Type 'hashid -h' to show usage of hashid")
@@ -969,7 +970,7 @@ def hashid():
 
 def gpstr():
 	print('\n###### Installing GPS Tracking')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install php git')
 	os.system('git clone https://github.com/indosecid/gps_tracking')
 	os.system('mv gps_tracking {}'.format(homeDir))
@@ -978,7 +979,7 @@ def gpstr():
 
 def pret():
 	print('\n###### Installing PRET')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 imagemagick git')
 	os.system('python2 -m pip install colorama pysnmp')
 	os.system('git clone https://github.com/RUB-NDS/PRET')
@@ -988,7 +989,7 @@ def pret():
 
 def atlas():
 	print('\n###### Installing Atlas')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install urllib2')
 	os.system('git clone https://github.com/m4ll0k/Atlas')
 	os.system('mv Atlas {}'.format(homeDir))
@@ -997,7 +998,7 @@ def atlas():
 
 def hashcat():
 	print('\n###### Installing Hashcat')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install unstable-repo')
 	os.system('apt install hashcat')
 	quo.flair(f"###### Done")
@@ -1006,7 +1007,7 @@ def hashcat():
 
 def liteotp():
 	print('\n###### Installing LiteOTP')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install php wget')
 	os.system('wget https://raw.githubusercontent.com/Cvar1984/LiteOTP/master/build/main.phar -O $PREFIX/bin/lite')
 	quo.flair(f"###### Done")
@@ -1015,7 +1016,7 @@ def liteotp():
 
 def fbbrutex():
 	print('\n###### Installing FBBrute')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python && python -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/FBBrute')
 	os.system('mv FBBrute {}'.format(homeDir))
@@ -1024,7 +1025,7 @@ def fbbrutex():
 
 def fim():
 	print('\n###### Installing fim')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python && python -m pip install requests bs4')
 	os.system('git clone https://github.com/karjok/fim')
 	os.system('mv fim {}'.format(homeDir))
@@ -1033,7 +1034,7 @@ def fim():
 
 def rshell():
 	print('\n###### Installing RShell')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python && python -m pip install colorama')
 	os.system('git clone https://github.com/Jishu-Epic/RShell')
 	os.system('mv RShell {}'.format(homeDir))
@@ -1042,7 +1043,7 @@ def rshell():
 
 def termpyter():
 	print('\n###### Installing TermPyter')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python')
 	os.system('git clone https://github.com/Jishu-Epic/TermPyter')
 	os.system('mv TermPyter {}'.format(homeDir))
@@ -1051,7 +1052,7 @@ def termpyter():
 
 def maxsubdofinder():
 	print('\n###### Installing MaxSubdoFinder')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install requests')
 	os.system('git clone https://github.com/maxteroit/MaxSubdoFinder')
@@ -1061,7 +1062,7 @@ def maxsubdofinder():
 
 def jadx():
 	print('\n###### Installing jadx')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://github.com/Lexiie/Termux-Jadx/blob/master/jadx-0.6.1_all.deb?raw=true')
 	os.system('dpkg -i jadx-0.6.1_all.deb?raw=true')
@@ -1072,7 +1073,7 @@ def jadx():
 
 def pwnedornot():
 	print('\n###### Installing pwnedOrNot')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python')
 	os.system('python -m pip install requests')
 	os.system('git clone https://github.com/thewhiteh4t/pwnedOrNot')
@@ -1082,7 +1083,7 @@ def pwnedornot():
 
 def maclook():
 	print('\n###### Installing Mac-Lookup')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python')
 	os.system('python -m pip install requests')
 	os.system('git clone https://github.com/T4P4N/Mac-Lookup')
@@ -1092,7 +1093,7 @@ def maclook():
 
 def f4k3():
 	print('\n###### Installing F4K3')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://github.com/Gameye98/Gameye98.github.io/blob/master/package/f4k3_1.0_all.deb')
 	os.system('dpkg -i f4k3_1.0_all.deb')
@@ -1103,7 +1104,7 @@ def f4k3():
 
 def katak():
 	print('\n###### Installing Katak')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install requests progressbar')
 	os.system('git clone https://github.com/Gameye98/Katak')
@@ -1113,7 +1114,7 @@ def katak():
 
 def heroku():
 	print('\n###### Installing heroku')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install nodejs')
 	os.system('npm install heroku -g')
 	print('###### Done')
@@ -1122,7 +1123,7 @@ def heroku():
 
 def google():
 	print('\n###### Installing google')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python')
 	os.system('python -m pip install google')
 	print('###### Done')
@@ -1131,7 +1132,7 @@ def google():
 
 def billcypher():
 	print('\n###### Installing BillCypher')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python')
 	os.system('python -m pip install argparse dnspython requests urllib3 colorama')
 	os.system('git clone https://github.com/GitHackTools/BillCipher')
@@ -1141,7 +1142,7 @@ def billcypher():
 
 def vbug():
 	print('\n###### Installing vbug')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/Gameye98/vbug')
 	os.system('mv vbug {}'.format(homeDir))
@@ -1150,7 +1151,7 @@ def vbug():
 
 def kojawafft():
 	print('\n###### Installing kojawafft')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git nodejs')
 	os.system('git clone https://github.com/sandalpenyok/kojawafft')
 	os.system('mv kojawafft {}'.format(homeDir))
@@ -1162,7 +1163,7 @@ def aircrackng():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing aircrack-ng')
-		os.system('apt update -y && apt upgrade -y')
+		# secretum inc
 		os.system('apt install root-repo aircrack-ng')
 		print('###### Done')
 		quo.flair(f"###### Type 'aircrack-ng' to start.")
@@ -1172,7 +1173,7 @@ def ettercap():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing ettercap')
-		os.system('apt update -y && apt upgrade -y')
+		# secretum inc
 		os.system('apt install root-repo ettercap')
 		print('###### Done')
 		quo.flair(f"###### Type 'ettercap' to start.")
@@ -1180,7 +1181,7 @@ def ettercap():
 
 def ccgen():
 	print('\n###### Installing ccgen')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python')
 	os.system('git clone https://github.com/Gameye98/ccgen')
 	os.system('mv ccgen {}'.format(homeDir))
@@ -1189,7 +1190,7 @@ def ccgen():
 
 def ddcrypt():
 	print('\n###### Installing ddcrypt')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python')
 	os.system('git clone https://github.com/Gameye98/ddcrypt')
 	os.system('mv ddcrypt {}'.format(homeDir))
@@ -1198,7 +1199,7 @@ def ddcrypt():
 
 def dnsrecon():
 	print('\n###### Installing dnsrecon')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python')
 	os.system('git clone https://github.com/darkoperator/dnsrecon')
 	os.system('python -m pip install -r dnsrecon/requirements.txt')
@@ -1208,7 +1209,7 @@ def dnsrecon():
 
 def zphisher():
 	print('\n###### Installing zphisher')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php openssh curl')
 	os.system('git clone https://github.com/htr-tech/zphisher')
 	os.system('mv zphisher {}'.format(homeDir))
@@ -1217,7 +1218,7 @@ def zphisher():
 
 def apktool():
 	print('\n###### Installing apktool')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git dpkg')
 	os.system('git clone https://github.com/Lexiie/Termux-Apktool')
 	os.system('mv Termux-Apktool {}'.format(homeDir))
@@ -1228,7 +1229,7 @@ def apktool():
 
 def uncompyle():
 	print('\n###### Installing uncompyle6')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python python2')
 	os.system('python2 -m pip install uncompyle6')
 	os.system('mv $PREFIX/bin/uncompyle6 $PREFIX/bin/uncompyle')
@@ -1242,7 +1243,7 @@ def wifite():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing Wifite')
-		os.system('apt update -y && apt upgrade -y')
+		# secretum inc
 		os.system('apt install git python2')
 		os.system('git clone https://github.com/derv82/wifite')
 		os.system('mv wifite {}'.format(homeDir))
@@ -1251,7 +1252,7 @@ def wifite():
 
 def parrot():
 	print('\n###### Installing Parrot')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install wget openssl-tool proot -y && hash -r && cd {} && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Parrot/parrot.sh && bash parrot.sh'.format(homeDir))
 	os.system('cd {} && bash start-parrot.sh'.format(homeDir))
 	print('###### Done')
@@ -1261,7 +1262,7 @@ def parrot():
 
 def archlinux():
 	print('\n###### Installing Arch Linux')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git')
 	os.system('cd $HOME && git clone https://github.com/sdrausty/TermuxArch')
 	os.system('cd $HOME && bash TermuxArch/setupTermuxArch.sh')
@@ -1272,7 +1273,7 @@ def tshark():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing tshark')
-		os.system('apt update -y && apt upgrade -y')
+		# secretum inc
 		os.system('apt install root-repo tshark')
 		print('###### Done')
 		quo.flair(f"###### Type 'tshark' to start.")
@@ -1280,7 +1281,7 @@ def tshark():
 
 def dos2unix():
 	print('\n###### Installing dos2unix')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dos2unix')
 	print('###### Done')
 	quo.flair(f"###### Type 'dos2unix' to start.")
@@ -1288,7 +1289,7 @@ def dos2unix():
 
 def exiftool():
 	print('\n###### Installing exiftool')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install exiftool')
 	print('###### Done')
 	quo.flair(f"###### Type 'exiftool' to start.")
@@ -1296,7 +1297,7 @@ def exiftool():
 
 def iconv():
 	print('\n###### Installing iconv')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install iconv')
 	print('###### Done')
 	quo.flair(f"###### Type 'iconv' to start.")
@@ -1304,7 +1305,7 @@ def iconv():
 
 def mediainfo():
 	print('\n###### Installing mediainfo')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install mediainfo')
 	print('###### Done')
 	print('###### Usage: mediainfo filename.pdf')
@@ -1312,7 +1313,7 @@ def mediainfo():
 
 def pdfinfo():
 	print('\n###### Installing pdfinfo')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install poppler')
 	print('###### Done')
 	print('###### Usage: pdfinfo filename.pdf')
@@ -1322,7 +1323,7 @@ def tcpdump():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing tcpdump')
-		os.system('apt update -y && apt upgrade -y')
+		# secretum inc
 		os.system('apt install root-repo tcpdump')
 		print('###### Done')
 		quo.flair(f"###### Type 'tcpdump' to start.")
@@ -1332,7 +1333,7 @@ def hping3():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
 		print('\n###### Installing hping3')
-		os.system('apt update -y && apt upgrade -y')
+		# secretum inc
 		os.system('apt install root-repo hping3')
 		print('###### Done')
 		quo.flair(f"###### Type 'hping3' to start.")
@@ -1340,7 +1341,7 @@ def hping3():
 
 def dbdat():
 	print('\n###### Installing DbDat')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install MySQL-python psycopg2 cx_Oracle pymssql ibm_db pymongo pyyaml couchdb')
 	os.system('git clone https://github.com/foospidy/DbDat')
@@ -1350,7 +1351,7 @@ def dbdat():
 
 def nosqlmap():
 	print('\n###### Installing NoSQLMap')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 unstable-repo metasploit')
 	os.system('python2 -m pip install pymongo httplib2')
 	os.system('git clone https://github.com/codingo/NoSQLMap')
@@ -1360,7 +1361,7 @@ def nosqlmap():
 
 def audit_couchdb():
 	print('\n###### Installing audit_couchdb')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git nodejs')
 	os.system('npm install -g npm@next audit_couchdb')
 	os.system('git clone https://github.com/iriscouch/audit_couchdb')
@@ -1371,7 +1372,7 @@ def audit_couchdb():
 
 def mongoaudit():
 	print('\n###### Installing mongoaudit')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python -y')
 	os.system('python -m pip install pymongo mongoaudit')
 	print('###### Done')
@@ -1380,7 +1381,7 @@ def mongoaudit():
 
 def wifiphisher():
 	print('\n###### Installing Wifiphisher')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python -y')
 	os.system('python -m pip install setuptools scapy')
 	os.system('git clone https://github.com/wifiphisher/wifiphisher')
@@ -1390,7 +1391,7 @@ def wifiphisher():
 
 def sherlock():
 	print('\n###### Installing sherlock')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python -y')
 	os.system('git clone https://github.com/sherlock-project/sherlock')
 	os.system('mv sherlock {0} && cd {0}/sherlock && python -m pip install -r requirements.txt'.format(homeDir))
@@ -1399,7 +1400,7 @@ def sherlock():
 
 def shc():
 	print('\n###### Installing shc')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install shc -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'shc' to start.")
@@ -1407,7 +1408,7 @@ def shc():
 
 def steghide():
 	print('\n###### Installing steghide')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install steghide -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'steghide' to start.")
@@ -1415,7 +1416,7 @@ def steghide():
 
 def tesseract():
 	print('\n###### Installing tesseract')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install tesseract -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'tesseract' to start.")
@@ -1423,7 +1424,7 @@ def tesseract():
 
 def sleuthkit():
 	print('\n###### Installing sleuthkit')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install sleuthkit -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'pkg files sleuthkit | grep usr/bin' to check executable file related to sleuthkit package.")
@@ -1431,7 +1432,7 @@ def sleuthkit():
 
 def octave():
 	print('\n###### Installing Octave')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	if not repo_check("pointless.list"):
 		pointless_repo()
 	os.system('apt install octave -y')
@@ -1441,7 +1442,7 @@ def octave():
 
 def fpcompiler():
 	print('\n###### Installing fp-compiler')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	if not repo_check("pointless.list"):
 		pointless_repo()
 	os.system('apt install fp-compiler -y')
@@ -1451,7 +1452,7 @@ def fpcompiler():
 
 def numpy():
 	print('\n###### Installing numpy')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	if not repo_check("pointless.list"):
 		pointless_repo()
 	os.system('apt install numpy -y')
@@ -1461,7 +1462,7 @@ def numpy():
 
 def userrecon():
 	print('\n###### Installing userrecon')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install wget dpkg curl -y')
 	os.system('wget https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/package/userrecon_1.0_all.deb')
 	os.system('dpkg -i userrecon_1.0_all.deb')
@@ -1472,7 +1473,7 @@ def userrecon():
 
 def mrsip():
 	print('\n###### Installing Mr.SIP')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python -y')
 	os.system('python -m pip install netifaces ipaddress scapy pyfiglet')
 	os.system('git clone https://github.com/meliht/Mr.SIP')
@@ -1482,7 +1483,7 @@ def mrsip():
 
 def tmscanner():
 	print('\n###### Installing TM-scanner')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python python2 nmap git -y')
 	os.system('python -m pip install colorama requests')
 	os.system('python2 -m pip install colorama requests')
@@ -1493,7 +1494,7 @@ def tmscanner():
 
 def xss_payload_list():
 	print('\n###### Installing xss-payload-list')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git -y')
 	os.system('git clone https://github.com/payloadbox/xss-payload-list')
 	os.system('mv xss-payload-list {}'.format(homeDir))
@@ -1502,7 +1503,7 @@ def xss_payload_list():
 
 def clickbot():
 	print('\n###### Installing ClickBot')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python git -y')
 	os.system('git clone https://github.com/ziziwho/clickbot')
 	os.system("python -m pip install asyncio colorama telethon rsa pyaes asyncio async_generator colorama bs4 requests")
@@ -1512,7 +1513,7 @@ def clickbot():
 
 def phoneinfoga():
 	print('\n###### Installing PhoneInfoga')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python git -y')
 	os.system('git clone https://github.com/ExpertAnonymous/PhoneInfoga')
 	os.chdir("PhoneInfoga")
@@ -1524,7 +1525,7 @@ def phoneinfoga():
 
 def btc2idr():
 	print('\n###### Installing BTC-to-IDR-checker')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python git -y')
 	os.system('git clone https://github.com/guruku/BTC-to-IDR-checker')
 	os.system('mv BTC-to-IDR-checker {}'.format(homeDir))
@@ -1533,7 +1534,7 @@ def btc2idr():
 
 def sitebroker():
 	print('\n###### Installing SiteBroker')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python php git -y')
 	os.system('git clone https://github.com/Anon-Exploiter/SiteBroker')
 	os.chdir("SiteBroker")
@@ -1546,7 +1547,7 @@ def sitebroker():
 
 def dostattack():
 	print('\n###### Installing dost-attack')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git -y')
 	os.system('git clone https://github.com/verluchie/dost-attack')
 	os.system('mv dost-attack {}'.format(homeDir))
@@ -1555,7 +1556,7 @@ def dostattack():
 
 def cfr():
 	print('\n###### Installing CFR')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dx wget -y')
 	os.system('mkdir $PREFIX/bin/lib')
 	os.system('wget https://www.benf.org/other/cfr/cfr-0.151.jar -O $PREFIX/bin/lib/cfr-0.151.jar')
@@ -1573,7 +1574,7 @@ def cfr():
 
 def upx():
 	print('\n###### Installing UPX')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install wget tar -y')
 	os.system('wget https://github.com/upx/upx/releases/download/v3.96/upx-3.96-arm64_linux.tar.xz')
 	os.system('tar xf upx-3.96-arm64_linux.tar.xz')
@@ -1586,7 +1587,7 @@ def upx():
 
 def pyinstxtractor():
 	print('\n###### Installing pyinstxtractor')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python -y')
 	os.system('git clone https://github.com/extremecoders-re/pyinstxtractor')
 	os.system('mv pyinstxtractor {}'.format(homeDir))
@@ -1595,7 +1596,7 @@ def pyinstxtractor():
 
 def innoextract():
 	print('\n###### Installing innoextract')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git clang -y')
 	os.system('git clone https://github.com/dscharrer/innoextract')
 	os.chdir("innoextract")
@@ -1611,7 +1612,7 @@ def innoextract():
 
 def lynis():
 	print('\n###### Installing Lynis')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git -y')
 	os.system('git clone https://github.com/CISOfy/lynis')
 	os.system('mv lynis {}'.format(homeDir))
@@ -1620,7 +1621,7 @@ def lynis():
 
 def chkrootkit():
 	print('\n###### Installing Chkrootkit')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install clang git -y')
 	os.system('git clone https://github.com/Magentron/chkrootkit')
 	os.system('mv chkrootkit {}'.format(homeDir))
@@ -1629,7 +1630,7 @@ def chkrootkit():
 
 def clamav():
 	print('\n###### Installing ClamAV')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install clamav -y')
 	os.system('freshclam')
 	print('###### Done')
@@ -1638,7 +1639,7 @@ def clamav():
 
 def yara():
 	print('\n###### Installing Yara')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install yara -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'yara' to start.")
@@ -1646,7 +1647,7 @@ def yara():
 
 def virustotal():
 	print('\n###### Installing VirusTotal-CLI')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install virustotal-cli -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'vt' to start.")
@@ -1654,7 +1655,7 @@ def virustotal():
 
 def maigret():
 	print('\n###### Installing maigret')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python -y')
 	os.system('python -m pip install maigret')
 	print('###### Done')
@@ -1664,7 +1665,7 @@ def maigret():
 
 def xplsearch():
 	print('\n###### Installing XPL-SEARCH')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php -y')
 	os.system('git clone https://github.com/r00tmars/XPL-SEARCH')
 	os.system('mv XPL-SEARCH {}'.format(homeDir))
@@ -1673,7 +1674,7 @@ def xplsearch():
 
 def xadmin():
 	print('\n###### Installing Xadmin')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git perl -y')
 	os.system('git clone https://github.com/Manisso/Xadmin')
 	os.system('mv Xadmin {}'.format(homeDir))
@@ -1682,7 +1683,7 @@ def xadmin():
 
 def credmap():
 	print('\n###### Installing Credmap')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('git clone https://github.com/lightos/credmap')
 	os.system('mv credmap {}'.format(homeDir))
@@ -1691,7 +1692,7 @@ def credmap():
 
 def mapeye():
 	print('\n###### Installing MapEye')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php python -y')
 	os.system('python -m pip install requests')
 	os.system('git clone https://github.com/bhikandeshmukh/MapEye')
@@ -1701,7 +1702,7 @@ def mapeye():
 
 def gathetool():
 	print('\n###### Installing GatheTOOL')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git php python -y')
 	os.system('python -m pip install requests')
 	os.system('git clone https://github.com/AngelSecurityTeam/GatheTOOL')
@@ -1711,7 +1712,7 @@ def gathetool():
 
 def avpass():
 	print('\n###### Installing avpass')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 python -y')
 	os.system('git clone https://github.com/sslab-gatech/avpass')
 	os.system('mv avpass {}'.format(homeDir))
@@ -1720,7 +1721,7 @@ def avpass():
 
 def binwalk():
 	print('\n###### Installing binwalk')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	if not repo_check("pointless.list"):
 		pointless_repo()
 	os.system('apt install gzip bzip2 tar arj lhasa p7zip cabextract sleuthkit lzop mtd-utils cmake build-essential make numpy scipy python git -y')
@@ -1735,7 +1736,7 @@ def binwalk():
 
 def arat():
 	print('\n###### Installing A-Rat')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python git -y')
 	os.system('git clone https://github.com/RexTheGod/A-Rat')
 	os.system('mv A-Rat {}'.format(homeDir))
@@ -1744,7 +1745,7 @@ def arat():
 
 def adbtk():
 	print('\n###### Installing ADB-Toolkit')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git -y')
 	os.system('git clone https://github.com/ASHWIN990/ADB-Toolkit')
 	os.system('mv ADB-Toolkit {}'.format(homeDir))
@@ -1753,7 +1754,7 @@ def adbtk():
 
 def androbugs():
 	print('\n###### Installing AndroBugs_Framework')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('python2 -m pip install pymongo')
 	os.system('git clone https://github.com/AndroBugs/AndroBugs_Framework')
@@ -1763,7 +1764,7 @@ def androbugs():
 
 def tekdefense():
 	print('\n###### Installing TekDefense-Automater')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('python2 -m pip install requests')
 	os.system('git clone https://github.com/1aN0rmus/TekDefense-Automater')
@@ -1773,7 +1774,7 @@ def tekdefense():
 
 def baf():
 	print('\n###### Installing BAF')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('python2 -m pip install requests bs4 selenium colored termcolor')
 	os.system('git clone https://github.com/engMaher/BAF')
@@ -1783,7 +1784,7 @@ def baf():
 
 def brutex():
 	print('\n###### Installing BruteX')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git hydra -y')
 	os.system('git clone https://github.com/1N3/BruteX')
 	os.system('mv BruteX {}'.format(homeDir))
@@ -1792,7 +1793,7 @@ def brutex():
 
 def cmseek():
 	print('\n###### Installing CMSeeK')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python -y')
 	os.system('python -m pip install requests')
 	os.system('git clone https://github.com/Tuhinshubhra/CMSeeK')
@@ -1803,7 +1804,7 @@ def cmseek():
 ### Compiler/Interpreter
 def python2():
 	print('\n###### Installing Python2')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python2 -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'python2' to start.")
@@ -1811,7 +1812,7 @@ def python2():
 
 def ecj():
 	print('\n###### Installing ecj')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install ecj -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'ecj' to start.")
@@ -1819,7 +1820,7 @@ def ecj():
 
 def golang():
 	print('\n###### Installing Golang')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install golang -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'go' to start.")
@@ -1827,7 +1828,7 @@ def golang():
 
 def ldc():
 	print('\n###### Installing ldc')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install ldc -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'ldc2' to start.")
@@ -1835,7 +1836,7 @@ def ldc():
 
 def nim():
 	print('\n###### Installing Nim')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install nim -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'nim' to start.")
@@ -1843,7 +1844,7 @@ def nim():
 
 def shc():
 	print('\n###### Installing shc')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install shc -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'shc' to start.")
@@ -1851,7 +1852,7 @@ def shc():
 
 def tcc():
 	print('\n###### Installing TCC')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install tcc -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'tcc' to start.")
@@ -1859,7 +1860,7 @@ def tcc():
 
 def php():
 	print('\n###### Installing PHP')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install php -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'php' to start.")
@@ -1867,7 +1868,7 @@ def php():
 
 def ruby():
 	print('\n###### Installing Ruby')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install ruby -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'ruby' to start.")
@@ -1875,7 +1876,7 @@ def ruby():
 
 def perl():
 	print('\n###### Installing Perl')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install perl -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'perl' to start.")
@@ -1883,7 +1884,7 @@ def perl():
 
 def vlang():
 	print('\n###### Installing Vlang')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install vlang -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'vlang' to start.")
@@ -1891,7 +1892,7 @@ def vlang():
 
 def blogc():
 	print('\n###### Installing BlogC')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install blogc -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'blogc' to start.")
@@ -1900,7 +1901,7 @@ def blogc():
 ### termux games
 def street_car():
 	print('\n###### Installing street-car')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python python2 -y')
 	os.system('git clone https://github.com/JustaHackers/street_car')
 	os.system('mv street_car {}'.format(homeDir))
@@ -1909,7 +1910,7 @@ def street_car():
 
 def flappy_bird():
 	print('\n###### Installing flappy-bird')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('git clone https://github.com/JustAHackers/flappy_bird')
 	os.system('mv flappy_bird {}'.format(homeDir))
@@ -1918,7 +1919,7 @@ def flappy_bird():
 
 def speed_typing():
 	print('\n###### Installing Speed Typing')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('git clone https://github.com/JustAHackers/typing-speed-test')
 	os.system('mv typing-speed-test {}'.format(homeDir))
@@ -1927,7 +1928,7 @@ def speed_typing():
 
 def nsnake():
 	print('\n###### Installing nsnake')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install nsnake -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'nsnake' to start.")
@@ -1935,7 +1936,7 @@ def nsnake():
 
 def nudoku():
 	print('\n###### Installing Sudoku')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install nudoku -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'nudoku' to start.")
@@ -1943,7 +1944,7 @@ def nudoku():
 
 def moon_buggy():
 	print('\n###### Installing Moon-Buggy')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install moon-buggy -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'moon-buggy' to start.")
@@ -1951,7 +1952,7 @@ def moon_buggy():
 
 def ttysolitaire():
 	print('\n###### Installing tty-solitaire')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install tty-solitaire -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'ttysolitaire' to start.")
@@ -1959,7 +1960,7 @@ def ttysolitaire():
 
 def pacman4console():
 	print('\n###### Installing Pacman4Console')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install pacman4console -y')
 	print('###### Done')
 	quo.flair(f"###### Type 'pacman' to start.")
@@ -1968,7 +1969,7 @@ def pacman4console():
 ### bash function ---
 def fbvid():
 	print('\n###### Installing fbvid')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python ffmpeg -y')
 	os.system('python -m pip install youtube-dl')
 	fbvid_code = open(".myshfunc/fbvid.sh","r").read()
@@ -1980,7 +1981,7 @@ def fbvid():
 
 def cast2video():
 	print('\n###### Installing cast2video')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install clang python ffmpeg -y')
 	os.system('python -m pip install CPython ttygif')
 	cast2video_code = open(".myshfunc/cast2video.sh","r").read()
@@ -2001,7 +2002,7 @@ def iconset():
 
 def readme():
 	print('\n###### Installing readme')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install curl -y')
 	readme_code = open(".myshfunc/readme.sh","r").read()
 	open(os.getenv("HOME")+"/.bashrc","a").write(readme_code)
@@ -2012,7 +2013,7 @@ def readme():
 
 def makedeb():
 	print('\n###### Installing makedeb')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install dpkg neovim -y')
 	makedeb_code = open(".myshfunc/makedeb.sh","r").read()
 	open(os.getenv("HOME")+"/.bashrc","a").write(makedeb_code)
@@ -2032,7 +2033,7 @@ def quikfind():
 
 def pranayama():
 	print('\n###### Installing pranayama')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install termux-api -y')
 	pranayama_code = open(".myshfunc/pranayama.sh","r").read()
 	open(os.getenv("HOME")+"/.bashrc","a").write(pranayama_code)
@@ -2045,7 +2046,7 @@ def pranayama():
 
 def sqlc():
 	print('\n###### Installing sqlc')
-	os.system('apt update -y && apt upgrade -y')
+	# secretum inc
 	os.system('apt install python sqlite3 -y')
 	sqlc_code = open(".myshfunc/sqlc.sh","r").read()
 	open(os.getenv("HOME")+"/.bashrc","a").write(sqlc_code)
