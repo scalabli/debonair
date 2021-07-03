@@ -83,7 +83,7 @@ def backtomenu_option():
 			restart_program()
 
 def banner():
-	print(lazymux_banner)
+	quo.flair(f'{lazymux_banner}', foreground="red", bold=True) 
 
 ### Repo Installer
 def pointless_repo():
