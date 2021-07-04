@@ -10,7 +10,7 @@ def install(terms):
     time.sleep(3)
     quo.pause()
     quo.flair(f"Technically, Moses was the first person with a tablet downloading data from the cloud...", foreground="red", dim=True, bold=True)
-    os.system("cd /etc/ && mkdir debonair_ && cd /etc/debonair_/ && git clone --quiet https://github.com/secretum-inc/debonair.git && cd /etc/debonair_/debonair/ && chmod +x debonair && chmod +x dbnr && mv -f  debonair /usr/bin/ && mv -f dbnr /usr/bin/ && cd && rm -rf debonair && dbnr")
+    os.system("cd /etc/ && rm -rf debonair_ && mkdir debonair_ && cd /etc/debonair_/ && git clone --quiet https://github.com/secretum-inc/debonair.git && cd /etc/debonair_/debonair/ && chmod +x debonair && chmod +x dbnr && mv -f  debonair /usr/bin/ && mv -f dbnr /usr/bin/ && cd && rm -rf debonair && dbnr")
 
 if __name__ == "__main__":
     install()
