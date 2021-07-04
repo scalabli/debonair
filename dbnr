@@ -9,8 +9,8 @@ elif [ -d /etc ]; then
 fi
 
 if [ -e /usr/lib/sudo ]; then
-	sudo python3 $conf_dir/debonair/start.py
+	sudo python3 $conf_dir/debonair_/debonair/start.py
 else
-	python3 $conf_dir/debonair/start.py
+	python3 $conf_dir/debonair_/debonair/start.py
 fi
 exit
