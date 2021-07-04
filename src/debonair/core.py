@@ -32,7 +32,7 @@ configBase = "[HOME] = ~"
 configFile = "/etc/debonair.conf"
 cache_1 = "/etc/debonair_1"
 
-@quo.commamd()
+@quo.command()
 @quo.app("--sources_list")
 def repo_check(sources_list):
 	if os.path.isfile(os.getenv("PREFIX")+"/etc/apt/sources.list.d/"+sources_list):
