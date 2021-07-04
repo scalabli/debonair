@@ -103,7 +103,7 @@ def pointless_repo():
 ###
 
 def nmap():
-	print('\n###### Installing Nmap')
+	quo.flair(f"%%%%%%% Installing... Nmap", foreground="vcyan") 
 	# secretum inc
 	os.system('apt install nmap')
 	print('###### Done')
@@ -111,7 +111,7 @@ def nmap():
 	backtomenu_option()
 
 def red_hawk():
-	print('\n###### Installing RED HAWK')
+	quo.flair(f"%%%%%%% Installing... RED HAWK", foreground="vcyan") 
 	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/Tuhinshubhra/RED_HAWK')
@@ -120,7 +120,7 @@ def red_hawk():
 	backtomenu_option()
 
 def dtect():
-	print('\n###### Installing D-TECT')
+	quo.flair(f"%%%%%%% Installing... D-TECT", foreground="vcyan") 
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/bibortone/D-Tech')
@@ -129,7 +129,7 @@ def dtect():
 	backtomenu_option()
 
 def sqlmap():
-	print('\n###### Installing sqlmap')
+	quo.flair(f"%%%%%%% Installing... sqlmap", foreground="vcyan") 
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/sqlmapproject/sqlmap')
@@ -138,7 +138,7 @@ def sqlmap():
 	backtomenu_option()
 
 def infoga():
-	print('\n###### Installing Infoga')
+	quo.flair(f"%%%%%%% Installing... Infoga", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install requests urllib3 urlparse')
@@ -148,7 +148,7 @@ def infoga():
 	backtomenu_option()
 
 def reconDog():
-	print('\n###### Installing ReconDog')
+	quo.flair(f"%%%%%%% Installing... ReconDog", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/s0md3v/ReconDog')
@@ -157,7 +157,7 @@ def reconDog():
 	backtomenu_option()
 
 def androZenmap():
-	print('\n###### Installing AndroZenmap')
+	quo.flair(f"%%%%%%% Installing... AndroZenmap", foreground="vcyan")
 	# secretum inc
 	os.system('apt install nmap curl')
 	os.system('curl -O https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/scripts/androzenmap.sh')
@@ -167,7 +167,7 @@ def androZenmap():
 	backtomenu_option()
 
 def sqlmate():
-	print('\n###### Installing sqlmate')
+	quo.flair(f"%%%%%%% Installing... sqlmate", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install mechanize bs4 HTMLparser argparse requests urlparse2')
@@ -177,7 +177,7 @@ def sqlmate():
 	backtomenu_option()
 
 def astraNmap():
-	print('\n###### Installing AstraNmap')
+	quo.flair(f"%%%%%%% Installing... AstraNmap", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git nmap')
 	os.system('git clone https://github.com/Gameye98/AstraNmap')
@@ -186,7 +186,7 @@ def astraNmap():
 	backtomenu_option()
 
 def weeman():
-	print('\n###### Installing weeman')
+	quo.flair(f"%%%%%%% Installing... weeman", foreground="vcyan")
 	# secretum inc
 	os.system('apt install clang git python2')
 	os.system('python2 -m pip bs4 html5lib lxml')
@@ -196,7 +196,7 @@ def weeman():
 	backtomenu_option()
 
 def easyMap():
-	print('\n###### Installing Easymap')
+	quo.flair(f"%%%%%%% Installing... Easymap", foreground="vcyan")
 	# secretum inc
 	os.system('apt install php git')
 	os.system('git clone https://github.com/Cvar1984/Easymap')
@@ -206,7 +206,7 @@ def easyMap():
 	backtomenu_option()
 
 def xd3v():
-	print('\n###### Installing XD3v')
+	quo.flair(f"%%%%%%% Installing... XD3v", foreground="vcyan")
 	# secretum inc
 	os.system('apt install curl')
 	os.system('curl -k -O https://gist.github.com/Gameye98/92035588bd0228df6fb7fa77a5f26bc2/raw/f8e73cd3d9f2a72bd536087bb6ba7bc8baef7d1d/xd3v.sh')
@@ -216,7 +216,7 @@ def xd3v():
 	backtomenu_option()
 
 def crips():
-	print('\n###### Installing Crips')
+	quo.flair(f"%%%%%%% Installing... Crips", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install git python2 openssl curl libcurl wget")
 	os.system("git clone https://github.com/Manisso/Crips")
@@ -225,7 +225,7 @@ def crips():
 	backtomenu_option()
 
 def sir():
-	print('\n###### Installing SIR')
+	quo.flair(f"%%%%%%% Installing... SIR", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install python2 git")
 	os.system("python2 -m pip install bs4 urllib2")
@@ -235,7 +235,7 @@ def sir():
 	backtomenu_option()
 
 def xshell():
-	print('\n###### Installing Xshell')
+	quo.flair(f"%%%%%%% Installing... Xshell", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install lynx python2 figlet ruby php nano w3m")
 	os.system("git clone https://github.com/Ubaii/Xshell")
@@ -244,7 +244,7 @@ def xshell():
 	backtomenu_option()
 
 def evilURL():
-	print('\n###### Installing EvilURL')
+	quo.flair(f"%%%%%%% Installing... EvilURL", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install git python2 python3")
 	os.system("git clone https://github.com/UndeadSec/EvilURL")
@@ -253,7 +253,7 @@ def evilURL():
 	backtomenu_option()
 
 def striker():
-	print('\n###### Installing Striker')
+	quo.flair(f"%%%%%%% Installing... Striker", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/s0md3v/Striker')
@@ -263,7 +263,7 @@ def striker():
 	backtomenu_option()
 
 def dsss():
-	print('\n###### Installing DSSS')
+	quo.flair(f"%%%%%%% Installing... DSSS", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/stamparm/DSSS')
@@ -272,7 +272,7 @@ def dsss():
 	backtomenu_option()
 
 def sqliv():
-	print('\n###### Installing SQLiv')
+	quo.flair(f"%%%%%%% Installing... SQLiv", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/the-robot/sqliv')
@@ -281,7 +281,7 @@ def sqliv():
 	backtomenu_option()
 
 def sqlscan():
-	print('\n###### Installing sqlscan')
+	quo.flair(f"%%%%%%% Installing... sqlscan", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone http://www.github.com/Cvar1984/sqlscan')
@@ -290,7 +290,7 @@ def sqlscan():
 	backtomenu_option()
 
 def wordpreSScan():
-	print('\n###### Installing Wordpresscan')
+	quo.flair(f"%%%%%%% Installing... Wordpresscan", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 python2-dev clang libxml2-dev libxml2-utils libxslt-dev')
 	os.system('git clone https://github.com/swisskyrepo/Wordpresscan')
@@ -300,7 +300,7 @@ def wordpreSScan():
 	backtomenu_option()
 
 def wpscan():
-	print('\n###### Installing WPScan')
+	quo.flair(f"%%%%%%% Installing... WPScan", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git ruby curl')
 	os.system('git clone https://github.com/wpscanteam/wpscan')
@@ -310,7 +310,7 @@ def wpscan():
 	backtomenu_option()
 
 def wordpresscan():
-	print('\n###### Installing wordpresscan(2)')
+	quo.flair(f"%%%%%%% Installing... wordpresscan(2)", foreground="vcyan")
 	# secretum inc
 	os.system('apt install nmap figlet git')
 	os.system('git clone https://github.com/silverhat007/termux-wordpresscan')
@@ -321,7 +321,7 @@ def wordpresscan():
 	backtomenu_option()
 
 def routersploit():
-	print('\n###### Installing Routersploit')
+	quo.flair(f"%%%%%%% Installing... Routersploit", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install requests')
@@ -331,7 +331,7 @@ def routersploit():
 	backtomenu_option()
 
 def torshammer():
-	print('\n###### Installing Torshammer')
+	quo.flair(f"%%%%%%% Installing... Torshammer", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/dotfighter/torshammer')
@@ -340,7 +340,7 @@ def torshammer():
 	backtomenu_option()
 
 def slowloris():
-	print('\n###### Installing Slowloris')
+	quo.flair(f"%%%%%%% Installing... Slowloris", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/gkbrk/slowloris')
@@ -349,7 +349,7 @@ def slowloris():
 	backtomenu_option()
 
 def fl00d12():
-	print('\n###### Installing Fl00d & Fl00d2')
+	quo.flair(f"%%%%%%% Installing... Fl00d & Fl00d2", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 curl')
 	os.system('mkdir {}/fl00d'.format(homeDir))
@@ -360,7 +360,7 @@ def fl00d12():
 	backtomenu_option()
 
 def goldeneye():
-	print('\n###### Installing GoldenEye')
+	quo.flair(f"%%%%%%% Installing... GoldenEye", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/jseidl/GoldenEye')
@@ -369,7 +369,7 @@ def goldeneye():
 	backtomenu_option()
 
 def xerxes():
-	print('\n###### Installing Xerxes')
+	quo.flair(f"%%%%%%% Installing... Xerxes", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git')
 	os.system('apt install clang')
@@ -378,11 +378,11 @@ def xerxes():
 	os.system('cd {}/xerxes && clang xerxes.c -o xerxes'.format(homeDir))
 	os.system('chmod 755 {0}/xerxes/xerxes && cp {0}/xerxes/xerxes $PREFIX/bin'.format(homeDir))
 	print('###### Done')
-	print('###### Usage: xerxes ​www.fakesite.com​ 80')
+	print('###### Usage: xerxes ​www.fakesite.com​ 80')
 	backtomenu_option()
 
 def planetwork_ddos():
-	print('\n###### Installing Planetwork-DDOS')
+	quo.flair(f"%%%%%%% Installing... Planetwork-DDOS", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/Hydra7/Planetwork-DDOS')
@@ -391,14 +391,14 @@ def planetwork_ddos():
 	backtomenu_option()
 
 def hydra():
-	print('\n###### Installing Hydra')
+	quo.flair(f"%%%%%%% Installing... Hydra", foreground="vcyan")
 	# secretum inc
 	os.system('apt install hydra')
 	print('###### Done')
 	backtomenu_option()
 
 def black_hydra():
-	print('\n###### Installing Black Hydra')
+	quo.flair(f"%%%%%%% Installing... Black Hydra", foreground="vcyan")
 	# secretum inc
 	os.system('apt install hydra git python2')
 	os.system('git clone https://github.com/Gameye98/Black-Hydra')
@@ -407,7 +407,7 @@ def black_hydra():
 	backtomenu_option()
 
 def cupp():
-	print('\n###### Installing Cupp')
+	quo.flair(f"%%%%%%% Installing... Cupp", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/Mebus/cupp')
@@ -416,7 +416,7 @@ def cupp():
 	backtomenu_option()
 
 def asu():
-	print('\n###### Installing ASU')
+	quo.flair(f"%%%%%%% Installing... ASU", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 php')
 	os.system('python2 -m pip install requests bs4 mechanize')
@@ -426,7 +426,7 @@ def asu():
 	backtomenu_option()
 
 def hash_buster():
-	print('\n###### Installing Hash-Buster')
+	quo.flair(f"%%%%%%% Installing... Hash-Buster", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/s0md3v/Hash-Buster')
@@ -435,7 +435,7 @@ def hash_buster():
 	backtomenu_option()
 
 def instaHack():
-	print('\n###### Installing InstaHack')
+	quo.flair(f"%%%%%%% Installing... InstaHack", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install requests')
@@ -445,7 +445,7 @@ def instaHack():
 	backtomenu_option()
 
 def indonesian_wordlist():
-	print('\n###### Installing indonesian-wordlist')
+	quo.flair(f"%%%%%%% Installing... indonesian-wordlist", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/geovedi/indonesian-wordlist')
@@ -454,7 +454,7 @@ def indonesian_wordlist():
 	backtomenu_option()
 
 def fbBrute():
-	print('\n###### Installing Facebook Brute Force 3')
+	quo.flair(f"%%%%%%% Installing... Facebook Brute Force 3", foreground="vcyan")
 	# secretum inc
 	os.system('apt install curl python2')
 	os.system('python2 -m pip install mechanize')
@@ -466,7 +466,7 @@ def fbBrute():
 	backtomenu_option()
 
 def webdav():
-	print('\n###### Installing WebDAV')
+	quo.flair(f"%%%%%%% Installing... WebDAV", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 openssl curl libcurl')
 	os.system('python2 -m pip install urllib3 chardet certifi idna requests')
@@ -476,7 +476,7 @@ def webdav():
 	backtomenu_option()
 
 def webmassploit():
-	print('\n###### Installing Webdav Mass Exploiter')
+	quo.flair(f"%%%%%%% Installing... Webdav Mass Exploiter", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install python2 openssl curl libcurl")
 	os.system("python2 -m pip install requests")
@@ -486,7 +486,7 @@ def webmassploit():
 	backtomenu_option()
 
 def sqldump():
-	print('\n###### Installing sqldump')
+	quo.flair(f"%%%%%%% Installing... sqldump", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 curl')
 	os.system('python2 -m pip install google')
@@ -496,7 +496,7 @@ def sqldump():
 	backtomenu_option()
 
 def websploit():
-	print('\n###### Installing Websploit')
+	quo.flair(f"%%%%%%% Installing... Websploit", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install scapy')
@@ -506,7 +506,7 @@ def websploit():
 	backtomenu_option()
 
 def metasploit():
-	print('\n###### Installing Metasploit')
+	quo.flair(f"%%%%%%% Installing... Metasploit", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install unstable-repo")
 	os.system("cd {} && apt install metasploit".format(homeDir))
@@ -515,7 +515,7 @@ def metasploit():
 	backtomenu_option()
 
 def commix():
-	print('\n###### Installing Commix')
+	quo.flair(f"%%%%%%% Installing... Commix", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/commixproject/commix')
@@ -524,7 +524,7 @@ def commix():
 	backtomenu_option()
 
 def brutal():
-	print('\n###### Installing Brutal')
+	quo.flair(f"%%%%%%% Installing... Brutal", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/Screetsec/Brutal')
@@ -533,7 +533,7 @@ def brutal():
 	backtomenu_option()
 
 def knockmail():
-	print('\n###### Installing KnockMail')
+	quo.flair(f"%%%%%%% Installing... KnockMail", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('python2 -m pip install validate_email pyDNS')
@@ -543,7 +543,7 @@ def knockmail():
 	backtomenu_option()
 
 def hac():
-	print('\n###### Installing Hac')
+	quo.flair(f"%%%%%%% Installing... Hac", foreground="vcyan")
 	# secretum inc
 	os.system('apt install php git')
 	os.system('git clone https://github.com/Cvar1984/Hac')
@@ -552,7 +552,7 @@ def hac():
 	backtomenu_option()
 
 def rang3r():
-	print('\n###### Installing Rang3r')
+	quo.flair(f"%%%%%%% Installing... Rang3r", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install git python2 && python2 -m pip install optparse termcolor")
 	os.system("git clone https://github.com/floriankunushevci/rang3r")
@@ -561,7 +561,7 @@ def rang3r():
 	backtomenu_option()
 
 def sh33ll():
-	print('\n###### Installing SH33LL')
+	quo.flair(f"%%%%%%% Installing... SH33LL", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install git python2")
 	os.system("git clone https://github.com/LOoLzeC/SH33LL")
@@ -570,7 +570,7 @@ def sh33ll():
 	backtomenu_option()
 
 def social():
-	print('\n###### Installing Social-Engineering')
+	quo.flair(f"%%%%%%% Installing... Social-Engineering", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install python2 perl")
 	os.system("git clone https://github.com/LOoLzeC/social-engineering")
@@ -579,7 +579,7 @@ def social():
 	backtomenu_option()
 
 def spiderbot():
-	print('\n###### Installing SpiderBot')
+	quo.flair(f"%%%%%%% Installing... SpiderBot", foreground="vcyan")
 	# secretum inxlc
 	os.system("apt install git php")
 	os.system("git clone https://github.com/Cvar1984/SpiderBot")
@@ -588,7 +588,7 @@ def spiderbot():
 	backtomenu_option()
 
 def ngrok():
-	print('\n###### Installing Ngrok')
+	quo.flair(f"%%%%%%% Installing... Ngrok", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/themastersunil/ngrok')
@@ -597,7 +597,7 @@ def ngrok():
 	backtomenu_option()
 
 def sudo():
-	print('\n###### Installing sudo')
+	quo.flair(f"%%%%%%% Installing... sudo", foreground="vcyan")
 	# secretum inc
 	os.system('apt install ncurses-utils git')
 	os.system('git clone https://github.com/st42/termux-sudo')
@@ -608,7 +608,7 @@ def sudo():
 	backtomenu_option()
 
 def ubuntu():
-	print('\n###### Installing Ubuntu')
+	quo.flair(f"%%%%%%% Installing... Ubuntu", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/Neo-Oli/termux-ubuntu')
@@ -617,7 +617,7 @@ def ubuntu():
 	backtomenu_option()
 
 def fedora():
-	print('\n###### Installing Fedora')
+	quo.flair(f"%%%%%%% Installing... Fedora", foreground="vcyan")
 	# secretum inc
 	os.system('apt install wget git')
 	os.system('wget https://raw.githubusercontent.com/nmilosev/termux-fedora/master/termux-fedora.sh')
@@ -626,7 +626,7 @@ def fedora():
 	backtomenu_option()
 
 def nethunter():
-	print('\n###### Installing Kali NetHunter')
+	quo.flair(f"%%%%%%% Installing... Kali NetHunter", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/Hax4us/Nethunter-In-Termux')
@@ -635,7 +635,7 @@ def nethunter():
 	backtomenu_option()
 
 def blackbox():
-	print('\n###### Installing BlackBox')
+	quo.flair(f"%%%%%%% Installing... BlackBox", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git && python2 -m pip install optparse passlib')
 	os.system('git clone https://github.com/jothatron/blackbox')
@@ -644,7 +644,7 @@ def blackbox():
 	backtomenu_option()
 
 def xattacker():
-	print('\n###### Installing XAttacker')
+	quo.flair(f"%%%%%%% Installing... XAttacker", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git perl')
 	os.system('cpnm install HTTP::Request')
@@ -655,7 +655,7 @@ def xattacker():
 	backtomenu_option()
 
 def vcrt():
-	print('\n###### Installing VCRT')
+	quo.flair(f"%%%%%%% Installing... VCRT", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/LOoLzeC/Evil-create-framework')
@@ -664,7 +664,7 @@ def vcrt():
 	backtomenu_option()
 
 def socfish():
-	print('\n###### Installing SocialFish')
+	quo.flair(f"%%%%%%% Installing... SocialFish", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git && python2 -m pip install wget')
 	os.system('git clone https://github.com/UndeadSec/SocialFish')
@@ -673,7 +673,7 @@ def socfish():
 	backtomenu_option()
 
 def ecode():
-	print('\n###### Installing ECode')
+	quo.flair(f"%%%%%%% Installing... ECode", foreground="vcyan")
 	# secretum inc
 	os.system('apt install php git')
 	os.system('git clone https://github.com/Cvar1984/Ecode')
@@ -682,7 +682,7 @@ def ecode():
 	backtomenu_option()
 
 def xsstrike():
-	print('\n###### Installing XSStrike')
+	quo.flair(f"%%%%%%% Installing... XSStrike", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install fuzzywuzzy prettytable mechanize HTMLParser')
@@ -692,7 +692,7 @@ def xsstrike():
 	backtomenu_option()
 
 def breacher():
-	print('\n###### Installing Breacher')
+	quo.flair(f"%%%%%%% Installing... Breacher", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install requests argparse')
@@ -702,7 +702,7 @@ def breacher():
 	backtomenu_option()
 
 def stylemux():
-	print('\n###### Installing Termux-Styling')
+	quo.flair(f"%%%%%%% Installing... Termux-Styling", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/BagazMukti/Termux-Styling-Shell-Script')
@@ -711,7 +711,7 @@ def stylemux():
 	backtomenu_option()
 
 def txtool():
-	print('\n###### Installing TXTool')
+	quo.flair(f"%%%%%%% Installing... TXTool", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 nmap php curl')
 	os.system('python2 -m pip install requests')
@@ -721,7 +721,7 @@ def txtool():
 	backtomenu_option()
 
 def passgencvar():
-	print('\n###### Installing PassGen')
+	quo.flair(f"%%%%%%% Installing... PassGen", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/Cvar1984/PassGen')
@@ -730,7 +730,7 @@ def passgencvar():
 	backtomenu_option()
 
 def owscan():
-	print('\n###### Installing OWScan')
+	quo.flair(f"%%%%%%% Installing... OWScan", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/Gameye98/OWScan')
@@ -739,7 +739,7 @@ def owscan():
 	backtomenu_option()
 
 def sanlen():
-	print('\n###### Installing santet-online')
+	quo.flair(f"%%%%%%% Installing... santet-online", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/santet-online')
@@ -748,7 +748,7 @@ def sanlen():
 	backtomenu_option()
 
 def spazsms():
-	print('\n###### Installing SpazSMS')
+	quo.flair(f"%%%%%%% Installing... SpazSMS", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/SpazSMS')
@@ -757,7 +757,7 @@ def spazsms():
 	backtomenu_option()
 
 def hasher():
-	print('\n###### Installing Hasher')
+	quo.flair(f"%%%%%%% Installing... Hasher", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install passlib binascii progressbar')
 	os.system('git clone https://github.com/CiKu370/hasher')
@@ -766,7 +766,7 @@ def hasher():
 	backtomenu_option()
 
 def hashgenerator():
-	print('\n###### Installing Hash-Generator')
+	quo.flair(f"%%%%%%% Installing... Hash-Generator", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install passlib progressbar')
 	os.system('git clone https://github.com/CiKu370/hash-generator')
@@ -775,7 +775,7 @@ def hashgenerator():
 	backtomenu_option()
 
 def kodork():
-	print('\n###### Installing ko-dork')
+	quo.flair(f"%%%%%%% Installing... ko-dork", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install urllib2')
 	os.system('git clone https://github.com/CiKu370/ko-dork')
@@ -784,7 +784,7 @@ def kodork():
 	backtomenu_option()
 
 def snitch():
-	print('\n###### Installing snitch')
+	quo.flair(f"%%%%%%% Installing... snitch", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/Smaash/snitch')
@@ -793,7 +793,7 @@ def snitch():
 	backtomenu_option()
 
 def osif():
-	print('\n###### Installing OSIF')
+	quo.flair(f"%%%%%%% Installing... OSIF", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install requests')
@@ -803,7 +803,7 @@ def osif():
 	backtomenu_option()
 
 def nk26():
-	print('\n###### Installing nk26')
+	quo.flair(f"%%%%%%% Installing... nk26", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/milio48/nk26')
@@ -812,7 +812,7 @@ def nk26():
 	backtomenu_option()
 
 def devploit():
-	print('\n###### Installing Devploit')
+	quo.flair(f"%%%%%%% Installing... Devploit", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git && python2 -m pip install urllib2')
 	os.system('git clone https://github.com/joker25000/Devploit')
@@ -821,7 +821,7 @@ def devploit():
 	backtomenu_option()
 
 def hasherdotid():
-	print('\n###### Installing Hasherdotid')
+	quo.flair(f"%%%%%%% Installing... Hasherdotid", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 git')
 	os.system('git clone https://github.com/galauerscrew/hasherdotid')
@@ -830,7 +830,7 @@ def hasherdotid():
 	backtomenu_option()
 
 def namechk():
-	print('\n###### Installing Namechk')
+	quo.flair(f"%%%%%%% Installing... Namechk", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git')
 	os.system('git clone https://github.com/HA71/Namechk')
@@ -839,7 +839,7 @@ def namechk():
 	backtomenu_option()
 
 def xlPy():
-	print('\n###### Installing xl-py')
+	quo.flair(f"%%%%%%% Installing... xl-py", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python git')
 	os.system('git clone https://github.com/albertoanggi/xl-py')
@@ -848,7 +848,7 @@ def xlPy():
 	backtomenu_option()
 
 def beanshell():
-	print('\n###### Installing Beanshell')
+	quo.flair(f"%%%%%%% Installing... Beanshell", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://github.com/amsitlab/amsitlab.github.io/raw/master/dists/termux/amsitlab/binary-all/beanshell_2.04_all.deb')
@@ -859,7 +859,7 @@ def beanshell():
 	backtomenu_option()
 
 def crunch():
-	print('\n###### Installing Crunch')
+	quo.flair(f"%%%%%%% Installing... Crunch", foreground="vcyan")
 	# secretum inc
 	os.system('apt install unstable-repo')
 	os.system('apt install crunch')
@@ -868,7 +868,7 @@ def crunch():
 	backtomenu_option()
 
 def binploit():
-	print('\n###### Installing Binary Exploitation')
+	quo.flair(f"%%%%%%% Installing... Binary Exploitation", foreground="vcyan")
 	# secretum inc
 	os.system('apt install unstable-repo')
 	os.system('apt install gdb radare2 ired ddrescue bin-utils yasm strace ltrace cdb hexcurse memcached llvmdb')
@@ -877,7 +877,7 @@ def binploit():
 	backtomenu_option()
 
 def textr():
-	print('\n###### Installing Textr')
+	quo.flair(f"%%%%%%% Installing... Textr", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://raw.githubusercontent.com/amsitlab/textr/master/textr_1.0_all.deb')
@@ -888,7 +888,7 @@ def textr():
 	backtomenu_option()
 
 def apsca():
-	print('\n###### Installing ApSca')
+	quo.flair(f"%%%%%%% Installing... ApSca", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://raw.githubusercontent.com/BlackHoleSecurity/apsca/master/apsca_0.1_all.deb')
@@ -899,7 +899,7 @@ def apsca():
 	backtomenu_option()
 
 def amox():
-	print('\n###### Installing amox')
+	quo.flair(f"%%%%%%% Installing... amox", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://gitlab.com/dtlily/amox/raw/master/amox_1.0_all.deb')
@@ -910,7 +910,7 @@ def amox():
 	backtomenu_option()
 
 def fade():
-	print('\n###### Installing FaDe')
+	quo.flair(f"%%%%%%% Installing... FaDe", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/FaDe')
@@ -919,7 +919,7 @@ def fade():
 	backtomenu_option()
 
 def ginf():
-	print('\n###### Installing GINF')
+	quo.flair(f"%%%%%%% Installing... GINF", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git php')
 	os.system('git clone https://github.com/Gameye98/GINF')
@@ -928,7 +928,7 @@ def ginf():
 	backtomenu_option()
 
 def auxile():
-	print('\n###### Installing AUXILE')
+	quo.flair(f"%%%%%%% Installing... AUXILE", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install requests bs4 pexpect')
 	os.system('git clone https://github.com/CiKu370/AUXILE')
@@ -937,7 +937,7 @@ def auxile():
 	backtomenu_option()
 
 def inther():
-	print('\n###### Installing inther')
+	quo.flair(f"%%%%%%% Installing... inther", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git ruby')
 	os.system('git clone https://github.com/Gameye98/inther')
@@ -946,7 +946,7 @@ def inther():
 	backtomenu_option()
 
 def hpb():
-	print('\n###### Installing HPB')
+	quo.flair(f"%%%%%%% Installing... HPB", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/package/html_0.1_all.deb')
@@ -957,7 +957,7 @@ def hpb():
 	backtomenu_option()
 
 def fmbrute():
-	print('\n###### Installing FMBrute')
+	quo.flair(f"%%%%%%% Installing... FMBrute", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python && python -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/FMBrute')
@@ -966,7 +966,7 @@ def fmbrute():
 	backtomenu_option()
 
 def hashid():
-	print('\n###### Installing HashID')
+	quo.flair(f"%%%%%%% Installing... HashID", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 && python2 -m pip install hashid')
 	quo.flair(f"###### Done")
@@ -974,7 +974,7 @@ def hashid():
 	backtomenu_option()
 
 def gpstr():
-	print('\n###### Installing GPS Tracking')
+	quo.flair(f"%%%%%%% Installing... GPS Tracking", foreground="vcyan")
 	# secretum inc
 	os.system('apt install php git')
 	os.system('git clone https://github.com/indosecid/gps_tracking')
@@ -983,7 +983,7 @@ def gpstr():
 	backtomenu_option()
 
 def pret():
-	print('\n###### Installing PRET')
+	quo.flair(f"%%%%%%% Installing... PRET", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 imagemagick git')
 	os.system('python2 -m pip install colorama pysnmp')
@@ -993,7 +993,7 @@ def pret():
 	backtomenu_option()
 
 def atlas():
-	print('\n###### Installing Atlas')
+	quo.flair(f"%%%%%%% Installing... Atlas", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 && python2 -m pip install urllib2')
 	os.system('git clone https://github.com/m4ll0k/Atlas')
@@ -1002,7 +1002,7 @@ def atlas():
 	backtomenu_option()
 
 def hashcat():
-	print('\n###### Installing Hashcat')
+	quo.flair(f"%%%%%%% Installing... Hashcat", foreground="vcyan")
 	# secretum inc
 	os.system('apt install unstable-repo')
 	os.system('apt install hashcat')
@@ -1011,7 +1011,7 @@ def hashcat():
 	backtomenu_option()
 
 def liteotp():
-	print('\n###### Installing LiteOTP')
+	quo.flair(f"%%%%%%% Installing... LiteOTP", foreground="vcyan")
 	# secretum inc
 	os.system('apt install php wget')
 	os.system('wget https://raw.githubusercontent.com/Cvar1984/LiteOTP/master/build/main.phar -O $PREFIX/bin/lite')
@@ -1020,7 +1020,7 @@ def liteotp():
 	backtomenu_option()
 
 def fbbrutex():
-	print('\n###### Installing FBBrute')
+	quo.flair(f"%%%%%%% Installing... FBBrute", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python && python -m pip install requests')
 	os.system('git clone https://github.com/Gameye98/FBBrute')
@@ -1029,7 +1029,7 @@ def fbbrutex():
 	backtomenu_option()
 
 def fim():
-	print('\n###### Installing fim')
+	quo.flair(f"%%%%%%% Installing... fim", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python && python -m pip install requests bs4')
 	os.system('git clone https://github.com/karjok/fim')
@@ -1038,7 +1038,7 @@ def fim():
 	backtomenu_option()
 
 def rshell():
-	print('\n###### Installing RShell')
+	quo.flair(f"%%%%%%% Installing... RShell", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python && python -m pip install colorama')
 	os.system('git clone https://github.com/Jishu-Epic/RShell')
@@ -1047,7 +1047,7 @@ def rshell():
 	backtomenu_option()
 
 def termpyter():
-	print('\n###### Installing TermPyter')
+	quo.flair(f"%%%%%%% Installing... TermPyter", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python')
 	os.system('git clone https://github.com/Jishu-Epic/TermPyter')
@@ -1056,7 +1056,7 @@ def termpyter():
 	backtomenu_option()
 
 def maxsubdofinder():
-	print('\n###### Installing MaxSubdoFinder')
+	quo.flair(f"%%%%%%% Installing... MaxSubdoFinder", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install requests')
@@ -1066,7 +1066,7 @@ def maxsubdofinder():
 	backtomenu_option()
 
 def jadx():
-	print('\n###### Installing jadx')
+	quo.flair(f"%%%%%%% Installing... jadx", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://github.com/Lexiie/Termux-Jadx/blob/master/jadx-0.6.1_all.deb?raw=true')
@@ -1077,7 +1077,7 @@ def jadx():
 	backtomenu_option()
 
 def pwnedornot():
-	print('\n###### Installing pwnedOrNot')
+	quo.flair(f"%%%%%%% Installing... pwnedOrNot", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python')
 	os.system('python -m pip install requests')
@@ -1087,7 +1087,7 @@ def pwnedornot():
 	backtomenu_option()
 
 def maclook():
-	print('\n###### Installing Mac-Lookup')
+	quo.flair(f"%%%%%%% Installing... Mac-Lookup", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python')
 	os.system('python -m pip install requests')
@@ -1097,7 +1097,7 @@ def maclook():
 	backtomenu_option()
 
 def f4k3():
-	print('\n###### Installing F4K3')
+	quo.flair(f"%%%%%%% Installing... F4K3", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dpkg wget')
 	os.system('wget https://github.com/Gameye98/Gameye98.github.io/blob/master/package/f4k3_1.0_all.deb')
@@ -1108,7 +1108,7 @@ def f4k3():
 	backtomenu_option()
 
 def katak():
-	print('\n###### Installing Katak')
+	quo.flair(f"%%%%%%% Installing... Katak", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install requests progressbar')
@@ -1118,7 +1118,7 @@ def katak():
 	backtomenu_option()
 
 def heroku():
-	print('\n###### Installing heroku')
+	quo.flair(f"%%%%%%% Installing... heroku", foreground="vcyan")
 	# secretum inc
 	os.system('apt install nodejs')
 	os.system('npm install heroku -g')
@@ -1127,7 +1127,7 @@ def heroku():
 	backtomenu_option()
 
 def google():
-	print('\n###### Installing google')
+	quo.flair(f"%%%%%%% Installing... google", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python')
 	os.system('python -m pip install google')
@@ -1136,7 +1136,7 @@ def google():
 	backtomenu_option()
 
 def billcypher():
-	print('\n###### Installing BillCypher')
+	quo.flair(f"%%%%%%% Installing... BillCypher", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python')
 	os.system('python -m pip install argparse dnspython requests urllib3 colorama')
@@ -1146,7 +1146,7 @@ def billcypher():
 	backtomenu_option()
 
 def vbug():
-	print('\n###### Installing vbug')
+	quo.flair(f"%%%%%%% Installing... vbug", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('git clone https://github.com/Gameye98/vbug')
@@ -1155,7 +1155,7 @@ def vbug():
 	backtomenu_option()
 
 def kojawafft():
-	print('\n###### Installing kojawafft')
+	quo.flair(f"%%%%%%% Installing... kojawafft", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git nodejs')
 	os.system('git clone https://github.com/sandalpenyok/kojawafft')
@@ -1167,7 +1167,7 @@ def kojawafft():
 def aircrackng():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
-		print('\n###### Installing aircrack-ng')
+		quo.flair(f"%%%%%%% Installing... aircrack-ng", foreground="vcyan")
 		# secretum inc
 		os.system('apt install root-repo aircrack-ng')
 		print('###### Done')
@@ -1177,7 +1177,7 @@ def aircrackng():
 def ettercap():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
-		print('\n###### Installing ettercap')
+		quo.flair(f"%%%%%%% Installing... ettercap", foreground="vcyan")
 		# secretum inc
 		os.system('apt install root-repo ettercap')
 		print('###### Done')
@@ -1185,7 +1185,7 @@ def ettercap():
 	backtomenu_option()
 
 def ccgen():
-	print('\n###### Installing ccgen')
+	quo.flair(f"%%%%%%% Installing... ccgen", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python')
 	os.system('git clone https://github.com/Gameye98/ccgen')
@@ -1194,7 +1194,7 @@ def ccgen():
 	backtomenu_option()
 
 def ddcrypt():
-	print('\n###### Installing ddcrypt')
+	quo.flair(f"%%%%%%% Installing... ddcrypt", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python')
 	os.system('git clone https://github.com/Gameye98/ddcrypt')
@@ -1203,7 +1203,7 @@ def ddcrypt():
 	backtomenu_option()
 
 def dnsrecon():
-	print('\n###### Installing dnsrecon')
+	quo.flair(f"%%%%%%% Installing... dnsrecon", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python')
 	os.system('git clone https://github.com/darkoperator/dnsrecon')
@@ -1213,7 +1213,7 @@ def dnsrecon():
 	backtomenu_option()
 
 def zphisher():
-	print('\n###### Installing zphisher')
+	quo.flair(f"%%%%%%% Installing... zphisher", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git php openssh curl')
 	os.system('git clone https://github.com/htr-tech/zphisher')
@@ -1222,7 +1222,7 @@ def zphisher():
 	backtomenu_option()
 
 def apktool():
-	print('\n###### Installing apktool')
+	quo.flair(f"%%%%%%% Installing... apktool", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git dpkg')
 	os.system('git clone https://github.com/Lexiie/Termux-Apktool')
@@ -1233,7 +1233,7 @@ def apktool():
 	backtomenu_option()
 
 def uncompyle():
-	print('\n###### Installing uncompyle6')
+	quo.flair(f"%%%%%%% Installing... uncompyle6", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python python2')
 	os.system('python2 -m pip install uncompyle6')
@@ -1247,7 +1247,7 @@ def uncompyle():
 def wifite():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
-		print('\n###### Installing Wifite')
+		quo.flair(f"%%%%%%% Installing... Wifite", foreground="vcyan")
 		# secretum inc
 		os.system('apt install git python2')
 		os.system('git clone https://github.com/derv82/wifite')
@@ -1256,7 +1256,7 @@ def wifite():
 	backtomenu_option()
 
 def parrot():
-	print('\n###### Installing Parrot')
+	quo.flair(f"%%%%%%% Installing... Parrot", foreground="vcyan")
 	# secretum inc
 	os.system('apt install wget openssl-tool proot -y && hash -r && cd {} && wget https://raw.githubusercontent.com/AndronixApp/AndronixOrigin/master/Installer/Parrot/parrot.sh && bash parrot.sh'.format(homeDir))
 	os.system('cd {} && bash start-parrot.sh'.format(homeDir))
@@ -1266,7 +1266,7 @@ def parrot():
 	backtomenu_option()
 
 def archlinux():
-	print('\n###### Installing Arch Linux')
+	quo.flair(f"%%%%%%% Installing... Arch Linux", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git')
 	os.system('cd $HOME && git clone https://github.com/sdrausty/TermuxArch')
@@ -1277,7 +1277,7 @@ def archlinux():
 def tshark():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
-		print('\n###### Installing tshark')
+		quo.flair(f"%%%%%%% Installing... tshark", foreground="vcyan")
 		# secretum inc
 		os.system('apt install root-repo tshark')
 		print('###### Done')
@@ -1285,7 +1285,7 @@ def tshark():
 	backtomenu_option()
 
 def dos2unix():
-	print('\n###### Installing dos2unix')
+	quo.flair(f"%%%%%%% Installing... dos2unix", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dos2unix')
 	print('###### Done')
@@ -1293,7 +1293,7 @@ def dos2unix():
 	backtomenu_option()
 
 def exiftool():
-	print('\n###### Installing exiftool')
+	quo.flair(f"%%%%%%% Installing... exiftool", foreground="vcyan")
 	# secretum inc
 	os.system('apt install exiftool')
 	print('###### Done')
@@ -1301,7 +1301,7 @@ def exiftool():
 	backtomenu_option()
 
 def iconv():
-	print('\n###### Installing iconv')
+	quo.flair(f"%%%%%%% Installing... iconv", foreground="vcyan")
 	# secretum inc
 	os.system('apt install iconv')
 	print('###### Done')
@@ -1309,7 +1309,7 @@ def iconv():
 	backtomenu_option()
 
 def mediainfo():
-	print('\n###### Installing mediainfo')
+	quo.flair(f"%%%%%%% Installing... mediainfo", foreground="vcyan")
 	# secretum inc
 	os.system('apt install mediainfo')
 	print('###### Done')
@@ -1317,7 +1317,7 @@ def mediainfo():
 	backtomenu_option()
 
 def pdfinfo():
-	print('\n###### Installing pdfinfo')
+	quo.flair(f"%%%%%%% Installing... pdfinfo", foreground="vcyan")
 	# secretum inc
 	os.system('apt install poppler')
 	print('###### Done')
@@ -1327,7 +1327,7 @@ def pdfinfo():
 def tcpdump():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
-		print('\n###### Installing tcpdump')
+		quo.flair(f"%%%%%%% Installing... tcpdump", foreground="vcyan")
 		# secretum inc
 		os.system('apt install root-repo tcpdump')
 		print('###### Done')
@@ -1337,7 +1337,7 @@ def tcpdump():
 def hping3():
 	if int(inputstream("id -u".split()).decode("utf8")) != 0: quo.flair(f"ERROR: Make sure you're device has been rooted");
 	else:
-		print('\n###### Installing hping3')
+		quo.flair(f"%%%%%%% Installing... hping3", foreground="vcyan")
 		# secretum inc
 		os.system('apt install root-repo hping3')
 		print('###### Done')
@@ -1345,7 +1345,7 @@ def hping3():
 	backtomenu_option()
 
 def dbdat():
-	print('\n###### Installing DbDat')
+	quo.flair(f"%%%%%%% Installing... DbDat", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2')
 	os.system('python2 -m pip install MySQL-python psycopg2 cx_Oracle pymssql ibm_db pymongo pyyaml couchdb')
@@ -1355,7 +1355,7 @@ def dbdat():
 	backtomenu_option()
 
 def nosqlmap():
-	print('\n###### Installing NoSQLMap')
+	quo.flair(f"%%%%%%% Installing... NoSQLMap", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 unstable-repo metasploit')
 	os.system('python2 -m pip install pymongo httplib2')
@@ -1365,7 +1365,7 @@ def nosqlmap():
 	backtomenu_option()
 
 def audit_couchdb():
-	print('\n###### Installing audit_couchdb')
+	quo.flair(f"%%%%%%% Installing... audit_couchdb", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git nodejs')
 	os.system('npm install -g npm@next audit_couchdb')
@@ -1376,7 +1376,7 @@ def audit_couchdb():
 	backtomenu_option()
 
 def mongoaudit():
-	print('\n###### Installing mongoaudit')
+	quo.flair(f"%%%%%%% Installing... mongoaudit", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python -y')
 	os.system('python -m pip install pymongo mongoaudit')
@@ -1385,7 +1385,7 @@ def mongoaudit():
 	backtomenu_option()
 
 def wifiphisher():
-	print('\n###### Installing Wifiphisher')
+	quo.flair(f"%%%%%%% Installing... Wifiphisher", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python -y')
 	os.system('python -m pip install setuptools scapy')
@@ -1395,7 +1395,7 @@ def wifiphisher():
 	backtomenu_option()
 
 def sherlock():
-	print('\n###### Installing sherlock')
+	quo.flair(f"%%%%%%% Installing... sherlock", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python -y')
 	os.system('git clone https://github.com/sherlock-project/sherlock')
@@ -1404,7 +1404,7 @@ def sherlock():
 	backtomenu_option()
 
 def shc():
-	print('\n###### Installing shc')
+	quo.flair(f"%%%%%%% Installing... shc", foreground="vcyan")
 	# secretum inc
 	os.system('apt install shc -y')
 	print('###### Done')
@@ -1412,7 +1412,7 @@ def shc():
 	backtomenu_option()
 
 def steghide():
-	print('\n###### Installing steghide')
+	quo.flair(f"%%%%%%% Installing... steghide", foreground="vcyan")
 	# secretum inc
 	os.system('apt install steghide -y')
 	print('###### Done')
@@ -1420,7 +1420,7 @@ def steghide():
 	backtomenu_option()
 
 def tesseract():
-	print('\n###### Installing tesseract')
+	quo.flair(f"%%%%%%% Installing... tesseract", foreground="vcyan")
 	# secretum inc
 	os.system('apt install tesseract -y')
 	print('###### Done')
@@ -1428,7 +1428,7 @@ def tesseract():
 	backtomenu_option()
 
 def sleuthkit():
-	print('\n###### Installing sleuthkit')
+	quo.flair(f"%%%%%%% Installing... sleuthkit", foreground="vcyan")
 	# secretum inc
 	os.system('apt install sleuthkit -y')
 	print('###### Done')
@@ -1436,7 +1436,7 @@ def sleuthkit():
 	backtomenu_option()
 
 def octave():
-	print('\n###### Installing Octave')
+	quo.flair(f"%%%%%%% Installing... Octave", foreground="vcyan")
 	# secretum inc
 	if not repo_check("pointless.list"):
 		pointless_repo()
@@ -1446,7 +1446,7 @@ def octave():
 	backtomenu_option()
 
 def fpcompiler():
-	print('\n###### Installing fp-compiler')
+	quo.flair(f"%%%%%%% Installing... fp-compiler", foreground="vcyan")
 	# secretum inc
 	if not repo_check("pointless.list"):
 		pointless_repo()
@@ -1456,7 +1456,7 @@ def fpcompiler():
 	backtomenu_option()
 
 def numpy():
-	print('\n###### Installing numpy')
+	quo.flair(f"%%%%%%% Installing... numpy", foreground="vcyan")
 	# secretum inc
 	if not repo_check("pointless.list"):
 		pointless_repo()
@@ -1466,7 +1466,7 @@ def numpy():
 	backtomenu_option()
 
 def userrecon():
-	print('\n###### Installing userrecon')
+	quo.flair(f"%%%%%%% Installing... userrecon", foreground="vcyan")
 	# secretum inc
 	os.system('apt install wget dpkg curl -y')
 	os.system('wget https://raw.githubusercontent.com/Gameye98/Gameye98.github.io/master/package/userrecon_1.0_all.deb')
@@ -1477,7 +1477,7 @@ def userrecon():
 	backtomenu_option()
 
 def mrsip():
-	print('\n###### Installing Mr.SIP')
+	quo.flair(f"%%%%%%% Installing... Mr.SIP", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python -y')
 	os.system('python -m pip install netifaces ipaddress scapy pyfiglet')
@@ -1487,7 +1487,7 @@ def mrsip():
 	backtomenu_option()
 
 def tmscanner():
-	print('\n###### Installing TM-scanner')
+	quo.flair(f"%%%%%%% Installing... TM-scanner", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python python2 nmap git -y')
 	os.system('python -m pip install colorama requests')
@@ -1498,7 +1498,7 @@ def tmscanner():
 	backtomenu_option()
 
 def xss_payload_list():
-	print('\n###### Installing xss-payload-list')
+	quo.flair(f"%%%%%%% Installing... xss-payload-list", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git -y')
 	os.system('git clone https://github.com/payloadbox/xss-payload-list')
@@ -1507,7 +1507,7 @@ def xss_payload_list():
 	backtomenu_option()
 
 def clickbot():
-	print('\n###### Installing ClickBot')
+	quo.flair(f"%%%%%%% Installing... ClickBot", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python git -y')
 	os.system('git clone https://github.com/ziziwho/clickbot')
@@ -1517,7 +1517,7 @@ def clickbot():
 	backtomenu_option()
 
 def phoneinfoga():
-	print('\n###### Installing PhoneInfoga')
+	quo.flair(f"%%%%%%% Installing... PhoneInfoga", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python git -y')
 	os.system('git clone https://github.com/ExpertAnonymous/PhoneInfoga')
@@ -1529,7 +1529,7 @@ def phoneinfoga():
 	backtomenu_option()
 
 def btc2idr():
-	print('\n###### Installing BTC-to-IDR-checker')
+	quo.flair(f"%%%%%%% Installing... BTC-to-IDR-checker", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python git -y')
 	os.system('git clone https://github.com/guruku/BTC-to-IDR-checker')
@@ -1538,7 +1538,7 @@ def btc2idr():
 	backtomenu_option()
 
 def sitebroker():
-	print('\n###### Installing SiteBroker')
+	quo.flair(f"%%%%%%% Installing... SiteBroker", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python php git -y')
 	os.system('git clone https://github.com/Anon-Exploiter/SiteBroker')
@@ -1551,7 +1551,7 @@ def sitebroker():
 	backtomenu_option()
 
 def dostattack():
-	print('\n###### Installing dost-attack')
+	quo.flair(f"%%%%%%% Installing... dost-attack", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git -y')
 	os.system('git clone https://github.com/verluchie/dost-attack')
@@ -1560,7 +1560,7 @@ def dostattack():
 	backtomenu_option()
 
 def cfr():
-	print('\n###### Installing CFR')
+	quo.flair(f"%%%%%%% Installing... CFR", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dx wget -y')
 	os.system('mkdir $PREFIX/bin/lib')
@@ -1578,7 +1578,7 @@ def cfr():
 	backtomenu_option()
 
 def upx():
-	print('\n###### Installing UPX')
+	quo.flair(f"%%%%%%% Installing... UPX", foreground="vcyan")
 	# secretum inc
 	os.system('apt install wget tar -y')
 	os.system('wget https://github.com/upx/upx/releases/download/v3.96/upx-3.96-arm64_linux.tar.xz')
@@ -1591,7 +1591,7 @@ def upx():
 	backtomenu_option()
 
 def pyinstxtractor():
-	print('\n###### Installing pyinstxtractor')
+	quo.flair(f"%%%%%%% Installing... pyinstxtractor", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python -y')
 	os.system('git clone https://github.com/extremecoders-re/pyinstxtractor')
@@ -1600,7 +1600,7 @@ def pyinstxtractor():
 	backtomenu_option()
 
 def innoextract():
-	print('\n###### Installing innoextract')
+	quo.flair(f"%%%%%%% Installing... innoextract", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git clang -y')
 	os.system('git clone https://github.com/dscharrer/innoextract')
@@ -1616,7 +1616,7 @@ def innoextract():
 	backtomenu_option()
 
 def lynis():
-	print('\n###### Installing Lynis')
+	quo.flair(f"%%%%%%% Installing... Lynis", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git -y')
 	os.system('git clone https://github.com/CISOfy/lynis')
@@ -1625,7 +1625,7 @@ def lynis():
 	backtomenu_option()
 
 def chkrootkit():
-	print('\n###### Installing Chkrootkit')
+	quo.flair(f"%%%%%%% Installing... Chkrootkit", foreground="vcyan")
 	# secretum inc
 	os.system('apt install clang git -y')
 	os.system('git clone https://github.com/Magentron/chkrootkit')
@@ -1634,7 +1634,7 @@ def chkrootkit():
 	backtomenu_option()
 
 def clamav():
-	print('\n###### Installing ClamAV')
+	quo.flair(f"%%%%%%% Installing... ClamAV", foreground="vcyan")
 	# secretum inc
 	os.system('apt install clamav -y')
 	os.system('freshclam')
@@ -1643,7 +1643,7 @@ def clamav():
 	backtomenu_option()
 
 def yara():
-	print('\n###### Installing Yara')
+	quo.flair(f"%%%%%%% Installing... Yara", foreground="vcyan")
 	# secretum inc
 	os.system('apt install yara -y')
 	print('###### Done')
@@ -1651,7 +1651,7 @@ def yara():
 	backtomenu_option()
 
 def virustotal():
-	print('\n###### Installing VirusTotal-CLI')
+	quo.flair(f"%%%%%%% Installing... VirusTotal-CLI", foreground="vcyan")
 	# secretum inc
 	os.system('apt install virustotal-cli -y')
 	print('###### Done')
@@ -1659,7 +1659,7 @@ def virustotal():
 	backtomenu_option()
 
 def maigret():
-	print('\n###### Installing maigret')
+	quo.flair(f"%%%%%%% Installing... maigret", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python -y')
 	os.system('python -m pip install maigret')
@@ -1669,7 +1669,7 @@ def maigret():
 	backtomenu_option()
 
 def xplsearch():
-	print('\n###### Installing XPL-SEARCH')
+	quo.flair(f"%%%%%%% Installing... XPL-SEARCH", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git php -y')
 	os.system('git clone https://github.com/r00tmars/XPL-SEARCH')
@@ -1678,7 +1678,7 @@ def xplsearch():
 	backtomenu_option()
 
 def xadmin():
-	print('\n###### Installing Xadmin')
+	quo.flair(f"%%%%%%% Installing... Xadmin", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git perl -y')
 	os.system('git clone https://github.com/Manisso/Xadmin')
@@ -1687,7 +1687,7 @@ def xadmin():
 	backtomenu_option()
 
 def credmap():
-	print('\n###### Installing Credmap')
+	quo.flair(f"%%%%%%% Installing... Credmap", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('git clone https://github.com/lightos/credmap')
@@ -1696,7 +1696,7 @@ def credmap():
 	backtomenu_option()
 
 def mapeye():
-	print('\n###### Installing MapEye')
+	quo.flair(f"%%%%%%% Installing... MapEye", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git php python -y')
 	os.system('python -m pip install requests')
@@ -1706,7 +1706,7 @@ def mapeye():
 	backtomenu_option()
 
 def gathetool():
-	print('\n###### Installing GatheTOOL')
+	quo.flair(f"%%%%%%% Installing... GatheTOOL", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git php python -y')
 	os.system('python -m pip install requests')
@@ -1716,7 +1716,7 @@ def gathetool():
 	backtomenu_option()
 
 def avpass():
-	print('\n###### Installing avpass')
+	quo.flair(f"%%%%%%% Installing... avpass", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 python -y')
 	os.system('git clone https://github.com/sslab-gatech/avpass')
@@ -1725,7 +1725,7 @@ def avpass():
 	backtomenu_option()
 
 def binwalk():
-	print('\n###### Installing binwalk')
+	quo.flair(f"%%%%%%% Installing... binwalk", foreground="vcyan")
 	# secretum inc
 	if not repo_check("pointless.list"):
 		pointless_repo()
@@ -1740,7 +1740,7 @@ def binwalk():
 	backtomenu_option()
 
 def arat():
-	print('\n###### Installing A-Rat')
+	quo.flair(f"%%%%%%% Installing... A-Rat", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python git -y')
 	os.system('git clone https://github.com/RexTheGod/A-Rat')
@@ -1749,7 +1749,7 @@ def arat():
 	backtomenu_option()
 
 def adbtk():
-	print('\n###### Installing ADB-Toolkit')
+	quo.flair(f"%%%%%%% Installing... ADB-Toolkit", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git -y')
 	os.system('git clone https://github.com/ASHWIN990/ADB-Toolkit')
@@ -1758,7 +1758,7 @@ def adbtk():
 	backtomenu_option()
 
 def androbugs():
-	print('\n###### Installing AndroBugs_Framework')
+	quo.flair(f"%%%%%%% Installing... AndroBugs_Framework", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('python2 -m pip install pymongo')
@@ -1768,7 +1768,7 @@ def androbugs():
 	backtomenu_option()
 
 def tekdefense():
-	print('\n###### Installing TekDefense-Automater')
+	quo.flair(f"%%%%%%% Installing... TekDefense-Automater", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('python2 -m pip install requests')
@@ -1778,7 +1778,7 @@ def tekdefense():
 	backtomenu_option()
 
 def baf():
-	print('\n###### Installing BAF')
+	quo.flair(f"%%%%%%% Installing... BAF", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('python2 -m pip install requests bs4 selenium colored termcolor')
@@ -1788,7 +1788,7 @@ def baf():
 	backtomenu_option()
 
 def brutex():
-	print('\n###### Installing BruteX')
+	quo.flair(f"%%%%%%% Installing... BruteX", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git hydra -y')
 	os.system('git clone https://github.com/1N3/BruteX')
@@ -1797,7 +1797,7 @@ def brutex():
 	backtomenu_option()
 
 def cmseek():
-	print('\n###### Installing CMSeeK')
+	quo.flair(f"%%%%%%% Installing... CMSeeK", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python -y')
 	os.system('python -m pip install requests')
@@ -1808,7 +1808,7 @@ def cmseek():
 
 ### Compiler/Interpreter
 def python2():
-	print('\n###### Installing Python2')
+	quo.flair(f"%%%%%%% Installing... Python2", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python2 -y')
 	print('###### Done')
@@ -1816,7 +1816,7 @@ def python2():
 	backtomenu_option()
 
 def ecj():
-	print('\n###### Installing ecj')
+	quo.flair(f"%%%%%%% Installing... ecj", foreground="vcyan")
 	# secretum inc
 	os.system('apt install ecj -y')
 	print('###### Done')
@@ -1824,7 +1824,7 @@ def ecj():
 	backtomenu_option()
 
 def golang():
-	print('\n###### Installing Golang')
+	quo.flair(f"%%%%%%% Installing... Golang", foreground="vcyan")
 	# secretum inc
 	os.system('apt install golang -y')
 	print('###### Done')
@@ -1832,7 +1832,7 @@ def golang():
 	backtomenu_option()
 
 def ldc():
-	print('\n###### Installing ldc')
+	quo.flair(f"%%%%%%% Installing... ldc", foreground="vcyan")
 	# secretum inc
 	os.system('apt install ldc -y')
 	print('###### Done')
@@ -1840,7 +1840,7 @@ def ldc():
 	backtomenu_option()
 
 def nim():
-	print('\n###### Installing Nim')
+	quo.flair(f"%%%%%%% Installing... Nim", foreground="vcyan")
 	# secretum inc
 	os.system('apt install nim -y')
 	print('###### Done')
@@ -1848,7 +1848,7 @@ def nim():
 	backtomenu_option()
 
 def shc():
-	print('\n###### Installing shc')
+	quo.flair(f"%%%%%%% Installing... shc", foreground="vcyan")
 	# secretum inc
 	os.system('apt install shc -y')
 	print('###### Done')
@@ -1856,7 +1856,7 @@ def shc():
 	backtomenu_option()
 
 def tcc():
-	print('\n###### Installing TCC')
+	quo.flair(f"%%%%%%% Installing... TCC", foreground="vcyan")
 	# secretum inc
 	os.system('apt install tcc -y')
 	print('###### Done')
@@ -1864,7 +1864,7 @@ def tcc():
 	backtomenu_option()
 
 def php():
-	print('\n###### Installing PHP')
+	quo.flair(f"%%%%%%% Installing... PHP", foreground="vcyan")
 	# secretum inc
 	os.system('apt install php -y')
 	print('###### Done')
@@ -1872,7 +1872,7 @@ def php():
 	backtomenu_option()
 
 def ruby():
-	print('\n###### Installing Ruby')
+	quo.flair(f"%%%%%%% Installing... Ruby", foreground="vcyan")
 	# secretum inc
 	os.system('apt install ruby -y')
 	print('###### Done')
@@ -1880,7 +1880,7 @@ def ruby():
 	backtomenu_option()
 
 def perl():
-	print('\n###### Installing Perl')
+	quo.flair(f"%%%%%%% Installing... Perl", foreground="vcyan")
 	# secretum inc
 	os.system('apt install perl -y')
 	print('###### Done')
@@ -1888,7 +1888,7 @@ def perl():
 	backtomenu_option()
 
 def vlang():
-	print('\n###### Installing Vlang')
+	quo.flair(f"%%%%%%% Installing... Vlang", foreground="vcyan")
 	# secretum inc
 	os.system('apt install vlang -y')
 	print('###### Done')
@@ -1896,7 +1896,7 @@ def vlang():
 	backtomenu_option()
 
 def blogc():
-	print('\n###### Installing BlogC')
+	quo.flair(f"%%%%%%% Installing... BlogC", foreground="vcyan")
 	# secretum inc
 	os.system('apt install blogc -y')
 	print('###### Done')
@@ -1905,7 +1905,7 @@ def blogc():
 
 ### termux games
 def street_car():
-	print('\n###### Installing street-car')
+	quo.flair(f"%%%%%%% Installing... street-car", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python python2 -y')
 	os.system('git clone https://github.com/JustaHackers/street_car')
@@ -1914,7 +1914,7 @@ def street_car():
 	backtomenu_option()
 
 def flappy_bird():
-	print('\n###### Installing flappy-bird')
+	quo.flair(f"%%%%%%% Installing... flappy-bird", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('git clone https://github.com/JustAHackers/flappy_bird')
@@ -1923,7 +1923,7 @@ def flappy_bird():
 	backtomenu_option()
 
 def speed_typing():
-	print('\n###### Installing Speed Typing')
+	quo.flair(f"%%%%%%% Installing... Speed Typing", foreground="vcyan")
 	# secretum inc
 	os.system('apt install git python2 -y')
 	os.system('git clone https://github.com/JustAHackers/typing-speed-test')
@@ -1932,7 +1932,7 @@ def speed_typing():
 	backtomenu_option()
 
 def nsnake():
-	print('\n###### Installing nsnake')
+	quo.flair(f"%%%%%%% Installing... nsnake", foreground="vcyan")
 	# secretum inc
 	os.system('apt install nsnake -y')
 	print('###### Done')
@@ -1940,7 +1940,7 @@ def nsnake():
 	backtomenu_option()
 
 def nudoku():
-	print('\n###### Installing Sudoku')
+	quo.flair(f"%%%%%%% Installing... Sudoku", foreground="vcyan")
 	# secretum inc
 	os.system('apt install nudoku -y')
 	print('###### Done')
@@ -1948,7 +1948,7 @@ def nudoku():
 	backtomenu_option()
 
 def moon_buggy():
-	print('\n###### Installing Moon-Buggy')
+	quo.flair(f"%%%%%%% Installing... Moon-Buggy", foreground="vcyan")
 	# secretum inc
 	os.system('apt install moon-buggy -y')
 	print('###### Done')
@@ -1956,7 +1956,7 @@ def moon_buggy():
 	backtomenu_option()
 
 def ttysolitaire():
-	print('\n###### Installing tty-solitaire')
+	quo.flair(f"%%%%%%% Installing... tty-solitaire", foreground="vcyan")
 	# secretum inc
 	os.system('apt install tty-solitaire -y')
 	print('###### Done')
@@ -1964,7 +1964,7 @@ def ttysolitaire():
 	backtomenu_option()
 
 def pacman4console():
-	print('\n###### Installing Pacman4Console')
+	quo.flair(f"%%%%%%% Installing... Pacman4Console", foreground="vcyan")
 	# secretum inc
 	os.system('apt install pacman4console -y')
 	print('###### Done')
@@ -1973,7 +1973,7 @@ def pacman4console():
 
 ### bash function ---
 def fbvid():
-	print('\n###### Installing fbvid')
+	quo.flair(f"%%%%%%% Installing... fbvid", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python ffmpeg -y')
 	os.system('python -m pip install youtube-dl')
@@ -1985,7 +1985,7 @@ def fbvid():
 	backtomenu_option()
 
 def cast2video():
-	print('\n###### Installing cast2video')
+	quo.flair(f"%%%%%%% Installing... cast2video", foreground="vcyan")
 	# secretum inc
 	os.system('apt install clang python ffmpeg -y')
 	os.system('python -m pip install CPython ttygif')
@@ -1997,7 +1997,7 @@ def cast2video():
 	backtomenu_option()
 
 def iconset():
-	print('\n###### Installing iconset')
+	quo.flair(f"%%%%%%% Installing... iconset", foreground="vcyan")
 	iconset_code = open(".myshfunc/iconset.sh","r").read()
 	open(os.getenv("HOME")+"/.bashrc","a").write(iconset_code)
 	os.system('source '+os.getenv("HOME")+"/.bashrc")
@@ -2006,7 +2006,7 @@ def iconset():
 	backtomenu_option()
 
 def readme():
-	print('\n###### Installing readme')
+	quo.flair(f"%%%%%%% Installing... readme", foreground="vcyan")
 	# secretum inc
 	os.system('apt install curl -y')
 	readme_code = open(".myshfunc/readme.sh","r").read()
@@ -2017,7 +2017,7 @@ def readme():
 	backtomenu_option()
 
 def makedeb():
-	print('\n###### Installing makedeb')
+	quo.flair(f"%%%%%%% Installing... makedeb", foreground="vcyan")
 	# secretum inc
 	os.system('apt install dpkg neovim -y')
 	makedeb_code = open(".myshfunc/makedeb.sh","r").read()
@@ -2028,7 +2028,7 @@ def makedeb():
 	backtomenu_option()
 
 def quikfind():
-	print('\n###### Installing quikfind')
+	quo.flair(f"%%%%%%% Installing... quikfind", foreground="vcyan")
 	quikfind_code = open(".myshfunc/quikfind.sh","r").read()
 	open(os.getenv("HOME")+"/.bashrc","a").write(quikfind_code)
 	os.system('source '+os.getenv("HOME")+"/.bashrc")
@@ -2037,7 +2037,7 @@ def quikfind():
 	backtomenu_option()
 
 def pranayama():
-	print('\n###### Installing pranayama')
+	quo.flair(f"%%%%%%% Installing... pranayama", foreground="vcyan")
 	# secretum inc
 	os.system('apt install termux-api -y')
 	pranayama_code = open(".myshfunc/pranayama.sh","r").read()
@@ -2050,7 +2050,7 @@ def pranayama():
 	backtomenu_option()
 
 def sqlc():
-	print('\n###### Installing sqlc')
+	quo.flair(f"%%%%%%% Installing... sqlc", foreground="vcyan")
 	# secretum inc
 	os.system('apt install python sqlite3 -y')
 	sqlc_code = open(".myshfunc/sqlc.sh","r").read()
