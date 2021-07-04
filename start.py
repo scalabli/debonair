@@ -29,10 +29,10 @@ def main(list):
 	print("   [18] Compiler/Interpreter")
 	print("   [19] Social Engineering Tools")
 	quo.flair(f"   [00] Exit Debonair", foreground="black", background="yellow", bold=True)
-	lazymux = quo.prompt("@dbnr >> install ")
+	debonair = quo.prompt("@dbnr >> install ")
 
 	# 01 - Information Gathering
-	if lazymux.strip() == "1" or lazymux.strip() == "01":
+	if debonair.strip() == "1" or debonair.strip() == "01":
 		print("\n    [01] Nmap: Utility for network discovery and security auditing")
 		print("    [02] Red Hawk: Information Gathering, Vulnerability Scanning and Crawling")
 		print("    [03] D-TECT: All-In-One Tool for Penetration Testing")
@@ -76,7 +76,7 @@ def main(list):
 		print("    [41] GatheTOOL: Information Gathering - API hackertarget.com")
 		print("    [42] ADB-ToolKit")
 		print("    [43] TekDefense-Automater: Automater - IP URL and MD5 OSINT Analysis")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		infogathering = quo.prompt("@dbnr >> install ")
 		if infogathering == "@":
 			infogathering = ""
@@ -136,7 +136,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 02 - Vulnerability Analysis
-	elif lazymux.strip() == "2" or lazymux.strip() == "02":
+	elif debonair.strip() == "2" or debonair.strip() == "02":
 		print("\n    [01] Nmap: Utility for network discovery and security auditing")
 		print("    [02] AndroZenmap")
 		print("    [03] AstraNmap: Security scanner used to find hosts and services on a computer network")
@@ -162,7 +162,7 @@ def main(list):
 		print("    [23] OWScan: OVID Web Scanner")
 		print("    [24] XPL-SEARCH: Search exploits in multiple exploit databases")
 		print("    [25] AndroBugs_Framework: An efficient Android vulnerability scanner that helps developers or hackers find potential security vulnerabilities in Android applications")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		vulnsys = quo.prompt("@dbnr >> install ")
 		if vulnsys == "@":
 			vulnsys = ""
@@ -204,7 +204,7 @@ def main(list):
 			writeStatus(0)
 
 	# 03 - Web Hacking
-	elif lazymux.strip() == "3" or lazymux.strip() == "03":
+	elif debonair.strip() == "3" or debonair.strip() == "03":
 		print("\n    [01] sqlmap: Automatic SQL injection and database takeover tool")
 		print("    [02] WebDAV: WebDAV File Upload Exploiter")
 		print("    [03] MaxSubdoFinder: Tool for Discovering Subdomain")
@@ -229,7 +229,7 @@ def main(list):
 		print("    [22] xss-payload-list: Cross Site Scripting ( XSS ) Vulnerability Payload List")
 		print("    [23] Xadmin: Admin Panel Finder")
 		print("    [24] CMSeeK: CMS Detection and Exploitation suite - Scan WordPress, Joomla, Drupal and over 180 other CMSs")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		webhack = quo.prompt("@dbnr >> install ")
 		if webhack == "@":
 			webhack = ""
@@ -270,13 +270,13 @@ def main(list):
 			writeStatus(0)
 	
 	# 04 - Database Assessment
-	elif lazymux.strip() == "4" or lazymux.strip() == "04":
+	elif debonair.strip() == "4" or debonair.strip() == "04":
 		print("\n    [01] DbDat: DbDat performs numerous checks on a database to evaluate security")
 		print("    [02] sqlmap: Automatic SQL injection and database takeover tool")
 		print("    [03] NoSQLMap: Automated NoSQL database enumeration and web application exploitation tool")
 		print("    [04] audit_couchdb: Detect security issues, large or small, in a CouchDB server")
 		print("    [05] mongoaudit: An automated pentesting tool that lets you know if your MongoDB instances are properly secured")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		dbssm = quo.prompt("@dbnr >> install ")
 		if dbssm == "@":
 			dbssm = ""
@@ -298,7 +298,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 05 - Password Attacks
-	elif lazymux.strip() == "5" or lazymux.strip() == "05":
+	elif debonair.strip() == "5" or debonair.strip() == "05":
 		print("\n    [01] Hydra: Network logon cracker supporting different services")
 		print("    [02] FMBrute: Facebook Multi Brute Force")
 		print("    [03] HashID: Software to identify the different types of hashes")
@@ -322,7 +322,7 @@ def main(list):
 		print("    [21] ASU: Facebook Hacking ToolKit")
 		print("    [22] Credmap: An open source tool that was created to bring awareness to the dangers of credential reuse")
 		print("    [23] BruteX: Automatically brute force all services running on a target")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		passtak = quo.prompt("@dbnr >> install ")
 		if passtak == "@":
 			passtak = ""
@@ -362,12 +362,12 @@ def main(list):
 			writeStatus(0)
 	
 	# 06 - Wireless Attacks
-	elif lazymux.strip() == "6" or lazymux.strip() == "06":
+	elif debonair.strip() == "6" or debonair.strip() == "06":
 		print("\n    [01] Aircrack-ng: WiFi security auditing tools suite")
 		print("    [02] Wifite: An automated wireless attack tool")
 		print("    [03] Wifiphisher: The Rogue Access Point Framework")
 		print("    [04] Routersploit: Exploitation Framework for Embedded Devices")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		wiretak = quo.prompt("@dbnr >> install ")
 		if wiretak == "@":
 			wiretak = ""
@@ -388,7 +388,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 07 - Reverse Engineering
-	elif lazymux.strip() == "7" or lazymux.strip() == "07":
+	elif debonair.strip() == "7" or debonair.strip() == "07":
 		print("\n    [01] Binary Exploitation")
 		print("    [02] jadx: DEX to JAVA Decompiler")
 		print("    [03] apktool: A utility that can be used for reverse engineering Android applications")
@@ -399,7 +399,7 @@ def main(list):
 		print("    [08] pyinstxtractor: PyInstaller Extractor")
 		print("    [09] innoextract: A tool to unpack installers created by Inno Setup")
 		print("    [10] binwalk: Firmware analysis tool")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		reversi = quo.prompt("@dbnr >> install ")
 		if reversi == "@":
 			reversi = ""
@@ -426,7 +426,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 08 - Exploitation Tools
-	elif lazymux.strip() == "8" or lazymux.strip() == "08":
+	elif debonair.strip() == "8" or debonair.strip() == "08":
 		print("\n    [01] Metasploit: Advanced open-source platform for developing, testing and using exploit code")
 		print("    [02] commix: Automated All-in-One OS Command Injection and Exploitation Tool")
 		print("    [03] BlackBox: A Penetration Testing Framework")
@@ -437,7 +437,7 @@ def main(list):
 		print("    [08] Routersploit: Exploitation Framework for Embedded Devices")
 		print("    [09] A-Rat: Remote Administration Tool")
 		print("    [10] BAF: Blind Attacking Framework")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		exploitool = quo.prompt("@dbnr >> install ")
 		if exploitool == "@":
 			exploitool = ""
@@ -464,13 +464,13 @@ def main(list):
 			writeStatus(0)
 	
 	# 09 - Sniffing and Spoofing
-	elif lazymux.strip() == "9" or lazymux.strip() == "09":
+	elif debonair.strip() == "9" or debonair.strip() == "09":
 		print("\n    [01] KnockMail: Verify if Email Exists")
 		print("    [02] tcpdump: A powerful command-line packet analyzer")
 		print("    [03] Ettercap: Comprehensive suite for MITM attacks, can sniff live connections, do content filtering on the fly and much more")
 		print("    [04] hping3: hping is a command-line oriented TCP/IP packet assembler/analyzer")
 		print("    [05] tshark: Network protocol analyzer and sniffer")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		sspoof = quo.prompt("@dbnr >> install ")
 		if sspoof == "@":
 			sspoof = ""
@@ -492,13 +492,13 @@ def main(list):
 			writeStatus(0)
 	
 	# 10 - Reporting Tools
-	elif lazymux.strip() == "10":
+	elif debonair.strip() == "10":
 		print("\n    [01] dos2unix: Converts between DOS and Unix text files")
 		print("    [02] exiftool: Utility for reading, writing and editing meta information in a wide variety of files")
 		print("    [03] iconv: Utility converting between different character encodings")
 		print("    [04] mediainfo: Command-line utility for reading information from media files")
 		print("    [05] pdfinfo: PDF document information extractor")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		reportls = quo.prompt("@dbnr >> install ")
 		if reportls == "@":
 			reportls = ""
@@ -520,11 +520,11 @@ def main(list):
 			writeStatus(0)
 	
 	# 11 - Forensic Tools
-	elif lazymux.strip() == "11":
+	elif debonair.strip() == "11":
 		print("\n    [01] steghide: Embeds a message in a file by replacing some of the least significant bits")
 		print("    [02] tesseract: Tesseract is probably the most accurate open source OCR engine available")
 		print("    [03] sleuthkit: The Sleuth Kit (TSK) is a library for digital forensics tools")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		forensc = quo.prompt("@dbnr >> install ")
 		if forensc == "@":
 			forensc = ""
@@ -544,7 +544,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 12 - Stress Testing
-	elif lazymux.strip() == "12":
+	elif debonair.strip() == "12":
 		print("\n    [01] Torshammer: Slow post DDOS tool")
 		print("    [02] Slowloris: Low bandwidth DoS tool")
 		print("    [03] Fl00d & Fl00d2: UDP Flood tool")
@@ -554,7 +554,7 @@ def main(list):
 		print("    [07] Xshell")
 		print("    [08] santet-online: Social Engineering Tool")
 		print("    [09] dost-attack: WebServer Attacking Tools")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		stresstest = quo.prompt("@dbnr >> install ")
 		if stresstest == "@":
 			stresstest = ""
@@ -580,13 +580,13 @@ def main(list):
 			writeStatus(0)
 	
 	# 13 - Install Linux Distro
-	elif lazymux.strip() == "13":
+	elif debonair.strip() == "13":
 		print("\n    [01] Ubuntu")
 		print("    [02] Fedora")
 		print("    [03] Kali Nethunter")
 		print("    [04] Parrot")
 		print("    [05] Arch Linux")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		innudis = quo.prompt("@dbnr >> install ")
 		if innudis == "@":
 			innudis = ""
@@ -608,7 +608,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 14 - Termux Utility
-	elif lazymux.strip() == "14":
+	elif debonair.strip() == "14":
 		print("\n    [01] SpiderBot: Curl website using random proxy and user agent")
 		print("    [02] Ngrok: tunnel local ports to public URLs and inspect traffic")
 		print("    [03] Sudo: sudo installer for Android")
@@ -629,7 +629,7 @@ def main(list):
 		print("    [19] Numpy: The fundamental package for scientific computing with Python")
 		print("    [20] BTC-to-IDR-checker: Check the exchange rate virtual money currency to Indonesia Rupiah from Bitcoin.co.id API")
 		print("    [21] ClickBot: Earn money using telegram bot")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		moretool = quo.prompt("@dbnr >> install ")
 		if moretool == "@":
 			moretool = ""
@@ -667,7 +667,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 15 - Shell Function [.bashrc]
-	elif lazymux.strip() == "15":
+	elif debonair.strip() == "15":
 		print("\n    [01] FBVid (FB Video Downloader)")
 		print("    [02] cast2video (Asciinema Cast Converter)")
 		print("    [03] iconset (AIDE App Icon)")
@@ -676,7 +676,7 @@ def main(list):
 		print("    [06] quikfind (Search Files)")
 		print("    [07] pranayama (4-7-8 Relax Breathing)")
 		print("    [08] sqlc (SQLite Query Processor)")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		myshf = quo.prompt("@dbnr >> install ")
 		if myshf == "@":
 			myshf = ""
@@ -701,7 +701,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 16 - Install CLI Games
-	elif lazymux.strip() == "16":
+	elif debonair.strip() == "16":
 		print("\n    [01] Flappy Bird")
 		print("    [02] Street Car")
 		print("    [03] Speed Typing")
@@ -710,7 +710,7 @@ def main(list):
 		print("    [06] Nudoku: ncurses based sudoku game")
 		print("    [07] tty-solitaire")
 		print("    [08] Pacman4Console")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		cligam = quo.prompt("@dbnr >> install ")
 		if cligam == "@":
 			cligam = ""
@@ -735,14 +735,14 @@ def main(list):
 			writeStatus(0)
 	
 	# 17 - Malware Analysis
-	elif lazymux.strip() == "17":
+	elif debonair.strip() == "17":
 		print("\n    [01] Lynis: Security Auditing and Rootkit Scanner")
 		print("    [02] Chkrootkit: A Linux Rootkit Scanners")
 		print("    [03] ClamAV: Antivirus Software Toolkit")
 		print("    [04] Yara: Tool aimed at helping malware researchers to identify and classify malware samples")
 		print("    [05] VirusTotal-CLI: Command line interface for VirusTotal")
 		print("    [06] avpass: Tool for leaking and bypassing Android malware detection system")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		malsys = quo.prompt("@dbnr >> install ")
 		if malsys == "@":
 			malsys = ""
@@ -765,7 +765,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 18 - Compiler/Interpreter
-	elif lazymux.strip() == "18":
+	elif debonair.strip() == "18":
 		print("\n    [01] Python2: Python 2 programming language intended to enable clear programs")
 		print("    [02] ecj: Eclipse Compiler for Java")
 		print("    [03] Golang: Go programming language compiler")
@@ -781,7 +781,7 @@ def main(list):
 		print("    [13] fp-compiler: Free Pascal is a 32, 64 and 16 bit professional Pascal compiler")
 		print("    [14] Octave: Scientific Programming Language")
 		print("    [15] BlogC: A blog compiler")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		compter = quo.prompt("@dbnr >> install ")
 		if compter == "@":
 			compter = ""
@@ -813,7 +813,7 @@ def main(list):
 			writeStatus(0)
 	
 	# 19 - Social Engineering Tools
-	elif lazymux.strip() == "19":
+	elif debonair.strip() == "19":
 		print("\n    [01] weeman: HTTP server for phishing in python")
 		print("    [02] SocialFish: Educational Phishing Tool & Information Collector")
 		print("    [03] santet-online: Social Engineering Tool")
@@ -821,7 +821,7 @@ def main(list):
 		print("    [05] LiteOTP: Multi Spam SMS OTP")
 		print("    [06] F4K3: Fake User Data Generator")
 		print("    [07] Hac")
-		print("\n    [00] Back to main menu\n")
+		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
 		soceng = quo.prompt("@dbnr >> install ")
 		if soceng == "@":
 			soceng = ""
@@ -843,7 +843,7 @@ def main(list):
 			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
-	elif lazymux.strip() == "00":
+	elif debonair.strip() == "00":
 		sys.exit()
 	
 	else:
