@@ -84,8 +84,8 @@ def main(list):
 				infogathering += f"{x} "
 		if len(infogathering.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for infox in infogathering.split():
 			if infox.strip() == "01" or infox.strip() == "1": nmap()
 			elif infox.strip() == "02" or infox.strip() == "2": red_hawk()
@@ -170,8 +170,8 @@ def main(list):
 				vulnsys += f"{x} "
 		if len(vulnsys.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for vulnx in vulnsys.split():
 			if vulnsys.strip() == "01" or vulnsys.strip() == "1": nmap()
 			elif vulnsys.strip() == "02" or vulnsys.strip() == "2": androZenmap()
@@ -199,7 +199,7 @@ def main(list):
 			elif vulnsys.strip() == "24": xplsearch()
 			elif vulnsys.strip() == "25": androbugs()
 			elif vulnsys.strip() == "00" or vulnsys.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 
@@ -237,8 +237,8 @@ def main(list):
 				webhack += f"{x} "
 		if len(webhack.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for webhx in webhack.split():
 			if webhx.strip() == "01" or webhx.strip() == "1": sqlmap()
 			elif webhx.strip() == "02" or webhx.strip() == "2": webdav()
@@ -265,7 +265,7 @@ def main(list):
 			elif webhx.strip() == "23": xadmin()
 			elif webhx.strip() == "24": cmseek()
 			elif webhx.strip() == "00" or webhx.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -284,8 +284,8 @@ def main(list):
 				dbssm += f"{x} "
 		if len(dbssm.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for dbsx in dbssm.split():
 			if dbsx.strip() == "01" or dbsx.strip() == "1": dbdat()
 			elif dbsx.strip() == "02" or dbsx.strip() == "2": sqlmap()
@@ -293,7 +293,7 @@ def main(list):
 			elif dbsx.strip() == "04" or dbsx.strip() == "4": audit_couchdb()
 			elif dbsx.strip() == "05" or dbsx.strip() == "5": mongoaudit()
 			elif dbsx.strip() == "00" or dbsx.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -330,8 +330,8 @@ def main(list):
 				passtak += f"{x} "
 		if len(passtak.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for passx in passtak.split():
 			if passx.strip() == "01" or passx.strip() == "1": hydra()
 			elif passx.strip() == "02" or passx.strip() == "2": fmbrute()
@@ -357,7 +357,7 @@ def main(list):
 			elif passx.strip() == "22": credmap()
 			elif passx.strip() == "23": brutex()
 			elif passx.strip() == "00" or passx.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -375,15 +375,15 @@ def main(list):
 				wiretak += f"{x} "
 		if len(wiretak.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for wirex in wiretak.split():
 			if wirex.strip() == "01" or wirex.strip() == "1": aircrackng()
 			elif wirex.strip() == "02" or wirex.strip() == "2": wifite()
 			elif wirex.strip() == "03" or wirex.strip() == "3": wifiphisher()
 			elif wirex.strip() == "04" or wirex.strip() == "4": routersploit()
 			elif wirex.strip() == "00" or wirex.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -407,8 +407,8 @@ def main(list):
 				reversi += f"{x} "
 		if len(reversi.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for revex in reversi.split():
 			if revex.strip() == "01" or revex.strip() == "1": binploit()
 			elif revex.strip() == "02" or revex.strip() == "2": jadx()
@@ -421,7 +421,7 @@ def main(list):
 			elif revex.strip() == "09" or revex.strip() == "9": innoextract()
 			elif revex.strip() == "10": binwalk()
 			elif revex.strip() == "00" or revex.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -445,8 +445,8 @@ def main(list):
 				exploitool += f"{x} "
 		if len(exploitool.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for explx in exploitool.split():
 			if explx.strip() == "01" or explx.strip() == "1": metasploit()
 			elif explx.strip() == "02" or explx.strip() == "2": commix()
@@ -459,7 +459,7 @@ def main(list):
 			elif explx.strip() == "09" or explx.strip() == "9": arat()
 			elif explx.strip() == "10": baf()
 			elif explx.strip() == "00" or explx.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -478,8 +478,8 @@ def main(list):
 				sspoof += f"{x} "
 		if len(sspoof.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for sspx in sspoof.split():
 			if sspx.strip() == "01" or sspx.strip() == "1": knockmail()
 			elif sspx.strip() == "02" or sspx.strip() == "2": tcpdump()
@@ -487,7 +487,7 @@ def main(list):
 			elif sspx.strip() == "04" or sspx.strip() == "4": hping3()
 			elif sspx.strip() == "05" or sspx.strip() == "5": tshark()
 			elif sspx.strip() == "00" or sspx.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -506,8 +506,8 @@ def main(list):
 				reportls += f"{x} "
 		if len(reportls.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for reportx in reportls.split():
 			if reportx.strip() == "01" or reportx.strip() == "1": dos2unix()
 			elif reportx.strip() == "02" or reportx.strip() == "2": exiftool()
@@ -515,7 +515,7 @@ def main(list):
 			elif reportx.strip() == "04" or reportx.strip() == "4": mediainfo()
 			elif reportx.strip() == "05" or reportx.strip() == "5": pdfinfo()
 			elif reportx.strip() == "00" or reportx.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -532,14 +532,14 @@ def main(list):
 				forensc += f"{x} "
 		if len(forensc.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for forenx in forensc.split():
 			if forenx.strip() == "01" or forenx.strip() == "1": steghide()
 			elif forenx.strip() == "02" or forenx.strip() == "2": tesseract()
 			elif forenx.strip() == "03" or forenx.strip() == "3": sleuthkit()
 			elif forenx.strip() == "00" or forenx.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -562,8 +562,8 @@ def main(list):
 				stresstest += f"{x} "
 		if len(stresstest.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for stressx in stresstest.split():
 			if stressx.strip() == "01" or stressx.strip() == "1": torshammer()
 			elif stressx.strip() == "02" or stressx.strip() == "2": slowloris()
@@ -575,7 +575,7 @@ def main(list):
 			elif stressx.strip() == "08" or stressx.strip() == "8": sanlen()
 			elif stressx.strip() == "09" or stressx.strip() == "9": dostattack()
 			elif stressx.strip() == "00" or stressx.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -594,8 +594,8 @@ def main(list):
 				innudis += f"{x} "
 		if len(innudis.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for innux in innudis.split():
 			if innux.strip() == "01" or innux.strip() == "1": ubuntu()
 			elif innux.strip() == "02" or innux.strip() == "2": fedora()
@@ -603,7 +603,7 @@ def main(list):
 			elif innux.strip() == "04" or innux.strip() == "4": parrot()
 			elif innux.strip() == "05" or innux.strip() == "5": archlinux()
 			elif innux.strip() == "00" or innux.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -637,8 +637,8 @@ def main(list):
 				moretool += f"{x} "
 		if len(moretool.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for moret in moretool.split():
 			if moret.strip() == "01" or moret.strip() == "1": spiderbot()
 			elif moret.strip() == "02" or moret.strip() == "2": ngrok()
@@ -662,7 +662,7 @@ def main(list):
 			elif moret.strip() == "20": btc2idr()
 			elif moret.strip() == "21": clickbot()
 			elif moret.strip() == "00" or moret.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -684,8 +684,8 @@ def main(list):
 				myshf += f"{x} "
 		if len(myshf.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for mysh in myshf.split():
 			if mysh.strip() == "01" or mysh.strip() == "1": fbvid()
 			elif mysh.strip() == "02" or mysh.strip() == "2": cast2video()
@@ -696,7 +696,7 @@ def main(list):
 			elif mysh.strip() == "07" or mysh.strip() == "7": pranayama()
 			elif mysh.strip() == "08" or mysh.strip() == "8": sqlc()
 			elif mysh.strip() == "00" or mysh.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -718,8 +718,8 @@ def main(list):
 				cligam += f"{x} "
 		if len(cligam.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for clig in cligam.split():
 			if clig.strip() == "01" or clig.strip() == "1": flappy_bird()
 			elif clig.strip() == "02" or clig.strip() == "2": street_car()
@@ -730,7 +730,7 @@ def main(list):
 			elif clig.strip() == "07" or clig.strip() == "7": ttysolitaire()
 			elif clig.strip() == "08" or clig.strip() == "8": pacman4console()
 			elif clig.strip() == "00" or clig.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -750,8 +750,8 @@ def main(list):
 				malsys += f"{x} "
 		if len(malsys.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for malx in malsys.split():
 			if malx.strip() == "01" or malx.strip() == "1": lynis()
 			elif malx.strip() == "02" or malx.strip() == "2": chkrootkit()
@@ -760,7 +760,7 @@ def main(list):
 			elif malx.strip() == "05" or malx.strip() == "5": virustotal()
 			elif malx.strip() == "06" or malx.strip() == "6": avpass()
 			elif malx.strip() == "00" or malx.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -789,8 +789,8 @@ def main(list):
 				compter += f"{x} "
 		if len(compter.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for compt in compter.split():
 			if compt.strip() == "01" or compt.strip() == "1": python2()
 			elif compt.strip() == "02" or compt.strip() == "2": ecj()
@@ -808,7 +808,7 @@ def main(list):
 			elif compt.strip() == "14": octave()
 			elif compt.strip() == "15": blogc()
 			elif compt.strip() == "00" or compt.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -829,8 +829,8 @@ def main(list):
 				soceng += f"{x} "
 		if len(soceng.split()) > 1:
 			writeStatus(1)
-		else:
-			writeStatus(0)
+		# © Gerrishon Sirere
+			# Secretum Inc
 		for socng in soceng.split():
 			if socng.strip() == "01" or socng.strip() == "1": weeman()
 			elif socng.strip() == "02" or socng.strip() == "2": socfish()
@@ -840,14 +840,14 @@ def main(list):
 			elif socng.strip() == "06" or socng.strip() == "6": f4k3()
 			elif socng.strip() == "07" or socng.strip() == "7": hac()
 			elif socng.strip() == "00" or socng.strip() == "0": restart_program()
-			else: print("\nERROR: Wrong Input");timeout(1);restart_program()
+			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	elif lazymux.strip() == "00":
 		sys.exit()
 	
 	else:
-		print("\nERROR: Wrong Input")
+		quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) 
 		timeout(1)
 		restart_program()
 
