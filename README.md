@@ -1,6 +1,6 @@
 <h1>Debonair<img src="https://media.giphy.com/media/12oufCB0MyZ1Go/giphy.gif" width="50"></h2>
 
-[![ ](assets/sashay.png)](https://github.com/gerrishon-s)
+[![ ](pics/home.png)](https://github.com/gerrishons)
 ---
 
 [![GitHub stars](https://img.shields.io/github/stars/secretum-inc/debonair.svg)](https://github.com/secretum-inc/debonair/stargazers)
