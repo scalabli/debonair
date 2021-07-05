@@ -69,7 +69,7 @@ If you run into an issue, we would be very happy if you would file a bug on the 
 
 ## License📑
 
-Debonair is licensed under Apache-2.0 License. See the `LICENSE` file in the top distribution directory for the full license text.
+Debonair is licensed under BSD-3-Clause License. See the `LICENSE` file in the top distribution directory for the full license text.
 
 
 ## Donate🎁
