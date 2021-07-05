@@ -55,7 +55,7 @@ Type **`debonair`** or **`dbnr`** from anywhere in your terminal
 
 :bulb: Each number represents a specific output.
 
-:bulb: Type the number corresponding number of a tool which you want to install.
+:bulb: Type the number corresponding number to a tool you want to install.
 
 
 ## Requirements🎲
