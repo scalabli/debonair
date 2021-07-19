@@ -80,7 +80,7 @@ def restart_program():
 
 def backtomenu_option():
 	if not readStatus():
-		echo(f'{_banner2}', foreground="red", bold=True) 
+		echo(f'{_banner2}', foreground="red", bold=True, italic=True) 
 		backtomenu = prompt("@dbnr >>> ")
 		
 		if backtomenu == "99":
