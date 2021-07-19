@@ -5,31 +5,31 @@ import readline
 from time import sleep as timeout
 from src.debonair.core import *
 
-@quo.command()
-@quo.app("--list", help="--list contains the homepage section")
+@command()
+@app("--list", help="--list contains the homepage section")
 def main(list):
 	banner()
-	quo.flair(f"   [01] Information Gathering", foreground="vred", bold=True)
-	quo.flair(f"   [02] Vulnerability Analysis", foreground="vblue", bold=True)
-	quo.flair(f"   [03] Web Hacking", foreground="vyellow", bold=True)
-	quo.flair(f"   [04] Database Assessment", foreground="vgreen", bold=True)
-	quo.flair(f"   [05] Password Attacks",foreground="vwhite", bold=True)
-	quo.flair(f"   [06] Wireless Attacks", foreground="vcyan", bold=True)
-	quo.flair(f"   [07] Reverse Engineering", foreground="vmagenta", bold=True)
-	quo.flair(f"   [08] Exploitation Tools", foreground=(165, 42, 42), bold=True)
-	quo.flair(f"   [09] Sniffing and Spoofing", foreground=(0, 128, 128), bold=True)
-	quo.flair(f"   [10] Reporting Tools", foreground=(128, 128, 0), bold=True)
-	quo.flair(f"   [11] Forensic Tools", foreground=(210, 105, 30), bold=True)
-	quo.flair(f"   [12] Stress Testing", foreground=(188, 143, 143), bold=True)
-	quo.flair(f"   [13] Install Linux Distro", foreground=(65, 105, 225), bold=True)
-	quo.flair(f"   [14] Termux Utility", foreground=(255, 127, 80), bold=True)
-	quo.flair(f"   [15] Shell Function [.bashrc]", bold=True)
-	quo.flair(f"   [16] Install CLI Games", foreground=(255, 215, 0), bold=True)
-	quo.flair(f"   [17] Malware Analysis", foreground=(175, 238, 238), bold=True)
-	quo.flair(f"   [18] Compiler/Interpreter", foreground=(127, 255, 212), bold=True)
-	quo.flair(f"   [19] Social Engineering Tools", foreground=(255, 20, 147), bold=True)
-	quo.flair(f"   [00] Exit Debonair", foreground="black", background="yellow", bold=True)
-	debonair = quo.prompt("@dbnr >> install ")
+	echo(f"   [01] Information Gathering", foreground="vred", bold=True)
+	echo(f"   [02] Vulnerability Analysis", foreground="vblue", bold=True)
+	echo(f"   [03] Web Hacking", foreground="vyellow", bold=True)
+	echo(f"   [04] Database Assessment", foreground="vgreen", bold=True)
+	echo(f"   [05] Password Attacks",foreground="vwhite", bold=True)
+	echo(f"   [06] Wireless Attacks", foreground="vcyan", bold=True)
+	echo(f"   [07] Reverse Engineering", foreground="vmagenta", bold=True)
+	echo(f"   [08] Exploitation Tools", foreground=(165, 42, 42), bold=True)
+	echo(f"   [09] Sniffing and Spoofing", foreground=(0, 128, 128), bold=True)
+	echo(f"   [10] Reporting Tools", foreground=(128, 128, 0), bold=True)
+	echo(f"   [11] Forensic Tools", foreground=(210, 105, 30), bold=True)
+	echo(f"   [12] Stress Testing", foreground=(188, 143, 143), bold=True)
+	echo(f"   [13] Install Linux Distro", foreground=(65, 105, 225), bold=True)
+	echo(f"   [14] Termux Utility", foreground=(255, 127, 80), bold=True)
+	echo(f"   [15] Shell Function [.bashrc]", bold=True)
+	echo(f"   [16] Install CLI Games", foreground=(255, 215, 0), bold=True)
+	echo(f"   [17] Malware Analysis", foreground=(175, 238, 238), bold=True)
+	echo(f"   [18] Compiler/Interpreter", foreground=(127, 255, 212), bold=True)
+	echo(f"   [19] Social Engineering Tools", foreground=(255, 20, 147), bold=True)
+	echo(f"   [00] Exit Debonair", foreground="black", background="yellow", bold=True)
+	debonair = prompt("@dbnr >> install ")
 
 	# 01 - Information Gathering
 	if debonair.strip() == "1" or debonair.strip() == "01":
@@ -76,8 +76,8 @@ def main(list):
 		print("    [41] GatheTOOL: Information Gathering - API hackertarget.com")
 		print("    [42] ADB-ToolKit")
 		print("    [43] TekDefense-Automater: Automater - IP URL and MD5 OSINT Analysis")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		infogathering = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		infogathering = prompt("@dbnr >> install ")
 		if infogathering == "@":
 			infogathering = ""
 			for x in range(1,201):
@@ -131,7 +131,7 @@ def main(list):
 			elif infox.strip() == "42": adbtk()
 			elif infox.strip() == "43": tekdefense()
 			elif infox.strip() == "00" or infox.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Wrong Input", foreground="red", bold=True);timeout(1);restart_program()
+			else: echo(f"ERROR: Wrong Input", foreground="red", bold=True);timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -162,8 +162,8 @@ def main(list):
 		print("    [23] OWScan: OVID Web Scanner")
 		print("    [24] XPL-SEARCH: Search exploits in multiple exploit databases")
 		print("    [25] AndroBugs_Framework: An efficient Android vulnerability scanner that helps developers or hackers find potential security vulnerabilities in Android applications")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		vulnsys = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		vulnsys = prompt("@dbnr >> install ")
 		if vulnsys == "@":
 			vulnsys = ""
 			for x in range(1,201):
@@ -199,7 +199,7 @@ def main(list):
 			elif vulnsys.strip() == "24": xplsearch()
 			elif vulnsys.strip() == "25": androbugs()
 			elif vulnsys.strip() == "00" or vulnsys.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 
@@ -229,8 +229,8 @@ def main(list):
 		print("    [22] xss-payload-list: Cross Site Scripting ( XSS ) Vulnerability Payload List")
 		print("    [23] Xadmin: Admin Panel Finder")
 		print("    [24] CMSeeK: CMS Detection and Exploitation suite - Scan WordPress, Joomla, Drupal and over 180 other CMSs")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		webhack = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		webhack = prompt("@dbnr >> install ")
 		if webhack == "@":
 			webhack = ""
 			for x in range(1,201):
@@ -265,7 +265,7 @@ def main(list):
 			elif webhx.strip() == "23": xadmin()
 			elif webhx.strip() == "24": cmseek()
 			elif webhx.strip() == "00" or webhx.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -276,8 +276,8 @@ def main(list):
 		print("    [03] NoSQLMap: Automated NoSQL database enumeration and web application exploitation tool")
 		print("    [04] audit_couchdb: Detect security issues, large or small, in a CouchDB server")
 		print("    [05] mongoaudit: An automated pentesting tool that lets you know if your MongoDB instances are properly secured")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		dbssm = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		dbssm = prompt("@dbnr >> install ")
 		if dbssm == "@":
 			dbssm = ""
 			for x in range(1,201):
@@ -293,7 +293,7 @@ def main(list):
 			elif dbsx.strip() == "04" or dbsx.strip() == "4": audit_couchdb()
 			elif dbsx.strip() == "05" or dbsx.strip() == "5": mongoaudit()
 			elif dbsx.strip() == "00" or dbsx.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -322,8 +322,8 @@ def main(list):
 		print("    [21] ASU: Facebook Hacking ToolKit")
 		print("    [22] Credmap: An open source tool that was created to bring awareness to the dangers of credential reuse")
 		print("    [23] BruteX: Automatically brute force all services running on a target")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		passtak = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		passtak = prompt("@dbnr >> install ")
 		if passtak == "@":
 			passtak = ""
 			for x in range(1,201):
@@ -357,7 +357,7 @@ def main(list):
 			elif passx.strip() == "22": credmap()
 			elif passx.strip() == "23": brutex()
 			elif passx.strip() == "00" or passx.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -367,8 +367,8 @@ def main(list):
 		print("    [02] Wifite: An automated wireless attack tool")
 		print("    [03] Wifiphisher: The Rogue Access Point Framework")
 		print("    [04] Routersploit: Exploitation Framework for Embedded Devices")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		wiretak = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		wiretak = prompt("@dbnr >> install ")
 		if wiretak == "@":
 			wiretak = ""
 			for x in range(1,201):
@@ -383,7 +383,7 @@ def main(list):
 			elif wirex.strip() == "03" or wirex.strip() == "3": wifiphisher()
 			elif wirex.strip() == "04" or wirex.strip() == "4": routersploit()
 			elif wirex.strip() == "00" or wirex.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -399,8 +399,8 @@ def main(list):
 		print("    [08] pyinstxtractor: PyInstaller Extractor")
 		print("    [09] innoextract: A tool to unpack installers created by Inno Setup")
 		print("    [10] binwalk: Firmware analysis tool")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		reversi = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		reversi = prompt("@dbnr >> install ")
 		if reversi == "@":
 			reversi = ""
 			for x in range(1,201):
@@ -421,7 +421,7 @@ def main(list):
 			elif revex.strip() == "09" or revex.strip() == "9": innoextract()
 			elif revex.strip() == "10": binwalk()
 			elif revex.strip() == "00" or revex.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -437,8 +437,8 @@ def main(list):
 		print("    [08] Routersploit: Exploitation Framework for Embedded Devices")
 		print("    [09] A-Rat: Remote Administration Tool")
 		print("    [10] BAF: Blind Attacking Framework")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		exploitool = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		exploitool = prompt("@dbnr >> install ")
 		if exploitool == "@":
 			exploitool = ""
 			for x in range(1,201):
@@ -459,7 +459,7 @@ def main(list):
 			elif explx.strip() == "09" or explx.strip() == "9": arat()
 			elif explx.strip() == "10": baf()
 			elif explx.strip() == "00" or explx.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -470,8 +470,8 @@ def main(list):
 		print("    [03] Ettercap: Comprehensive suite for MITM attacks, can sniff live connections, do content filtering on the fly and much more")
 		print("    [04] hping3: hping is a command-line oriented TCP/IP packet assembler/analyzer")
 		print("    [05] tshark: Network protocol analyzer and sniffer")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		sspoof = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		sspoof = prompt("@dbnr >> install ")
 		if sspoof == "@":
 			sspoof = ""
 			for x in range(1,201):
@@ -487,7 +487,7 @@ def main(list):
 			elif sspx.strip() == "04" or sspx.strip() == "4": hping3()
 			elif sspx.strip() == "05" or sspx.strip() == "5": tshark()
 			elif sspx.strip() == "00" or sspx.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -498,8 +498,8 @@ def main(list):
 		print("    [03] iconv: Utility converting between different character encodings")
 		print("    [04] mediainfo: Command-line utility for reading information from media files")
 		print("    [05] pdfinfo: PDF document information extractor")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		reportls = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		reportls = prompt("@dbnr >> install ")
 		if reportls == "@":
 			reportls = ""
 			for x in range(1,201):
@@ -515,7 +515,7 @@ def main(list):
 			elif reportx.strip() == "04" or reportx.strip() == "4": mediainfo()
 			elif reportx.strip() == "05" or reportx.strip() == "5": pdfinfo()
 			elif reportx.strip() == "00" or reportx.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -524,8 +524,8 @@ def main(list):
 		print("\n    [01] steghide: Embeds a message in a file by replacing some of the least significant bits")
 		print("    [02] tesseract: Tesseract is probably the most accurate open source OCR engine available")
 		print("    [03] sleuthkit: The Sleuth Kit (TSK) is a library for digital forensics tools")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		forensc = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		forensc = prompt("@dbnr >> install ")
 		if forensc == "@":
 			forensc = ""
 			for x in range(1,201):
@@ -539,7 +539,7 @@ def main(list):
 			elif forenx.strip() == "02" or forenx.strip() == "2": tesseract()
 			elif forenx.strip() == "03" or forenx.strip() == "3": sleuthkit()
 			elif forenx.strip() == "00" or forenx.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -554,8 +554,8 @@ def main(list):
 		print("    [07] Xshell")
 		print("    [08] santet-online: Social Engineering Tool")
 		print("    [09] dost-attack: WebServer Attacking Tools")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		stresstest = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		stresstest = prompt("@dbnr >> install ")
 		if stresstest == "@":
 			stresstest = ""
 			for x in range(1,201):
@@ -575,7 +575,7 @@ def main(list):
 			elif stressx.strip() == "08" or stressx.strip() == "8": sanlen()
 			elif stressx.strip() == "09" or stressx.strip() == "9": dostattack()
 			elif stressx.strip() == "00" or stressx.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -586,8 +586,8 @@ def main(list):
 		print("    [03] Kali Nethunter")
 		print("    [04] Parrot")
 		print("    [05] Arch Linux")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		innudis = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		innudis = prompt("@dbnr >> install ")
 		if innudis == "@":
 			innudis = ""
 			for x in range(1,201):
@@ -603,7 +603,7 @@ def main(list):
 			elif innux.strip() == "04" or innux.strip() == "4": parrot()
 			elif innux.strip() == "05" or innux.strip() == "5": archlinux()
 			elif innux.strip() == "00" or innux.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -629,8 +629,8 @@ def main(list):
 		print("    [19] Numpy: The fundamental package for scientific computing with Python")
 		print("    [20] BTC-to-IDR-checker: Check the exchange rate virtual money currency to Indonesia Rupiah from Bitcoin.co.id API")
 		print("    [21] ClickBot: Earn money using telegram bot")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		moretool = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		moretool = prompt("@dbnr >> install ")
 		if moretool == "@":
 			moretool = ""
 			for x in range(1,201):
@@ -662,7 +662,7 @@ def main(list):
 			elif moret.strip() == "20": btc2idr()
 			elif moret.strip() == "21": clickbot()
 			elif moret.strip() == "00" or moret.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -676,8 +676,8 @@ def main(list):
 		print("    [06] quikfind (Search Files)")
 		print("    [07] pranayama (4-7-8 Relax Breathing)")
 		print("    [08] sqlc (SQLite Query Processor)")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		myshf = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		myshf = prompt("@dbnr >> install ")
 		if myshf == "@":
 			myshf = ""
 			for x in range(1,201):
@@ -696,7 +696,7 @@ def main(list):
 			elif mysh.strip() == "07" or mysh.strip() == "7": pranayama()
 			elif mysh.strip() == "08" or mysh.strip() == "8": sqlc()
 			elif mysh.strip() == "00" or mysh.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -710,8 +710,8 @@ def main(list):
 		print("    [06] Nudoku: ncurses based sudoku game")
 		print("    [07] tty-solitaire")
 		print("    [08] Pacman4Console")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		cligam = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		cligam = prompt("@dbnr >> install ")
 		if cligam == "@":
 			cligam = ""
 			for x in range(1,201):
@@ -730,7 +730,7 @@ def main(list):
 			elif clig.strip() == "07" or clig.strip() == "7": ttysolitaire()
 			elif clig.strip() == "08" or clig.strip() == "8": pacman4console()
 			elif clig.strip() == "00" or clig.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -742,8 +742,8 @@ def main(list):
 		print("    [04] Yara: Tool aimed at helping malware researchers to identify and classify malware samples")
 		print("    [05] VirusTotal-CLI: Command line interface for VirusTotal")
 		print("    [06] avpass: Tool for leaking and bypassing Android malware detection system")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		malsys = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		malsys = prompt("@dbnr >> install ")
 		if malsys == "@":
 			malsys = ""
 			for x in range(1,201):
@@ -760,7 +760,7 @@ def main(list):
 			elif malx.strip() == "05" or malx.strip() == "5": virustotal()
 			elif malx.strip() == "06" or malx.strip() == "6": avpass()
 			elif malx.strip() == "00" or malx.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -781,8 +781,8 @@ def main(list):
 		print("    [13] fp-compiler: Free Pascal is a 32, 64 and 16 bit professional Pascal compiler")
 		print("    [14] Octave: Scientific Programming Language")
 		print("    [15] BlogC: A blog compiler")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		compter = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		compter = prompt("@dbnr >> install ")
 		if compter == "@":
 			compter = ""
 			for x in range(1,201):
@@ -808,7 +808,7 @@ def main(list):
 			elif compt.strip() == "14": octave()
 			elif compt.strip() == "15": blogc()
 			elif compt.strip() == "00" or compt.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	
@@ -821,8 +821,8 @@ def main(list):
 		print("    [05] LiteOTP: Multi Spam SMS OTP")
 		print("    [06] F4K3: Fake User Data Generator")
 		print("    [07] Hac")
-		quo.flair(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
-		soceng = quo.prompt("@dbnr >> install ")
+		echo(f"    [00] Back to main menu", foreground="black", background="yellow", bold=True) 
+		soceng = prompt("@dbnr >> install ")
 		if soceng == "@":
 			soceng = ""
 			for x in range(1,201):
@@ -840,14 +840,14 @@ def main(list):
 			elif socng.strip() == "06" or socng.strip() == "6": f4k3()
 			elif socng.strip() == "07" or socng.strip() == "7": hac()
 			elif socng.strip() == "00" or socng.strip() == "0": restart_program()
-			else: quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
+			else: echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) ;timeout(1);restart_program()
 		if readStatus():
 			writeStatus(0)
 	elif debonair.strip() == "00":
 		sys.exit()
 	
 	else:
-		quo.flair(f"ERROR: Invalid Input",  foreground="vred",  bold=True) 
+		echo(f"ERROR: Invalid Input",  foreground="vred",  bold=True) 
 		timeout(1)
 		restart_program()
 
